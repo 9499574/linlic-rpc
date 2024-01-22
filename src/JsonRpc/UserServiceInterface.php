@@ -10,5 +10,5 @@ interface UserServiceInterface
      * @param string $user_name 机构的用户名
      * @return bool
      */
-    public function addManageUser($orgId,$userName):bool;
+    public function setManageUser($orgId,$userName):bool;
 }
