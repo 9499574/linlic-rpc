@@ -6,9 +6,9 @@ interface UserServiceInterface
 {
     /*
      * 机构添加管理员账号
-     * @param string $org_id 机构编号
-     * @param string $user_name 机构的用户名
+     * @param string $orgId 机构编号
+     * @param string $userName 管理员账号的用户名
      * @return bool
      */
-    public function setManageUser($orgId,$userName):bool;
+    public function synManageUser($orgId,$userName):bool;
 }
