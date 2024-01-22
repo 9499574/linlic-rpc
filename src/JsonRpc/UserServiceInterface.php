@@ -4,5 +4,11 @@ namespace linlic\JsonRpc;
 
 interface UserServiceInterface
 {
-    public function add($a,$b):int;
+    /*
+     * 机构添加管理员账号
+     * @param string $org_id 机构编号
+     * @param string $user_name 机构的用户名
+     * @return bool
+     */
+    public function addManageUser($orgId,$userName):bool;
 }
