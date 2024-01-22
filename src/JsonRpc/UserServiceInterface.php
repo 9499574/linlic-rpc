@@ -10,5 +10,5 @@ interface UserServiceInterface
      * @param string $userName 管理员账号的用户名
      * @return bool
      */
-    public function synManageUser($orgId,$userName):bool;
+    public function synManageUser($orgId,$userName):array;
 }
