@@ -50,4 +50,5 @@ interface DictionaryServiceInterface
      * @time 2024/1/23 18:00
      */
     public function getUserFieldsWithOptions(): array;
+
 }
