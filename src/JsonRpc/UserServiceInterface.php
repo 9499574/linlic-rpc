@@ -11,4 +11,5 @@ interface UserServiceInterface
      * @return bool
      */
     public function synManageUser($orgId,$userName):array;
+    public function test($a,$b):int;
 }
