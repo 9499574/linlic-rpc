@@ -12,14 +12,8 @@ interface FormServiceInterface
 
     /**
      * 获取填报表单字段
-     * @param string $filling_form_template_id 填报表单ID
+     * @param array $params 参数数组
      * @return array
      */
-    public function getFillingFormFields(string $filling_form_template_id):array;
-
-    /**
-     * 获取可用的个人资料模板
-     * @return array
-     */
-    public function getPersonalDataTemplates():array;
+    public function getFillingFormFields(array $params):array;
 }
