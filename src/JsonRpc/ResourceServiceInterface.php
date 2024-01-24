@@ -28,4 +28,21 @@ interface ResourceServiceInterface
      * @return array
      */
     public function getFileInfo(array $resource_id): array;
+
+
+    /**
+     * 设置云盘大小
+     * @param string $org_id 机构编号
+     * @param int $size 大小（T）
+     * @return bool
+     */
+    public function setSpaceSize(string $org_id,int $size):bool;
+
+
+    /**
+     * 已使用云盘空间大小
+     * @param string $org_id 机构编号
+     * @return array
+     */
+    public function getSpaceUseSize(string $org_id):array;
 }
