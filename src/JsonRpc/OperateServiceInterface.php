@@ -10,4 +10,11 @@ interface OperateServiceInterface
      * @return array
      */
     public function getUserName(array $uid): array;
+
+    /**
+     * 获取用户信息
+     * @param string $uid
+     * @return array
+     */
+    public function getUserInfo(string $uid):array;
 }
