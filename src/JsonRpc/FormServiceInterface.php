@@ -16,4 +16,13 @@ interface FormServiceInterface
      * @return array
      */
     public function getFillingFormFields(array $params):array;
+
+    /**
+     * 根据表单ID数组获取表单标题
+     * @param array $filling_form_template_id_arr
+     * @return array
+     */
+    public function getFillingFormNames(array $filling_form_template_id_arr):array;
+
+
 }
