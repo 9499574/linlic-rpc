@@ -51,4 +51,14 @@ interface DictionaryServiceInterface
      */
     public function getUserFieldsWithOptions(): array;
 
+    /**
+     * 初始化机构系统字典数据
+     *
+     * @param array $systemData
+     * @return bool
+     * @user zhaodongsheng
+     * @time 2024/1/25 19:23
+     */
+    public function initOrgDict(array $systemData): bool;
+
 }
