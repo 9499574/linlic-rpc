@@ -4,13 +4,16 @@ namespace linlic\JsonRpc;
 
 interface UserServiceInterface
 {
-    public function test($a,$b):int;
-    /*
-     * 机构设置管理员账号
-     * @param string $orgId 机构的id编号
-     * @param string $userName 管理员账号的用户名
-     * @return array。如：['status'=>$status,'message'=>$message]
+    /**
+     * 获取两个数相加的值
      */
+    public function test($a,$b):int;
+
+    /*机构设置管理员账号
+    * 请求参数：orgId表示机构的id、userName表示机构的用户名
+    * 返回数组。status为1表示操作成功，0表示操作失败。message表示成功或失败的消息提示
+    * manage_uid表示用户的uid，为了防止四舍五入出错，这里给的是字符串类型
+    */
     public function setManageUser($orgId,$userName):array;
 
     /*
