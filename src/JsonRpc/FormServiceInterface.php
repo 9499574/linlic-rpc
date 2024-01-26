@@ -24,5 +24,12 @@ interface FormServiceInterface
      */
     public function getFillingFormNames(array $filling_form_template_id_arr):array;
 
+    /**
+     * 根据用户资料模板ID数组获取模板标题
+     * @param array $personal_data_template_id_arr
+     * @return array
+     */
+    public function getPersonalDataTemplateNames(array $personal_data_template_id_arr):array;
+
 
 }
