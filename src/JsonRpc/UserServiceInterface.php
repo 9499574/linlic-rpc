@@ -30,4 +30,25 @@ interface UserServiceInterface
     */
     public function setOrgCount($orgId,$setCount):array;
 
+    /**
+     * 机构开通系统 初始化角色数据
+     * @param array $params
+     * @return bool
+     */
+    public function orgSystemRoleInit(array $params):bool;
+
+    /**
+     * 机构开通系统 初始化角色与资料数据
+     * @param array $params
+     * @return bool
+     */
+    public function orgSystemRoleFormInit(array $params):bool;
+
+    /**
+     * 机构开通系统 初始化角色权限数据
+     * @param array $params
+     * @return bool
+     */
+    public function orgSystemRolePower(array $params):bool;
+
 }
