@@ -61,4 +61,15 @@ interface DictionaryServiceInterface
      */
     public function initOrgDict(array $systemData): bool;
 
+
+    /**
+     * 根据选项ID返回选项标签
+     *
+     * @param $optionId int 选项ID
+     * @return string 选项标签
+     * @user zhaodongsheng
+     * @time 2024/1/26 11:15
+     */
+    public function getOptionLabelByOptionId(string $optionId): string;
+
 }
