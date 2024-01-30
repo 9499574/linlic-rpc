@@ -11,4 +11,11 @@ interface SystemServiceInterface
      * @return bool
      */
     public function orgAddSystem(string $org_id,array $system_id):bool;
+
+    /**
+     * 通过系统ID获取系统名称
+     * @param array $system_id
+     * @return array
+     */
+    public function systemNameList(array $system_id):array;
 }
