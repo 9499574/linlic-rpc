@@ -18,4 +18,11 @@ interface SystemServiceInterface
      * @return array
      */
     public function systemNameList(array $system_id):array;
+
+    /**
+     * 通过机构ID获取系统列表
+     * @param string $org_id
+     * @return array
+     */
+    public function orgSystemList(string $org_id):array;
 }
