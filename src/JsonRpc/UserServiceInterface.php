@@ -33,10 +33,17 @@ interface UserServiceInterface
 
     /*
     * 根据ccmtvUid的数组，获取到用户的相关信息
-    *  @param $ccmtvUidArr 数组类型，表示ccmtv的用户uid数组
+    * @param $ccmtvUidArr 数组类型，表示ccmtv的用户uid数组
     * @return array。如：[['user_name'=>'xxx','true_name'=>'yyy','mobphone'=>'ccx'],['user_name'=>'yx15','true_name'=>'95s','mobphone'=>'ccx']]
     */
     public function getUserByCcmtvUidArr($ccmtvUidArr):array;
+
+    /*
+    * 根据uid的数组，获取到用户的相关信息
+    * @param $uidArr 数组类型，表示用户的uid数组
+    * @return array。如：[['user_name'=>'xxx','true_name'=>'yyy','mobphone'=>'ccx'],['user_name'=>'yx15','true_name'=>'95s','mobphone'=>'ccx']]
+    */
+    public function getUserByUidArr($uidArr):array;
     /**
      * 机构开通系统 初始化角色数据
      * @param array $params
