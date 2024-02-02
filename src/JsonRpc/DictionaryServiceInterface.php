@@ -215,4 +215,20 @@ interface DictionaryServiceInterface
      */
     public function getOptionLabelByOptionId(string $optionId): string;
 
+
+    /**
+     * 根据选项IDS返回选项标签
+     *
+     * @param $optionIds array 选项IDs
+     * @return array
+     * // 返回示例
+     * //{
+     * //         "610484296108838912": "ce22",
+     * //         "610484253918334976": "ceshi11"
+     * //}
+     * @user zhaodongsheng
+     * @time 2024/2/2 10:43
+     */
+    public function getOptionLabelsByOptionIds(array $optionIds): array;
+
 }
