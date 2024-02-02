@@ -48,8 +48,10 @@ interface UserServiceInterface
     public function getUserByUidArr($uidArr,$colArr = []):array;
 
     /*
-    * 根据where条件组，返回用户的id的数组
-    * $where：如： ['user_name'=>'xx','true_name'=>'yy']，如果数组的键值为空字符，请不要传来，否则会返回空数组，比如['user_name'=>''],就会返回空数组
+    * 根据where条件组，返回用户的uid的数组
+    * $where：如： ['org_id'=>'609114673077370880','system_id'=>'610565232448225280','user_name'=>'xx','true_name'=>'yy']，目前参数org必带，如果要想查系统里所有的后台用户，org_id传-1,如果没有org_id参数，则全部返回空数组。
+    * 如果数组的键值为空字符，则后台会自动过滤掉此查询条件。比如['user_name'=>'xx','true_name'=>''],等同于['user_name'=>'xx']的查询
+    * user_name、true_name、mobphone字段，目前都是做的like的模糊查询。
     */
     public function getUidArrByWhere(array $where):array;
     /**
