@@ -30,6 +30,30 @@ interface UserServiceInterface
     */
     public function setOrgCount($orgId,$setCount):array;
 
+
+    /*
+    * 根据ccmtvUid的数组，获取到用户的相关信息
+    * @param $ccmtvUidArr 数组类型，表示ccmtv的用户uid数组
+    * @$colArr:数组类型，表示要获取到的字段值，如['user_name','true_name']。如果不填，则默认返回最基本的信息
+    * @return array。如：[['user_name'=>'xxx','true_name'=>'yyy','mobphone'=>'ccx'],['user_name'=>'yx15','true_name'=>'95s','mobphone'=>'ccx']]
+    */
+    public function getUserByCcmtvUidArr($ccmtvUidArr,$colArr = []):array;
+
+    /*
+    * 根据uid的数组，获取到用户的相关信息
+    * @param $uidArr 数组类型，表示用户的uid数组
+    * @$colArr:数组类型，表示要获取到的字段值，如['user_name','true_name']。如果不填，则默认返回最基本的信息
+    * @return array。如：[['user_name'=>'xxx','true_name'=>'yyy','mobphone'=>'ccx'],['user_name'=>'yx15','true_name'=>'95s','mobphone'=>'ccx']]
+    */
+    public function getUserByUidArr($uidArr,$colArr = []):array;
+
+    /*
+    * 根据where条件组，返回用户的uid的数组
+    * $where：如： ['org_id'=>'609114673077370880','system_id'=>'610565232448225280','user_name'=>'xx','true_name'=>'yy']，目前参数org必带，如果要想查系统里所有的后台用户，org_id传-1,如果没有org_id参数，则全部返回空数组。
+    * 如果数组的键值为空字符，则后台会自动过滤掉此查询条件。比如['user_name'=>'xx','true_name'=>''],等同于['user_name'=>'xx']的查询
+    * user_name、true_name、mobphone字段，目前都是做的like的模糊查询。
+    */
+    public function getUidArrByWhere(array $where):array;
     /**
      * 机构开通系统 初始化角色数据
      * @param array $params
