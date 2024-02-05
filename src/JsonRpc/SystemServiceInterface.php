@@ -25,4 +25,11 @@ interface SystemServiceInterface
      * @return array
      */
     public function orgSystemList(string $org_id):array;
+
+    /**
+     * 系统正常状态列表
+     * @param string $org_id
+     * @return array 返回正常状态的系统列表
+     */
+    public function systemNormalStatusList(string $org_id):array;
 }
