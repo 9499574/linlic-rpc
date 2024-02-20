@@ -231,4 +231,70 @@ interface DictionaryServiceInterface
      */
     public function getOptionLabelsByOptionIds(array $optionIds): array;
 
+
+    /**
+     * 根据字典keys获取字典选项
+     *
+     * @param array $dictKey 字典keys
+     * @param int $orgId 机构id
+     * @return array
+     * // 返回示例
+     *  // {
+     *  //         "user_ks": [
+     *  //             {
+     *  //                 "option_id": "613058205140955136",
+     *  //                 "dict_id": "613057726751223808",
+     *  //                 "dict_key": "user_ks",
+     *  //                 "org_id": "-1",
+     *  //                 "option_label": "心内科",
+     *  //                 "option_value": "1",
+     *  //                 "sort": 1,
+     *  //                 "is_default": 0,
+     *  //                 "option_status": 1,
+     *  //                 "option_remark": ""
+     *  //             },
+     *  //             {
+     *  //                 "option_id": "613063633212059648",
+     *  //                 "dict_id": "613057726751223808",
+     *  //                 "dict_key": "user_ks",
+     *  //                 "org_id": "-1",
+     *  //                 "option_label": "科室2",
+     *  //                 "option_value": "",
+     *  //                 "sort": 1,
+     *  //                 "is_default": 1,
+     *  //                 "option_status": 1,
+     *  //                 "option_remark": ""
+     *  //             }
+     *  //         ],
+     *  //         "ask_type": [
+     *  //             {
+     *  //                 "option_id": "613377780214816769",
+     *  //                 "dict_id": "613096597807509504",
+     *  //                 "dict_key": "ask_type",
+     *  //                 "org_id": "613069846708518912",
+     *  //                 "option_label": "年假1",
+     *  //                 "option_value": "613096655735042048",
+     *  //                 "sort": 1,
+     *  //                 "is_default": 0,
+     *  //                 "option_status": 1,
+     *  //                 "option_remark": ""
+     *  //             },
+     *  //             {
+     *  //                 "option_id": "613377780281925632",
+     *  //                 "dict_id": "613096597807509504",
+     *  //                 "dict_key": "ask_type",
+     *  //                 "org_id": "613069846708518912",
+     *  //                 "option_label": "病假",
+     *  //                 "option_value": "613096683220316160",
+     *  //                 "sort": 2,
+     *  //                 "is_default": 1,
+     *  //                 "option_status": 1,
+     *  //                 "option_remark": ""
+     *  //             }
+     *  //         ]
+     *  //     }
+     * @user zhaodongsheng
+     * @time 2024/1/22 17:26
+     */
+    public function getOptionByDictKeys(array $dictKeys, int $orgId): array;
 }
