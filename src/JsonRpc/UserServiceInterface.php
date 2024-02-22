@@ -54,6 +54,17 @@ interface UserServiceInterface
     * user_name、true_name、mobphone字段，目前都是做的like的模糊查询。
     */
     public function getUidArrByWhere(array $where):array;
+
+
+    /**
+     * 根据where条件获取用户ID
+     * @param $orgId
+     * @param array $where [['user_name','=','asdassdf23423'],['aaa','=','111']]
+     * @param $systemId
+     * @return array
+     */
+    public function getUserIdByWhere($orgId,array $where, $systemId=null):array;
+
     /**
      * 机构开通系统 初始化角色数据
      * @param array $params
