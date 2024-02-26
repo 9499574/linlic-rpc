@@ -304,7 +304,7 @@ interface DictionaryServiceInterface
      * @param int $orgId
      * @param array $optionLabels
      * 示例:
-     * //{"ask_type":["陪产假","产假"],"dict_key":["xx","xxx"]}
+     * //{"ask_type":["陪产假","产假"],"xxx_dict_key":["xx_label","xx1_label"]}
      *
      * @return array
      * 示例:
@@ -313,9 +313,9 @@ interface DictionaryServiceInterface
      * //             "产假": "613096764782751744",
      * //             "陪产假": "613096847628644352"
      * //         },
-     * //        'dict_key': {
-     * //             "xx": "613096764782751744",
-     * //             "xxx": "613096847628644352"
+     * //        'xxx_dict_key': {
+     * //             "xx_label": "613096764782751744",
+     * //             "xx1_label": "613096847628644352"
      * //         }
      * //}
      * @user zhaodongsheng
