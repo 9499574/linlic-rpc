@@ -86,4 +86,24 @@ interface UserServiceInterface
      */
     public function orgSystemRolePower(array $params):bool;
 
+    /**
+     * 根据机构id，获取基地字段
+     * @param string $orgId
+     * @return array
+     */
+    public function getBaseFields(string $orgId):array;
+
+    /**
+     * 根据机构id，获取基地选项
+     * @param string $orgId
+     * @return array
+     */
+    public function getBaseOptions(string $orgId):array;
+
+    /**
+     * 获取标准基地选项
+     * @return array
+     */
+    public function getStandardBaseOptions():array;
+
 }
