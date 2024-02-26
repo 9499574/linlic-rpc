@@ -299,7 +299,7 @@ interface DictionaryServiceInterface
     public function getOptionByDictKeys(array $dictKeys, int $orgId): array;
 
     /**
-     * 根据字典values获取字段labels
+     * 根据字典labels获取字典values
      *
      * @param int $orgId
      * @param array $optionLabels
