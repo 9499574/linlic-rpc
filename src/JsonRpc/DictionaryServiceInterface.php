@@ -297,4 +297,29 @@ interface DictionaryServiceInterface
      * @time 2024/1/22 17:26
      */
     public function getOptionByDictKeys(array $dictKeys, int $orgId): array;
+
+    /**
+     * 根据字典values获取字段labels
+     *
+     * @param int $orgId
+     * @param array $optionLabels
+     * 示例:
+     * //{"ask_type":["陪产假","产假"],"dict_key":["xx","xxx"]}
+     *
+     * @return array
+     * 示例:
+     * //{
+     * //         "ask_type": {
+     * //             "产假": "613096764782751744",
+     * //             "陪产假": "613096847628644352"
+     * //         },
+     * //        'dict_key': {
+     * //             "xx": "613096764782751744",
+     * //             "xxx": "613096847628644352"
+     * //         }
+     * //}
+     * @user zhaodongsheng
+     * @time 2024/2/26 11:54
+     */
+    public function getOptionValuesByOptionLabels(int $orgId, array $optionLabels): array;
 }
