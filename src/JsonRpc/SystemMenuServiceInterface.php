@@ -11,6 +11,14 @@ interface SystemMenuServiceInterface
      */
     public function getSystemModuleFunConf($system_id):array;
 
+
+    /**
+     * 通过系统组件编号获取数据
+     * @param array $system_module_id
+     * @return array
+     */
+    public function systemModuleIdGetData(array $system_module_id):array;
+
     /**
      * 通过模块功能编号获取表数据
      * @param array $fun_id
