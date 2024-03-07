@@ -36,4 +36,11 @@ interface FormServiceInterface
     * 根据个人资料表单的template_fields信息,提取出里面的字段信息
     */
     public function getPerDataFieldList(string $fieldArrJson):array;
+
+    /**
+     * 获取菜单配置查询条件
+     * @param array $params  ['field'=>'menu_conf','data'=>'613096948300275712'];data为field字段模块参数对应值
+     * @return array  ['menu_conf->filling_form_template_id','613096948300275712'];返回模块参数对应的查询条件
+     */
+    public function getMenuConfWhere(array $params):array;
 }
