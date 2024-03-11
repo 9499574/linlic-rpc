@@ -209,17 +209,19 @@ interface DictionaryServiceInterface
      * 根据选项ID返回选项标签
      *
      * @param $optionId int 选项ID
+     * @param $dictKey string 字典key
      * @return string 选项标签
      * @user zhaodongsheng
      * @time 2024/1/26 11:15
      */
-    public function getOptionLabelByOptionId(string $optionId): string;
+    public function getOptionLabelByOptionId(string $optionId,string $dictKey): string;
 
 
     /**
      * 根据选项IDS返回选项标签
      *
      * @param $optionIds array 选项IDs
+     * @param $dictKey string 字典key
      * @return array
      * // 返回示例
      * //{
@@ -229,7 +231,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/2/2 10:43
      */
-    public function getOptionLabelsByOptionIds(array $optionIds): array;
+    public function getOptionLabelsByOptionIds(array $optionIds,string $dictKey): array;
 
 
     /**
