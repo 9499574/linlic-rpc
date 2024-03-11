@@ -86,13 +86,4 @@ interface UserServiceInterface
      */
     public function orgSystemRolePower(array $params):bool;
 
-    /**
-     * 获取机构系统下的角色
-     * @param string $orgId
-     * @param string $systemId
-     * @param int $roleType 0所有类型 1角色组类型 2正常角色类型
-     * @return array
-     */
-    public function getOrgSystemRoles(string $orgId,string $systemId,int $roleType=0):array;
-
 }
