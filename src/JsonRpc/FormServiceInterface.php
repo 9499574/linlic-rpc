@@ -43,4 +43,11 @@ interface FormServiceInterface
      * @return array  ['menu_conf->filling_form_template_id','613096948300275712'];返回模块参数对应的查询条件
      */
     public function getMenuConfWhere(array $params):array;
+
+    /**
+     * 获取用户字段
+     * @param array $params ['belong_to'=>1,'org_id'=>'-1'] belong_to:归属 1全局 2机构 org_id:机构id
+     * @return array
+     */
+    public function getUserFields(array $params): array;
 }
