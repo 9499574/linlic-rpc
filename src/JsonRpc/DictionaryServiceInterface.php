@@ -119,7 +119,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/22 17:27
      */
-    public function getUserFields(array $select = ['field_id', 'org_id', 'field_name', 'field_en_name', 'field_key', 'field_type', 'dict_id', 'dict_key', 'field_remark']): array;
+    public function getFields(array $select = ['field_id', 'org_id', 'field_name', 'field_en_name', 'field_key', 'field_type', 'dict_id', 'dict_key', 'field_remark']): array;
 
     /**
      * 获取用户字段和选项
@@ -176,7 +176,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/23 18:00
      */
-    public function getUserFieldsWithOptions(): array;
+    public function getFieldsWithOptions(): array;
 
     /**
      * 初始化机构系统字典数据
