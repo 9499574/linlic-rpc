@@ -1,1 +1,1 @@
-接口类
+composer require linlic/rpc
