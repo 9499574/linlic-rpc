@@ -8,7 +8,7 @@ interface FormServiceInterface
      * 获取可用的填报表单
      * @return array
      */
-    public function getFillingForms():array;
+    public function getFillingForms(array $params):array;
 
     /**
      * 获取填报表单字段
