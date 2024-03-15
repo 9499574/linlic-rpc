@@ -21,4 +21,11 @@ interface BaseServiceInterface
      */
     public function getBaseOptions(string $orgId,array $where=[],array $select=[]):array;
 
+    /**
+     * 通过标准基地ID集合,获取标准基地名称
+     * @param array $standardBaseId [1,2,3,4]
+     * @return array [1=>'aaa',2=>'bbb']
+     */
+    public function getStandardBaseName(array $standardBaseId):array;
+
 }
