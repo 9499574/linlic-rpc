@@ -40,9 +40,9 @@ interface FormServiceInterface
     /**
      * 获取菜单配置查询条件
      * @param array $params ['field'=>'menu_conf','data'=>'613096948300275712'];data为field字段模块参数对应值
-     * @return array|object ['menu_conf->filling_form_template_id','613096948300275712'];返回模块参数对应的查询条件
+     * @return array|string ['menu_conf->filling_form_template_id','613096948300275712'];返回模块参数对应的查询条件
      */
-    public function getMenuConfWhere(array $params):array|object;
+    public function getMenuConfWhere(array $params):array|string;
 
     /**
      * 获取用户字段
