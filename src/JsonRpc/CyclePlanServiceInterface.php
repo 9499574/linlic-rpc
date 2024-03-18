@@ -4,7 +4,7 @@ namespace linlic\JsonRpc;
 
 interface CyclePlanServiceInterface
 {
-    public function planField():array;
+    public function planField($params):array;
 
-    public function planConf():array;
+    public function planConf($params):array;
 }
