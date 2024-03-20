@@ -10,7 +10,7 @@ composer config -g --unset repos.packagist
 ```
 
 
-composer官方项地址
+composer项目地址
 ```
 https://packagist.org/packages/linlic/rpc
 ```
