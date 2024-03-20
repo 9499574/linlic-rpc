@@ -50,4 +50,12 @@ interface FormServiceInterface
      * @return array
      */
     public function getUserFields(array $params): array;
+
+    /**
+     * 通过用户字段获取字段字典key
+     * @param array $params ['belong_to'=>1,'org_id'=>'-1'] belong_to:归属 1全局 2机构 org_id:机构id
+     * @param array $userField ['standard_base_id','sd_id']
+     * @return array ['standard_base_id'=>'base_options']
+     */
+    public function getUserFieldDictKey(array $params, array $userField):array;
 }
