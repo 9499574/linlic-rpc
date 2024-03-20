@@ -24,4 +24,11 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function planLogField($params):array;
+
+    /**
+     * 获取轮转排班已存在的用户ID
+     * @param array $params ['system_id'=>'111','start_date'=>'2024-3-20']
+     * @return array
+     */
+    public function getCyclePlanExistsUserId(array $params):array;
 }
