@@ -86,4 +86,36 @@ interface UserServiceInterface
      */
     public function orgSystemRolePower(array $params):bool;
 
+
+    /**
+     * 根据机构id，系统id、获取角色选项
+     * @param string $orgId 机构Id
+     * @param string $systemId 系统Id
+     * @param array $where where查询条件的数组示例。如：['option_label'=>["住院医师"],'option_value'=>["622116875481731073"]]
+     * @param array $select select查询条件的数组示例。如：['option_label','option_value']
+     * @return array 返回的数据格式，如：[["option_label"=>"带教老师","option_value"=>"622116875481731073"]]
+     */
+    public function getRoleOptions(string $orgId,string $systemId,array $where=[],array $select=[]):array;
+
+    /**
+     * 用户管理，用户列表-功能字段列表的接口
+     * @param array $params
+     * @return array
+     */
+    public function getFields(array $params):array;
+
+    /**
+     * 用户管理，用户列表-菜单设置的接口
+     * @param array $params
+     * @return array
+     */
+    public function getConfigs(array $params):array;
+
+    /**
+     * 用户管理，用户列表-数据共享信息的接口
+     * @param array $params
+     * @return array
+     */
+    public function getShareFields(array $params):array;
+
 }

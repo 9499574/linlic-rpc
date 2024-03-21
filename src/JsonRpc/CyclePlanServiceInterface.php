@@ -1,0 +1,34 @@
+<?php
+
+namespace linlic\JsonRpc;
+
+interface CyclePlanServiceInterface
+{
+    /**
+     * 新建排班-模块字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function planField($params):array;
+
+    /**
+     * 新建排班-配置字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function planConf($params):array;
+
+    /**
+     * 排班记录-模块字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function planLogField($params):array;
+
+    /**
+     * 获取轮转排班已存在的用户ID
+     * @param array $params ['system_id'=>'111','start_date'=>'2024-3-20']
+     * @return array
+     */
+    public function getCyclePlanExistsUserId(array $params):array;
+}
