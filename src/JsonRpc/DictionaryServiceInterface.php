@@ -128,6 +128,7 @@ interface DictionaryServiceInterface
     /**
      * 获取用户字段和选项
      *
+     * @param string $orgId 机构ID
      * @param string $systemId 系统ID
      * @param string $menuId 菜单ID
      * @return array
@@ -182,7 +183,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/23 18:00
      */
-    public function getFieldsWithOptions(string $systemId = null, string $menuId = null): array;
+    public function getFieldsWithOptions(string $orgId = null, string $systemId = null, string $menuId = null): array;
 
     /**
      * @param array $systemData
