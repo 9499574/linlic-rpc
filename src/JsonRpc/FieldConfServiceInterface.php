@@ -10,4 +10,11 @@ interface FieldConfServiceInterface
      * @return bool
      */
     public function ConfigInit(array $params):bool;
+
+    /**
+     * 获取菜单配置参数
+     * @param string $menu_id
+     * @return array
+     */
+    public function getMenuIdConf(string $menu_id):array;
 }
