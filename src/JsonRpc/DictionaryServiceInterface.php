@@ -218,13 +218,14 @@ interface DictionaryServiceInterface
      *
      * @param $optionId int 选项ID
      * @param $dictKey string 字典key
+     * @param string $orgId 机构ID
      * @param string $systemId 系统ID
      * @param string $menuId 菜单ID
      * @return string 选项标签
      * @user zhaodongsheng
      * @time 2024/1/26 11:15
      */
-    public function getOptionLabelByOptionId(string $optionId, string $dictKey, string $systemId = null, string $menuId = null): string;
+    public function getOptionLabelByOptionId(string $optionId, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): string;
 
 
     /**
@@ -232,6 +233,7 @@ interface DictionaryServiceInterface
      *
      * @param $optionIds array 选项IDs
      * @param $dictKey string 字典key
+     * @param string $orgId 机构ID
      * @param string $systemId 系统ID
      * @param string $menuId 菜单ID
      * @return array
@@ -243,7 +245,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/2/2 10:43
      */
-    public function getOptionLabelsByOptionIds(array $optionIds, string $dictKey, string $systemId = null, string $menuId = null): array;
+    public function getOptionLabelsByOptionIds(array $optionIds, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): array;
 
 
     /**
