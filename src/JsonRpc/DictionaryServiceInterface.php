@@ -15,6 +15,8 @@ interface DictionaryServiceInterface
      *
      * @param string $dictKey 字典key
      * @param int $orgId 机构id
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * @return array
      * // 返回示例
      * //[
@@ -46,13 +48,15 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/22 17:26
      */
-    public function getOptionByDictKey(string $dictKey, int $orgId): array;
+    public function getOptionByDictKey(string $dictKey, int $orgId, string $systemId = null, string $menuId = null): array;
 
     /**
      * 根据字典id获取字典选项
      *
      * @param int $dictId 字典id
      * @param int $orgId 机构id
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * @return array
      * // 返回示例
      * //[
@@ -84,7 +88,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/22 17:27
      */
-    public function getOptionByDictId(int $dictId, int $orgId): array;
+    public function getOptionByDictId(int $dictId, int $orgId, string $systemId = null, string $menuId = null): array;
 
     /**
      * 获取用户字段
@@ -124,6 +128,8 @@ interface DictionaryServiceInterface
     /**
      * 获取用户字段和选项
      *
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * @return array
      * //返回示例
      * //[
@@ -176,11 +182,9 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/23 18:00
      */
-    public function getFieldsWithOptions(): array;
+    public function getFieldsWithOptions(string $systemId = null, string $menuId = null): array;
 
     /**
-     * 初始化机构系统字典数据
-     *
      * @param array $systemData
      * //参数示例
      * //        $systemData = [
@@ -201,6 +205,9 @@ interface DictionaryServiceInterface
      * @return bool
      * @user zhaodongsheng
      * @time 2024/1/25 19:23
+     * @deprecated
+     * 初始化机构系统字典数据
+     *
      */
     public function initOrgDict(array $systemData): bool;
 
@@ -210,11 +217,13 @@ interface DictionaryServiceInterface
      *
      * @param $optionId int 选项ID
      * @param $dictKey string 字典key
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * @return string 选项标签
      * @user zhaodongsheng
      * @time 2024/1/26 11:15
      */
-    public function getOptionLabelByOptionId(string $optionId,string $dictKey): string;
+    public function getOptionLabelByOptionId(string $optionId, string $dictKey, string $systemId = null, string $menuId = null): string;
 
 
     /**
@@ -222,6 +231,8 @@ interface DictionaryServiceInterface
      *
      * @param $optionIds array 选项IDs
      * @param $dictKey string 字典key
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * @return array
      * // 返回示例
      * //{
@@ -231,7 +242,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/2/2 10:43
      */
-    public function getOptionLabelsByOptionIds(array $optionIds,string $dictKey): array;
+    public function getOptionLabelsByOptionIds(array $optionIds, string $dictKey, string $systemId = null, string $menuId = null): array;
 
 
     /**
@@ -239,6 +250,8 @@ interface DictionaryServiceInterface
      *
      * @param array $dictKey 字典keys
      * @param int $orgId 机构id
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * @return array
      * // 返回示例
      *  // {
@@ -298,13 +311,15 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/22 17:26
      */
-    public function getOptionByDictKeys(array $dictKeys, int $orgId): array;
+    public function getOptionByDictKeys(array $dictKeys, int $orgId, string $systemId = null, string $menuId = null): array;
 
     /**
      * 根据字典labels获取字典values
      *
      * @param int $orgId
      * @param array $optionLabels
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
      * 示例:
      * //{"ask_type":["陪产假","产假"],"xxx_dict_key":["xx_label","xx1_label"]}
      *
@@ -323,5 +338,5 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/2/26 11:54
      */
-    public function getOptionValuesByOptionLabels(int $orgId, array $optionLabels): array;
+    public function getOptionValuesByOptionLabels(int $orgId, array $optionLabels, string $systemId = null, string $menuId = null): array;
 }
