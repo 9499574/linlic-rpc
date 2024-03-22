@@ -58,4 +58,12 @@ interface FormServiceInterface
      * @return array ['standard_base_id'=>'base_options']
      */
     public function getUserFieldDictKey(array $params, array $userField):array;
+
+    /**
+     * 通过类别选项值获取填报表单
+     * @param string $org_id 机构id
+     * @param string $option_value 类别选项值
+     * @return array ['filling_form_template_id'=>'xxx','template_name'=>'xxx']
+     */
+    public function getFillFormsByOptionValue(string $org_id,string $option_value):array;
 }
