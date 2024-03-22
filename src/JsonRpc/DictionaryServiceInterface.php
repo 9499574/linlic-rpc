@@ -224,6 +224,7 @@ interface DictionaryServiceInterface
      * @return string 选项标签
      * @user zhaodongsheng
      * @time 2024/1/26 11:15
+     * @deprecated 不应该option_id查询标签,应使用option_value查询标签,请使用getOptionLabelByOptionValue方法
      */
     public function getOptionLabelByOptionId(string $optionId, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): string;
 
@@ -244,6 +245,7 @@ interface DictionaryServiceInterface
      * //}
      * @user zhaodongsheng
      * @time 2024/2/2 10:43
+     * @deprecated 不应该option_id查询标签,应使用option_value查询标签,请使用getOptionLabelsByOptionValues方法
      */
     public function getOptionLabelsByOptionIds(array $optionIds, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): array;
 
@@ -342,4 +344,38 @@ interface DictionaryServiceInterface
      * @time 2024/2/26 11:54
      */
     public function getOptionValuesByOptionLabels(int $orgId, array $optionLabels, string $systemId = null, string $menuId = null): array;
+
+    /**
+     * 根据选项value返回选项标签
+     *
+     * @param $optionId int 选项value
+     * @param $dictKey string 字典key
+     * @param string $orgId 机构ID
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
+     * @return string 选项标签
+     * @user zhaodongsheng
+     * @time 2024/1/26 11:15
+     */
+    public function getOptionLabelByOptionValue(string $optionValue, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): string;
+
+
+    /**
+     * 根据选项values返回选项标签
+     *
+     * @param $optionIds array 选项values
+     * @param $dictKey string 字典key
+     * @param string $orgId 机构ID
+     * @param string $systemId 系统ID
+     * @param string $menuId 菜单ID
+     * @return array
+     * // 返回示例
+     * //{
+     * //         "610484296108838912": "ce22",
+     * //         "610484253918334976": "ceshi11"
+     * //}
+     * @user zhaodongsheng
+     * @time 2024/2/2 10:43
+     */
+    public function getOptionLabelsByOptionValues(array $optionValues, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): array;
 }
