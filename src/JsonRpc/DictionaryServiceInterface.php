@@ -224,7 +224,7 @@ interface DictionaryServiceInterface
      * @return string 选项标签
      * @user zhaodongsheng
      * @time 2024/1/26 11:15
-     * @deprecated 不应该option_id查询标签,应使用option_value查询标签,请使用getOptionLabelByOptionValue方法
+     * @deprecated 不应该使用option_id查询标签,应使用option_value查询标签,请使用getOptionLabelByOptionValue方法
      */
     public function getOptionLabelByOptionId(string $optionId, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): string;
 
@@ -245,7 +245,7 @@ interface DictionaryServiceInterface
      * //}
      * @user zhaodongsheng
      * @time 2024/2/2 10:43
-     * @deprecated 不应该option_id查询标签,应使用option_value查询标签,请使用getOptionLabelsByOptionValues方法
+     * @deprecated 不应该使用option_id查询标签,应使用option_value查询标签,请使用getOptionLabelsByOptionValues方法
      */
     public function getOptionLabelsByOptionIds(array $optionIds, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): array;
 
