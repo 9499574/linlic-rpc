@@ -57,6 +57,15 @@ interface UserServiceInterface
 
 
     /**
+     * 根据用户字段的where条件获取用户ID数组
+     * where条件格式，比如：['like','demouser'] 或 ['=','demouser'],like 或 = 只能传其中一种 在这里使用。如果不用where条件，这里请传空数组。
+     * filedArr 给 whereIn使用的，如果field是user_name，那么这里的filedArr就是用户名的数组，比如：['demouser','demouser3'],where和 filedArr,可以同时使用.如果不用 filedArr，这里默认传空数组。
+     * $field：默认为user_name,也可用true_name,mobphone
+     * @return array,比如：["613069847589339136","613112297200656385"]
+     */
+    public function getUserIdByUserField($where,$filedArr = [],$field = 'user_name'):array;
+
+    /**
      * 根据where条件获取用户ID
      * @param $orgId
      * @param array $where [['user_name','=','asdassdf23423'],['aaa','=','111']]
@@ -117,5 +126,13 @@ interface UserServiceInterface
      * @return array
      */
     public function getShareFields(array $params):array;
+
+    /**
+     * 通过用户名获取用户id
+     * @param int $org_id
+     * @param array $user_name ['aaa','bbb'];
+     * @return array ['aaa'=>1111,'bbb'=>2222]
+     */
+    public function getUserNameById(int $org_id,array $user_name):array;
 
 }

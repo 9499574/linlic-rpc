@@ -7,13 +7,15 @@ interface CycleViewServiceInterface
 
     /**
      * 功能字段
+     * @param array $params
      * @return array
      */
-    public function viewField():array;
+    public function viewField(array $params):array;
 
     /**
-     * 功能配置
+     * 菜单配置
+     * @param array $params
      * @return array
      */
-    public function viewConf():array;
+    public function viewConf(array $params):array;
 }
