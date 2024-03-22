@@ -127,4 +127,12 @@ interface UserServiceInterface
      */
     public function getShareFields(array $params):array;
 
+    /**
+     * 通过用户名获取用户id
+     * @param int $org_id
+     * @param array $user_name ['aaa','bbb'];
+     * @return array ['aaa'=>1111,'bbb'=>2222]
+     */
+    public function getUserNameById(int $org_id,array $user_name):array;
+
 }
