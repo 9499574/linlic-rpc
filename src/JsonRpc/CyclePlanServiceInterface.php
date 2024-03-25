@@ -31,4 +31,13 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function getCyclePlanExistsUserId(array $params):array;
+
+    /**
+     * 获取轮转排班计划名称下拉框
+     * @param int $org_id
+     * @param string $system_id
+     * @param string $menu_id
+     * @return array
+     */
+    public function getPlanNameOptions(int $org_id,string$system_id,string $menu_id):array;
 }
