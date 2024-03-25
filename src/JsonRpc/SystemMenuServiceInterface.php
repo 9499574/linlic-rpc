@@ -10,7 +10,7 @@ interface SystemMenuServiceInterface
      * @param array $where
      * @return array
      */
-    public function getSystemModuleFunConf($system_id, array $where = []):array;
+    public function getSystemModuleFunConf($system_id, array $where = []): array;
 
 
     /**
@@ -18,19 +18,28 @@ interface SystemMenuServiceInterface
      * @param array $system_module_id
      * @return array
      */
-    public function systemModuleIdGetData(array $system_module_id):array;
+    public function systemModuleIdGetData(array $system_module_id): array;
 
     /**
      * 通过模块功能编号获取表数据
      * @param array $fun_id
      * @return array
      */
-    public function moduleFunIdGetData(array $fun_id):array;
+    public function moduleFunIdGetData(array $fun_id): array;
 
     /**
      * 通过菜单编号获取表数据
      * @param array $menu_id
      * @return array
      */
-    public function menuIdGetData(array $menu_id):array;
+    public function menuIdGetData(array $menu_id): array;
+
+    /**
+     * 通过基础功能ID获取机构系统菜单列表
+     * @param array $menu_id
+     * @param $org_id
+     * @param $system_id
+     * @return array
+     */
+    public function baseMenuIdGetOrgSystemMenuList($org_id, $system_id, array $menu_id): array;
 }
