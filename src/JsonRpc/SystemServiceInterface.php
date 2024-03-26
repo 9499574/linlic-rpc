@@ -27,6 +27,13 @@ interface SystemServiceInterface
     public function orgSystemList(string $org_id):array;
 
     /**
+     * 查询机构全部系统ID
+     * @param string $org_id
+     * @return array
+     */
+    public function getOrgAllSystemId(string $org_id):array;
+
+    /**
      * 系统正常状态列表
      * @param string $org_id
      * @return array 返回正常状态的系统列表
