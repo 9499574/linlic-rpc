@@ -32,4 +32,12 @@ interface SystemServiceInterface
      * @return array 返回正常状态的系统列表
      */
     public function systemNormalStatusList(string $org_id):array;
+
+    /**
+     * 获取系统信息
+     * @param string $org_id
+     * @param string $system_id
+     * @return mixed
+     */
+    public function getSystemInfo(string $org_id,string $system_id):array;
 }
