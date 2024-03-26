@@ -57,15 +57,6 @@ interface UserServiceInterface
 
 
     /**
-     * 根据用户字段的where条件获取用户ID数组
-     * where条件格式，比如：['like','demouser'] 或 ['=','demouser'],like 或 = 只能传其中一种 在这里使用。如果不用where条件，这里请传空数组。
-     * filedArr 给 whereIn使用的，如果field是user_name，那么这里的filedArr就是用户名的数组，比如：['demouser','demouser3'],where和 filedArr,可以同时使用.如果不用 filedArr，这里默认传空数组。
-     * $field：默认为user_name,也可用true_name,mobphone
-     * @return array,比如：["613069847589339136","613112297200656385"]
-     */
-    public function getUserIdByUserField($where,$filedArr = [],$field = 'user_name'):array;
-
-    /**
      * 根据where条件获取用户ID
      * @param $orgId
      * @param array $where [['user_name','=','asdassdf23423'],['aaa','=','111']]
@@ -74,6 +65,20 @@ interface UserServiceInterface
      */
     public function getUserIdByWhere($orgId,array $where, $systemId=null):array;
 
+
+    ////////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
+    /*
+    * 根据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
+    * $orgId：机构id，必填 如果为空 则返回空数组。
+    * $ccmtvWhere：ccmtv里面的查询条件,二维数组,里面只会去查询 用户名(user_name)、真实姓名(true_name)、手机号(mobphone)、性别(sex。1表示男 2表示女 0表示保密) 这4个字段。
+    * 比如：[['user_name','like','%whszyy%'],['mobphone','=','1523']] 或 使用query语句方式。
+    * $where：用户其它字段的查询条件,二维数组。比如：[['ks_id','like','%158412%'],['base_id','=','15231515161114']]或 使用query语句方式。
+    * $ridWhere：用户组的where查询条件,二维数组。比如：[['rid','=','15231515161114']] 或 使用query语句方式。
+    * $columnArr：除了uid、用户名、真实姓名、手机号、性别之外的 额外的查询字段，一维数组。如：['ks_id','base_id']，如果传空数组，则默认返回 uid、用户名、真实姓名、手机号、性别 这几个基本字段。
+    * $systemIdArr：系统的id数组。比如['15231515161114','15231515161222']
+    */
+    public function getUserFieldByWhere($orgId,$ccmtvWhere = [],$where = [],$ridWhere = [],$columnArr = [],$systemIdArr = []):array;
+    ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
     /**
      * 机构开通系统 初始化角色数据
      * @param array $params
