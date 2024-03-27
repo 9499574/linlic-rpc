@@ -21,7 +21,7 @@ interface FieldConfServiceInterface
     /**
      * 获取跳转按钮ID的父级菜单id
      * @param string $menu_id
-     * @return array
+     * @return string
      */
-    public function getJumpBtnIdParentMenuId(string $menu_id):array;
+    public function getJumpBtnIdParentMenuId(string $menu_id):string;
 }
