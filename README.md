@@ -1,4 +1,4 @@
-更新新版本1
+更新新版本
 ```
 composer require linlic/rpc
 
