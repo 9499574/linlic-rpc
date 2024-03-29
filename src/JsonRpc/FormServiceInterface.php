@@ -66,4 +66,18 @@ interface FormServiceInterface
      * @return array [['filling_form_template_id'=>'xxx','template_name'=>'xxx']]
      */
     public function getFillFormsByOptionValue(string $org_id,string $option_value):array;
+
+    /**
+     * 机构设置
+     * @param array $params 参数数组
+     * @return array
+     */
+    public function formSetConf(array $params):array;
+
+    /**
+     * 通过表单ID获取字典key
+     * @param array $filling_form_template_id_arr
+     * @return array ['user_status','user_sex','ask_type']
+     */
+    public function getFormDictKey(array $filling_form_template_id_arr):array;
 }
