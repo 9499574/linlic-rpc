@@ -21,4 +21,14 @@ interface CycleBookServiceInterface
      * @return array
      */
     public function getMenuConfWhere():array;
+
+    /**
+     * 获取设置配置
+     *
+     * @param array $params
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/3/29 13:32
+     */
+    public function getSettingConf(array $params): array;
 }
