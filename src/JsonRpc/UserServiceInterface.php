@@ -140,4 +140,11 @@ interface UserServiceInterface
      */
     public function getUserNameById(int $org_id,array $user_name):array;
 
+    /**
+     * 用户设置配置
+     * @param array $params
+     * @return mixed
+     */
+    public function userSetConf(array $params):array;
+
 }
