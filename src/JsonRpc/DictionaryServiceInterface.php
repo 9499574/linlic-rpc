@@ -208,9 +208,9 @@ interface DictionaryServiceInterface
      * @time 2024/1/25 19:23
      * @deprecated
      * 初始化机构系统字典数据
-     *
+     * @deprecated 请使用initMenuDict方法
      */
-    public function initOrgDict(array $systemData): bool;
+    // public function initOrgDict(array $systemData): bool;
 
 
     /**
@@ -391,4 +391,17 @@ interface DictionaryServiceInterface
      * @time 2024/3/29 13:09
      */
     public function filterGlobalDictKeys(array $dictKeys): array;
+
+    /**
+     * 初始化菜单字典
+     *
+     * @param array $dictKeys
+     * @param string $orgId
+     * @param string $systemId
+     * @param string $menuId
+     * @return bool
+     * @user zhaodongsheng
+     * @time 2024/3/29 14:05
+     */
+    public function initMenuDict(array $dictKeys, string $orgId, string $systemId, string $menuId): bool;
 }
