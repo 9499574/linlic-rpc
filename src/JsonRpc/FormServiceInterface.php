@@ -80,4 +80,11 @@ interface FormServiceInterface
      * @return array ['user_status','user_sex','ask_type']
      */
     public function getFormDictKey(array $filling_form_template_id_arr):array;
+
+    /**
+     * 通过表单Id获取字段name和label
+     * @param string $filling_form_template_id
+     * @return array
+     */
+    public function getFieldsNameLabel(string $filling_form_template_id):array;
 }
