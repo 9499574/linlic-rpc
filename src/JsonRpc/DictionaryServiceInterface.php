@@ -378,4 +378,17 @@ interface DictionaryServiceInterface
      * @time 2024/2/2 10:43
      */
     public function getOptionLabelsByOptionValues(array $optionValues, string $dictKey, string $orgId = null, string $systemId = null, string $menuId = null): array;
+
+    /**
+     * 过滤全局字典key
+     *
+     * @param array $dictKeys
+     * @param string|null $orgId
+     * @param string|null $systemId
+     * @param string|null $menuId
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/3/29 13:09
+     */
+    public function filterGlobalDictKeys(array $dictKeys): array;
 }
