@@ -2,8 +2,6 @@
 
 namespace linlic\JsonRpc;
 
-use Closure;
-
 interface UserServiceInterface
 {
     /**
@@ -79,7 +77,7 @@ interface UserServiceInterface
     * $columnArr：除了uid、用户名、真实姓名、手机号、性别之外的 额外的查询字段，一维数组。如：['ks_id','base_id']，如果传空数组，则默认返回 uid、用户名、真实姓名、手机号、性别 这几个基本字段。
     * $systemIdArr：系统的id数组。比如['15231515161114','15231515161222']
     */
-    public function getUserFieldByWhere($orgId,Closure $closure=null,$where = [],$ridWhere = [],$columnArr = [],$systemIdArr = []):array;
+    public function getUserFieldByWhere($orgId,\Closure|array $ccmtvWhere=null,\Closure|array $where = null,\Closure|array $ridWhere = null,$columnArr = [],$systemIdArr = []):array;
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
     /**
      * 机构开通系统 初始化角色数据
