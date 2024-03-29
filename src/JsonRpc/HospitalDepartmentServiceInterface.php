@@ -30,4 +30,12 @@ interface HospitalDepartmentServiceInterface
      */
     public function getHospitalDepartmentList(string $orgId,array $select,array $where,array $pageParams=[]):array;
 
+
+    /**
+     * 获取本院科室容量
+     * @param $hdIds ["1","2"]
+     * @return array ["1"=>10,"2"=>0]
+     */
+    public function getDepartmentCapacity($hdIds):array;
+
 }
