@@ -79,6 +79,15 @@ interface UserServiceInterface
     */
     public function getUserFieldByWhere($orgId,string|array $ccmtvWhere=null,string|array $where = null,string|array $ridWhere = null,$columnArr = [],$systemIdArr = []):array;
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
+
+    /**
+     * RPC接口调用
+     * 据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
+     * @param $params ['org_id'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array]
+     * @return array
+     */
+    public function getUserFieldByWhereRpc($params):array;
+
     /**
      * 机构开通系统 初始化角色数据
      * @param array $params
