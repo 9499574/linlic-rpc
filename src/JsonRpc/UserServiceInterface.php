@@ -83,7 +83,7 @@ interface UserServiceInterface
     /**
      * RPC接口调用
      * 据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
-     * @param $params ['org_id'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array]
+     * @param $params ['orgId'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array]
      * @return array
      */
     public function getUserFieldByWhereRpc($params):array;
