@@ -28,9 +28,12 @@ interface FormServiceInterface
      * 根据用户资料模板ID数组获取模板字段信息
      * @param array $filling_form_template_id_arr
      * @param array $colNameArr 表示要获取到的字段值数组
+     * @param int $orgId
+     * @param string $systemId
+     * @param string $menuId
      * @return array
      */
-    public function getPersonalDataTemplateNames(array $filling_form_template_id_arr,array $colNameArr= ['template_name']):array;
+    public function getPersonalDataTemplateNames(array $filling_form_template_id_arr,array $colNameArr= ['template_name'],int $orgId=-1, string $systemId = '', string $menuId = ''):array;
 
     /*
     * 根据个人资料表单的template_fields信息,提取出里面的字段信息
