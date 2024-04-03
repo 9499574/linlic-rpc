@@ -115,10 +115,11 @@ interface UserServiceInterface
      * @param string $orgId 机构Id
      * @param string $systemId 系统Id
      * @param array $where where查询条件的数组示例。如：['option_label'=>["住院医师"],'option_value'=>["622116875481731073"]]
-     * @param array $select select查询条件的数组示例。如：['option_label','option_value']
-     * @return array 返回的数据格式，如：[["option_label"=>"带教老师","option_value"=>"622116875481731073"]]
+     * @param array $select 重新组装后的名称和值。如：['option_label','option_value']，那么返回的结果里的 option_label就表示角色的名称，option_value就表示角色的role_id，如果为空则默认为['option_label','option_value']
+     * @param int $type 1表示返回树形结构 2表示返回无树状构造下的全部数组
+     * @return array 返回的数据格式，type为1的时候，返回格式如：[["option_label"=>"带教老师","option_value"=>"622116875481731073","pid"=>0,"children"=>[]]]，type为2的时候返回格式如：[["option_label"=>"带教老师","option_value"=>"622116875481731073","pid"=>0]]
      */
-    public function getRoleOptions(string $orgId,string $systemId,array $where=[],array $select=[]):array;
+    public function getRoleOptions(string $orgId,string $systemId,array $where=[],array $select=[],int $type = 1):array;
 
     /**
      * 用户管理，用户列表-功能字段列表的接口
