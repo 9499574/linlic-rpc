@@ -90,4 +90,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getFieldsNameLabel(string $filling_form_template_id):array;
+
+    /**
+     * 通过表单Id获取字段
+     * @param string $filling_form_template_id
+     * @return array
+     */
+    public function getFields(string $filling_form_template_id):array;
 }
