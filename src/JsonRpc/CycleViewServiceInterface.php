@@ -18,4 +18,11 @@ interface CycleViewServiceInterface
      * @return array
      */
     public function viewConf(array $params):array;
+
+    /**
+     * 出科考核项
+     * @param array $params
+     * @return array
+     */
+    public function LeaveDeptItem(array $params):array;
 }
