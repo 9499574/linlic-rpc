@@ -94,7 +94,10 @@ interface FormServiceInterface
     /**
      * 通过表单Id获取字段
      * @param string $filling_form_template_id
+     * @param int $orgId
+     * @param string $systemId
+     * @param string $menuId
      * @return array
      */
-    public function getFields(string $filling_form_template_id):array;
+    public function getFields(string $filling_form_template_id,int $orgId, string $systemId, string $menuId):array;
 }
