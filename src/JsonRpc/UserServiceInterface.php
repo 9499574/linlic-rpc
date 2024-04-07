@@ -76,8 +76,9 @@ interface UserServiceInterface
     * $ridWhere：用户组的where查询条件,二维数组。比如：[['rid','=','15231515161114']] 或 使用query语句方式。
     * $columnArr：除了uid、用户名、真实姓名、手机号、性别之外的 额外的查询字段，一维数组。如：['ks_id','base_id']，如果传空数组，则默认返回 uid、用户名、真实姓名、手机号、性别 这几个基本字段。
     * $systemIdArr：系统的id数组。比如['15231515161114','15231515161222']
+     * $uidArr：用户uid的数组。比如['15231515161114','15231515161222']
     */
-    public function getUserFieldByWhere($orgId,string|array $ccmtvWhere=null,string|array $where = null,string|array $ridWhere = null,$columnArr = [],$systemIdArr = []):array;
+    public function getUserFieldByWhere($orgId,string|array $ccmtvWhere=null,string|array $where = null,string|array $ridWhere = null,$columnArr = [],$systemIdArr = [],$uidArr = []):array;
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
 
     /**
