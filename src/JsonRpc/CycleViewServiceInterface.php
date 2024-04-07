@@ -20,7 +20,7 @@ interface CycleViewServiceInterface
     public function viewConf(array $params):array;
 
     /**
-     * 出科考核项
+     * 可用的出科考核项
      * @param array $params
      * @return array
      */
