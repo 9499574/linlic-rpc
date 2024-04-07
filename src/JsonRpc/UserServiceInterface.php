@@ -7,28 +7,28 @@ interface UserServiceInterface
     /**
      * 获取两个数相加的值
      */
-    public function test($a,$b):int;
+    public function test($a, $b): int;
 
     /*机构设置管理员账号
     * 请求参数：orgId表示机构的id、userName表示机构的用户名
     * 返回数组。status为1表示操作成功，0表示操作失败。message表示成功或失败的消息提示
     * manage_uid表示用户的uid，为了防止四舍五入出错，这里给的是字符串类型
     */
-    public function setManageUser($orgId,$userName):array;
+    public function setManageUser($orgId, $userName): array;
 
     /*
     * 根据机构id，获取到机构下用户的数量信息
     * @param string $orgId 机构的id编号
     * @return array。比如['set_count'=>100,'has_count'=>2],其中set_count为空字符串的时候，表示还没有进行设置
     */
-    public function getOrgUserCount($orgId):array;
+    public function getOrgUserCount($orgId): array;
 
     /*
     * 根据机构id，获取到机构下用户的数量信息
     * @param string $orgId 机构的id编号
     * @return int。如：['status'=>$status,'message'=>$message]
     */
-    public function setOrgCount($orgId,$setCount):array;
+    public function setOrgCount($orgId, $setCount): array;
 
 
     /*
@@ -37,7 +37,7 @@ interface UserServiceInterface
     * @$colArr:数组类型，表示要获取到的字段值，如['user_name','true_name']。如果不填，则默认返回最基本的信息
     * @return array。如：[['user_name'=>'xxx','true_name'=>'yyy','mobphone'=>'ccx'],['user_name'=>'yx15','true_name'=>'95s','mobphone'=>'ccx']]
     */
-    public function getUserByCcmtvUidArr($ccmtvUidArr,$colArr = []):array;
+    public function getUserByCcmtvUidArr($ccmtvUidArr, $colArr = []): array;
 
     /*
     * 根据uid的数组，获取到用户的相关信息
@@ -45,7 +45,7 @@ interface UserServiceInterface
     * @$colArr:数组类型，表示要获取到的字段值，如['user_name','true_name']。如果不填，则默认返回最基本的信息
     * @return array。如：[['user_name'=>'xxx','true_name'=>'yyy','mobphone'=>'ccx'],['user_name'=>'yx15','true_name'=>'95s','mobphone'=>'ccx']]
     */
-    public function getUserByUidArr($uidArr,$colArr = []):array;
+    public function getUserByUidArr($uidArr, $colArr = []): array;
 
     /*
     * 根据where条件组，返回用户的uid的数组
@@ -53,7 +53,7 @@ interface UserServiceInterface
     * 如果数组的键值为空字符，则后台会自动过滤掉此查询条件。比如['user_name'=>'xx','true_name'=>''],等同于['user_name'=>'xx']的查询
     * user_name、true_name、mobphone字段，目前都是做的like的模糊查询。
     */
-    public function getUidArrByWhere(array $where):array;
+    public function getUidArrByWhere(array $where): array;
 
 
     /**
@@ -63,7 +63,7 @@ interface UserServiceInterface
      * @param $systemId
      * @return array
      */
-    public function getUserIdByWhere($orgId,array $where, $systemId=null):array;
+    public function getUserIdByWhere($orgId, array $where, $systemId = null): array;
 
 
     ////////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
@@ -77,8 +77,18 @@ interface UserServiceInterface
     * $columnArr：除了uid、用户名、真实姓名、手机号、性别之外的 额外的查询字段，一维数组。如：['ks_id','base_id']，如果传空数组，则默认返回 uid、用户名、真实姓名、手机号、性别 这几个基本字段。
     * $systemIdArr：系统的id数组。比如['15231515161114','15231515161222']
      * $uidArr：用户uid的数组。比如['15231515161114','15231515161222']
+     * $showFieldName：是否显示字段名称。默认不显示。如果传true，则返回字段名称。如：['uid'=>'用户uid','user_name'=>'用户名','true_name'=>'真实姓名','mobphone'=>'手机号','sex'=>'性别']
     */
-    public function getUserFieldByWhere($orgId,string|array $ccmtvWhere=null,string|array $where = null,string|array $ridWhere = null,$columnArr = [],$systemIdArr = [],$uidArr = []):array;
+    public function getUserFieldByWhere(
+        $orgId,
+        string|array $ccmtvWhere = null,
+        string|array $where = null,
+        string|array $ridWhere = null,
+        $columnArr = [],
+        $systemIdArr = [],
+        $uidArr = [],
+        $showFieldName=false
+    ): array;
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
 
     /**
@@ -87,28 +97,28 @@ interface UserServiceInterface
      * @param $params ['orgId'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array]
      * @return array
      */
-    public function getUserFieldByWhereRpc($params):array;
+    public function getUserFieldByWhereRpc($params): array;
 
     /**
      * 机构开通系统 初始化角色数据
      * @param array $params
      * @return bool
      */
-    public function orgSystemRoleInit(array $params):bool;
+    public function orgSystemRoleInit(array $params): bool;
 
     /**
      * 机构开通系统 初始化角色与资料数据
      * @param array $params
      * @return bool
      */
-    public function orgSystemRoleFormInit(array $params):bool;
+    public function orgSystemRoleFormInit(array $params): bool;
 
     /**
      * 机构开通系统 初始化角色权限数据
      * @param array $params
      * @return bool
      */
-    public function orgSystemRolePower(array $params):bool;
+    public function orgSystemRolePower(array $params): bool;
 
 
     /**
@@ -120,28 +130,34 @@ interface UserServiceInterface
      * @param int $type 1表示返回树形结构 2表示返回无树状构造下的全部数组
      * @return array 返回的数据格式，type为1的时候，返回格式如：[["option_label"=>"带教老师","option_value"=>"622116875481731073","pid"=>0,"children"=>[]]]，type为2的时候返回格式如：[["option_label"=>"带教老师","option_value"=>"622116875481731073","pid"=>0]]
      */
-    public function getRoleOptions(string $orgId,string $systemId,array $where=[],array $select=[],int $type = 1):array;
+    public function getRoleOptions(
+        string $orgId,
+        string $systemId,
+        array $where = [],
+        array $select = [],
+        int $type = 1
+    ): array;
 
     /**
      * 用户管理，用户列表-功能字段列表的接口
      * @param array $params
      * @return array
      */
-    public function getFields(array $params):array;
+    public function getFields(array $params): array;
 
     /**
      * 用户管理，用户列表-菜单设置的接口
      * @param array $params
      * @return array
      */
-    public function getConfigs(array $params):array;
+    public function getConfigs(array $params): array;
 
     /**
      * 用户管理，用户列表-数据共享信息的接口
      * @param array $params
      * @return array
      */
-    public function getShareFields(array $params):array;
+    public function getShareFields(array $params): array;
 
     /**
      * 通过用户名获取用户id
@@ -149,13 +165,13 @@ interface UserServiceInterface
      * @param array $user_name ['aaa','bbb'];
      * @return array ['aaa'=>1111,'bbb'=>2222]
      */
-    public function getUserNameById(int $org_id,array $user_name):array;
+    public function getUserNameById(int $org_id, array $user_name): array;
 
     /**
      * 用户设置配置
      * @param array $params
      * @return mixed
      */
-    public function userSetConf(array $params):array;
+    public function userSetConf(array $params): array;
 
 }
