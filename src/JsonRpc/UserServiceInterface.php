@@ -81,7 +81,7 @@ interface UserServiceInterface
     */
     public function getUserFieldByWhere(
         string $orgId,
-        string $systemId=null,
+        string $systemId,
         string|array $ccmtvWhere = null,
         string|array $where = null,
         string|array $ridWhere = null,
