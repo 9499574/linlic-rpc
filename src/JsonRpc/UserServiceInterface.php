@@ -70,24 +70,24 @@ interface UserServiceInterface
     /*
     * 根据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
     * $orgId：机构id，必填 如果为空 则返回空数组。
+     * $systemId:系统编号
     * $ccmtvWhere：ccmtv里面的查询条件,二维数组,里面只会去查询 用户名(user_name)、真实姓名(true_name)、手机号(mobphone)、性别(sex。1表示男 2表示女 0表示保密) 这4个字段。
     * 比如：[['user_name','like','%whszyy%'],['mobphone','=','1523']] 或 使用query语句方式。
     * $where：用户其它字段的查询条件,二维数组。比如：[['ks_id','like','%158412%'],['base_id','=','15231515161114']]或 使用query语句方式。
     * $ridWhere：用户组的where查询条件,二维数组。比如：[['rid','=','15231515161114']] 或 使用query语句方式。
     * $columnArr：除了uid、用户名、真实姓名、手机号、性别之外的 额外的查询字段，一维数组。如：['ks_id','base_id']，如果传空数组，则默认返回 uid、用户名、真实姓名、手机号、性别 这几个基本字段。
-    * $systemIdArr：系统的id数组。比如['15231515161114','15231515161222']
      * $uidArr：用户uid的数组。比如['15231515161114','15231515161222']
      * $showFieldName：是否显示字段名称。默认不显示。如果传true，则返回字段名称。如：['uid'=>'用户uid','user_name'=>'用户名','true_name'=>'真实姓名','mobphone'=>'手机号','sex'=>'性别']
     */
     public function getUserFieldByWhere(
-        $orgId,
+        string $orgId,
+        string $systemId=null,
         string|array $ccmtvWhere = null,
         string|array $where = null,
         string|array $ridWhere = null,
-        $columnArr = [],
-        $systemIdArr = [],
-        $uidArr = [],
-        $showFieldName=false
+        array $columnArr = [],
+        array $uidArr = [],
+        bool $showFieldName=false
     ): array;
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
 
