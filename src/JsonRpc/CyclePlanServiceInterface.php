@@ -40,4 +40,13 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function getPlanNameOptions(int $org_id,string$system_id,string $menu_id):array;
+
+    /**
+     * 获取轮转排班用户列表
+     * @param int $org_id
+     * @param string $system_id
+     * @param string $menu_id
+     * @return array
+     */
+    public function getUserList(int $org_id, string $system_id, string $menu_id):array;
 }
