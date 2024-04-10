@@ -10,13 +10,13 @@ interface CycleCareerServiceInterface
      * @param array $params
      * @return array
      */
-    public function CareerField(array $params):array;
+    public function careerField(array $params):array;
 
     /**
      * 菜单配置
      * @param array $params
      * @return array
      */
-    public function CareerConf(array $params):array;
+    public function careerConf(array $params):array;
 
 }
