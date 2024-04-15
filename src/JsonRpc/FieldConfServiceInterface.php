@@ -36,8 +36,8 @@ interface FieldConfServiceInterface
     /**
      * 依赖菜单ID获取相同关联菜单ID
      * @param string $system_id
-     * @param string $menu_id
+     * @param string $reliance_menu_id
      * @return array
      */
-    public function relianceMenuIdGetMenuId(string $system_id,string $menu_id):array;
+    public function relianceMenuIdGetMenuId(string $system_id,string $reliance_menu_id):array;
 }
