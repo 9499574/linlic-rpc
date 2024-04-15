@@ -32,4 +32,12 @@ interface FieldConfServiceInterface
      * @return array
      */
     public function getPageConf(string $serviceName,array $params):array;
+
+    /**
+     * 依赖菜单ID获取相同关联菜单ID
+     * @param string $system_id
+     * @param string $menu_id
+     * @return array
+     */
+    public function relianceMenuIdGetMenuId(string $system_id,string $menu_id):array;
 }
