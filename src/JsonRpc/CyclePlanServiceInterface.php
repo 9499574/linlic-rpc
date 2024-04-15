@@ -5,6 +5,12 @@ namespace linlic\JsonRpc;
 interface CyclePlanServiceInterface
 {
     /**
+     * 数据共享
+     * @param $params
+     * @return array
+     */
+    public function dataSharing($params):array;
+    /**
      * 新建排班-模块字段
      * @param $params ['org_id'=>-1]
      * @return array
