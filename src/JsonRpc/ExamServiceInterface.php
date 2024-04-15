@@ -6,19 +6,17 @@ interface ExamServiceInterface
 {
 
     /**
-     * 获取考试发布表单字段
-     * @param array $params 参数数组
+     * 考试-模块字段
+     * @param $params ['org_id'=>-1]
      * @return array
      */
-    public function getExamFormFields(array $params = []):array;
+    public function examField($params):array;
 
     /**
-     * 根据机构id，获取考试选项
-     * @param string $orgId
-     * @param array $select ['option_label','option_value']
-     * @param array $where ['option_label'=>["眼科"],'option_value'=>["622116875481731073"]]
-     * @return array [["option_label"=>"眼科","option_value"=>"622116875481731073"]]
+     * 考试-配置字段
+     * @param $params ['org_id'=>-1]
+     * @return array
      */
-    public function getExamOptions(string $orgId,array $select=[],array $where=[]):array;
+    public function examConf($params):array;
 
 }
