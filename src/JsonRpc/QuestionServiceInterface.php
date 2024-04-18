@@ -2,7 +2,7 @@
 
 namespace linlic\JsonRpc;
 
-interface questionServiceInterface
+interface QuestionServiceInterface
 {
 
     /**
