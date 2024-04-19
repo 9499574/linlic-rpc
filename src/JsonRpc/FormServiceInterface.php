@@ -108,4 +108,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getFields(string $filling_form_template_id,int $orgId, string $systemId, string $menuId):array;
+
+    /**
+     * 通过表单ID集合获取所有表单内容
+     * @param array $filling_form_template_id
+     * @return array
+     */
+    public function getAllFormContent(array $filling_form_template_id):array;
 }
