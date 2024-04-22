@@ -115,4 +115,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getOrgConf(array $params):array;
+
+    /**
+     * 获取用户表单多选字段
+     * @param int $org_id
+     * @return array
+     */
+    public function getFormMultipleField(int $org_id):array;
 }
