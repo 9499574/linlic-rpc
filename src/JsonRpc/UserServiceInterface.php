@@ -174,4 +174,10 @@ interface UserServiceInterface
      */
     public function userSetConf(array $params): array;
 
+    /**
+     * 获取用户头像
+     * @param array $uid
+     * @return array ['1000'=>'https://www.xxxx.com/1.jpg','1001'=>'https://www.xxxx.com/2.jpg']
+     */
+    public function getUserAvatar(array $uid):array;
 }
