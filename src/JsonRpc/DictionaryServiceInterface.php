@@ -404,4 +404,13 @@ interface DictionaryServiceInterface
      * @time 2024/3/29 14:05
      */
     public function initMenuDict(array $dictKeys, string $orgId, string $systemId, string $menuId): bool;
+
+    /**
+     * 获取不可编辑的字典key
+     *
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/4/23 下午8:42
+     */
+    public function getNotEditableDictKey(): array;
 }
