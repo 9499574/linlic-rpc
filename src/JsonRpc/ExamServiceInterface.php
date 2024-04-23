@@ -26,4 +26,19 @@ interface ExamServiceInterface
      */
     public function examAutoPublishField($params):array;
 
+
+    /**
+     * 考试-考试详情-模块字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function examSituationField($params):array;
+
+    /**
+     * 考试-考试详情-配置字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function examSituationConf($params):array;
+
 }
