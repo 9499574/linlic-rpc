@@ -63,6 +63,14 @@ interface FormServiceInterface
     public function getUserFieldDictKey(array $params, array $userField):array;
 
     /**
+     * 通过表单ID获取字段字典KEY
+     * @param array $filling_form_template_ids
+     * @param array $userField
+     * @return array ['standard_base_id'=>'base_options']
+     */
+    public function formIdGetUserFieldDictKey(array $filling_form_template_ids, array $userField):array;
+
+    /**
      * 通过类别选项值获取填报表单
      * @param string $org_id 机构id
      * @param string $option_value 类别选项值
@@ -100,4 +108,18 @@ interface FormServiceInterface
      * @return array
      */
     public function getFields(string $filling_form_template_id,int $orgId, string $systemId, string $menuId):array;
+
+    /**
+     * 获取机构设置PRC接口
+     * @param array $params
+     * @return array
+     */
+    public function getOrgConf(array $params):array;
+
+    /**
+     * 获取用户表单多选字段
+     * @param int $org_id
+     * @return array
+     */
+    public function getFormMultipleField(int $org_id):array;
 }

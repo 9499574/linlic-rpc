@@ -24,4 +24,20 @@ interface FieldConfServiceInterface
      * @return string
      */
     public function getJumpBtnIdParentMenuId(string $menu_id):string;
+
+    /**
+     * 读取页面配置参数
+     * @param string $serviceName App\Service\Implement\MoudleConfServiceImpl\getPageConf
+     * @param array $params ['system_id'=>'','menu_id'=>'']
+     * @return array
+     */
+    public function getPageConf(string $serviceName,array $params):array;
+
+    /**
+     * 依赖菜单ID获取相同关联菜单ID
+     * @param string $system_id
+     * @param string $reliance_menu_id
+     * @return array
+     */
+    public function relianceMenuIdGetMenuId(string $system_id,string $reliance_menu_id):array;
 }
