@@ -47,4 +47,13 @@ interface SystemServiceInterface
      * @return mixed
      */
     public function getSystemInfo(string $org_id,string $system_id):array;
+
+    /**
+     * 获取机构系统级别的系统列表
+     * @param int $org_id
+     * @param array $system_id
+     * @param int $system_level
+     * @return array
+     */
+    public function getSystemLevelNormalStatusList(int $org_id,array $system_id=[],int $system_level=1):array;
 }
