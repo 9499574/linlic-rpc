@@ -11,6 +11,11 @@ interface QuestionServiceInterface
      * @return array
      */
     public function questionField($params):array;
-
+    /**
+     * 题库-创建机构题库表（按机构和类型分表）
+     * @param $params ['org_id'=>'123']
+     * @return array
+     */
+    public function createOrganQuestionTable($params):array;
 
 }
