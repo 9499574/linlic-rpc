@@ -9,17 +9,15 @@ interface UserSearchServiceInterface
      * @param int $org_id
      * @param string $system_id
      * @param array $search_params
-     * @param array $columnArr
      * @param array $uidArr
-     * @param bool $showFieldName
+     * @param bool $keyword_is_user
      * @return array
      */
     public function get(
         int $org_id,
         string $system_id,
         array $search_params,
-        array $columnArr = [],
-        array $uidArr = ['uid'],
-        bool $showFieldName = false
+        array $uidArr = [],
+        bool $keyword_is_user = false
     ): array;
 }
