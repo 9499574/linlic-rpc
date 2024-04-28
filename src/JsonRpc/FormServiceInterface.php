@@ -122,4 +122,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getFormMultipleField(int $org_id):array;
+
+    /**
+     * 获取用户表单日期字段
+     * @param int $org_id
+     * @return array
+     */
+    public function getFormDateField(int $org_id):array;
 }
