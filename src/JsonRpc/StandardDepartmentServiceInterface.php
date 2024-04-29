@@ -28,7 +28,8 @@ interface StandardDepartmentServiceInterface
      * @param array $where 查询条件
      * @param array $pageParams 分页参数['page'=>1,'limit'=>15] 空数组表示不分页
      * @param bool $sdHdRel 关联关系限制
+     * @param array $orderBy 查询条件
      * @return array
      */
-    public function getStandardDepartmentList(string $orgId,array $select,array $where,array $pageParams=[],bool $sdHdRel=false):array;
+    public function getStandardDepartmentList(string $orgId,array $select,array $where,array $pageParams=[],bool $sdHdRel=false,array $orderBy=[]):array;
 }
