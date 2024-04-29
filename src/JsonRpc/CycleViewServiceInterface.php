@@ -36,4 +36,11 @@ interface CycleViewServiceInterface
      * @return bool
      */
     public function saveOrgLeaveDeptSet(string $org_id,string $system_id,string $menu_id,array $conf,string $created_by):bool;
+
+    /**
+     * 数据共享
+     * @param $params
+     * @return array
+     */
+    public function dataSharing($params):array;
 }

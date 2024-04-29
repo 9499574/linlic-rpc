@@ -19,4 +19,11 @@ interface CycleCareerServiceInterface
      */
     public function careerConf(array $params):array;
 
+    /**
+     * 数据共享
+     * @param $params
+     * @return array
+     */
+    public function dataSharing($params):array;
+
 }
