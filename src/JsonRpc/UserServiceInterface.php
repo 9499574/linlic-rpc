@@ -197,7 +197,8 @@ interface UserServiceInterface
      * @param int $org_id
      * @param array $system_id
      * @param array $uid
+     * @param string $operation
      * @return array
      */
-    public function getOrgSystemUserId(int $org_id,array $system_id,array $uid=[]):array;
+    public function getOrgSystemUserId(int $org_id,array $system_id,array $uid=[],string $operation='in'):array;
 }
