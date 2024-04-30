@@ -196,7 +196,8 @@ interface UserServiceInterface
      * 获取机构系统里面的用户ID集合
      * @param int $org_id
      * @param array $system_id
+     * @param array $uid
      * @return array
      */
-    public function getOrgSystemUserId(int $org_id,array $system_id):array;
+    public function getOrgSystemUserId(int $org_id,array $system_id,array $uid=[]):array;
 }
