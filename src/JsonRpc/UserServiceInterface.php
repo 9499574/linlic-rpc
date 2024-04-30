@@ -191,4 +191,12 @@ interface UserServiceInterface
      * @return array ['1000'=>'https://www.xxxx.com/1.jpg','1001'=>'https://www.xxxx.com/2.jpg']
      */
     public function getUserAvatar(array $uid):array;
+
+    /**
+     * 获取机构系统里面的用户ID集合
+     * @param int $org_id
+     * @param array $system_id
+     * @return array
+     */
+    public function getOrgSystemUserId(int $org_id,array $system_id):array;
 }
