@@ -92,6 +92,17 @@ interface UserServiceInterface
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
 
     /**
+     * 获取用户信息(不走where条件)
+     * @param string $orgId
+     * @param array $uidArr
+     * @param array $columnArr
+     * @param string $systemId
+     * @param bool $showFieldName
+     * @return array
+     */
+    public function getUserInfo(string $orgId,array $uidArr,array $columnArr, string $systemId='',bool $showFieldName=false):array;
+
+    /**
      * RPC接口调用
      * 据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
      * @param $params ['orgId'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array]
