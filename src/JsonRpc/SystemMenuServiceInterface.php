@@ -15,10 +15,10 @@ interface SystemMenuServiceInterface
     /**
      * 通过系统编号获取系统关联的功能配置
      * @param $system_id
-     * @param array $where
+     * @param array|string $where
      * @return array
      */
-    public function getSystemModuleFunConf($system_id, array $where = []): array;
+    public function getSystemModuleFunConf($system_id, array|string $where = []): array;
 
 
     /**
