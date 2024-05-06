@@ -38,4 +38,12 @@ interface RoleServiceInterface
      * @return array
      */
     public function topPidGetChildRoleId(array $role_id):array;
+
+    /**
+     * 根据角色ID获取角色数据
+     * @param array $role_id
+     * @param array $select
+     * @return array
+     */
+    public function getRoleDataList(array $role_id,array $select=['role_id','role_name','pid','top_pid']):array;
 }
