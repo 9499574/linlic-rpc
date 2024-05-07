@@ -1,4 +1,4 @@
-更新新版本
+更新新版本 2024-5-6
 ```
 composer require linlic/rpc
 
