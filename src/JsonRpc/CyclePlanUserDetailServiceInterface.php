@@ -15,4 +15,16 @@ interface CyclePlanUserDetailServiceInterface
      * @return array
      */
     public function hdIdGetNowUserId(int $org_id,array $hd_ids,array $uid=[],array $system_id=[],array $menu_id=[],string $operation='in'):array;
+
+    /**
+     * 根据本院科室ID集合获取日期范围用户ID集合
+     * @param int $org_id
+     * @param array $hd_ids
+     * @param string $start_date
+     * @param string $end_date
+     * @param array $uid
+     * @param string $operation
+     * @return array
+     */
+    public function hdIdGetDateRangeUserId(int $org_id,array $hd_ids,string $start_date,string $end_date,array $uid=[],string $operation='in'):array;
 }
