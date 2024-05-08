@@ -149,6 +149,12 @@ interface UserServiceInterface
         int $type = 1
     ): array;
 
+    /*
+    * 根据用户id和系统id,获取用户在这个系统下的用户类型
+    * 返回值：1表示是系统下的管理员  2表示普通用户
+    */
+    public function getUserType($uid,$systemId): int;
+
     /**
      * 用户管理，用户列表-功能字段列表的接口
      * @param array $params
