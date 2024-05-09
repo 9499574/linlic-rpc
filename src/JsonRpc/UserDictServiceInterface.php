@@ -73,5 +73,5 @@ interface UserDictServiceInterface
      * @user zhaodongsheng
      * @time 2024/5/9 下午7:36
      */
-    public function getRoleListOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+    public function getRoleOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 }
