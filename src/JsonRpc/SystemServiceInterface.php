@@ -60,11 +60,24 @@ interface SystemServiceInterface
 
     /**
      * 字典key获取系统列表
+     *
+     * @param int $org_id
+     * @param array $system_id
+     * @param string $id_key
+     * @param string $name_key
+     * @return array
+     * @deprecated 请使用dictKeyGetSystemOptions
+     */
+    public function dictKeyGetSystemData(int $org_id,array $system_id=[], string $id_key='system_id', string $name_key='system_name'): array;
+
+    /**
+     * 字典key获取系统选项
+     *
      * @param int $org_id
      * @param array $system_id
      * @param string $id_key
      * @param string $name_key
      * @return array
      */
-    public function dictKeyGetSystemData(int $org_id,array $system_id=[], string $id_key='system_id', string $name_key='system_name'): array;
+    public function dictKeyGetSystemOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 }
