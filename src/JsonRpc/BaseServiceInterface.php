@@ -4,6 +4,12 @@ namespace linlic\JsonRpc;
 
 interface BaseServiceInterface
 {
+    /**
+     * 功能字段
+     * @param array $params
+     * @return array
+     */
+    public function baseField(array $params):array;
 
     /**
      * 根据机构id，获取基地字段
