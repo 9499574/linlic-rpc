@@ -6,9 +6,9 @@ interface SmsServiceInterface
 {
     /**
      * 忘记密码
-     * @param int $phone
+     * @param string $phone
      * @param int $code
      * @return bool
      */
-    public function forgotPassword(int $phone, int $code):bool;
+    public function forgotPassword(string $phone, int $code):bool;
 }
