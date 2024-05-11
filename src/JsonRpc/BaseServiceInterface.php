@@ -12,6 +12,13 @@ interface BaseServiceInterface
     public function baseField(array $params):array;
 
     /**
+     * 菜单配置
+     * @param array $params
+     * @return array
+     */
+    public function baseConf(array $params):array;
+
+    /**
      * 根据机构id，获取基地字段
      * @param string $orgId
      * @return array
