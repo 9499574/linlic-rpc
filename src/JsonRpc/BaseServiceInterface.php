@@ -43,4 +43,11 @@ interface BaseServiceInterface
      */
     public function getStandardBaseName(array $standardBaseId):array;
 
+    /**
+     * 获取基地详情字段key及字段值
+     * @param string $standard_base_id
+     * @return array
+     */
+    public function getDetailFieldVal(string $standard_base_id):array;
+
 }
