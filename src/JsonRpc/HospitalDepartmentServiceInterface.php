@@ -41,4 +41,10 @@ interface HospitalDepartmentServiceInterface
      */
     public function getDepartmentCapacity($hdIds):array;
 
+    /*
+    * 获取本院科室的名称
+    * @param $hdIds ["1","2"]
+    * @return array [["1"=>'心血科'],["2"=>'内科']]
+    */
+    public function getHdName($hdIdArr):array;
 }
