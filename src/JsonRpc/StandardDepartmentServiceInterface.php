@@ -6,6 +6,13 @@ interface StandardDepartmentServiceInterface
 {
 
     /**
+     * 功能字段
+     * @param array $params
+     * @return array
+     */
+    public function stdField(array $params):array;
+
+    /**
      * 根据机构id，获取标准科室字段
      * @param string $orgId
      * @return array
