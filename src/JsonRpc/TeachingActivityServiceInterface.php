@@ -29,4 +29,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getSettingConf(array $params): array;
+
+    /**
+     * 数据共享
+     * @param array $params
+     * @return array
+     */
+    public function getShareFields(array $params):array;
 }
