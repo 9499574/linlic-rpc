@@ -20,4 +20,12 @@ interface UserSearchServiceInterface
         array $uidArr = [],
         bool $keyword_is_user = false
     ): array;
+
+
+    /**
+     * 通过where条件获取用户(列表查询方式)
+     * @param array $params
+     * @return array
+     */
+    public function whereGet(array $params):array;
 }
