@@ -4,6 +4,19 @@ namespace linlic\JsonRpc;
 
 interface BaseServiceInterface
 {
+    /**
+     * 功能字段
+     * @param array $params
+     * @return array
+     */
+    public function baseField(array $params):array;
+
+    /**
+     * 菜单配置
+     * @param array $params
+     * @return array
+     */
+    public function baseConf(array $params):array;
 
     /**
      * 根据机构id，获取基地字段
@@ -29,5 +42,12 @@ interface BaseServiceInterface
      * @return array [1=>'aaa',2=>'bbb']
      */
     public function getStandardBaseName(array $standardBaseId):array;
+
+    /**
+     * 获取基地详情字段key及字段值
+     * @param string $standard_base_id
+     * @return array
+     */
+    public function getDetailFieldVal(string $standard_base_id):array;
 
 }
