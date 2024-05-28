@@ -12,4 +12,11 @@ interface HospitalEduServiceInterface
      */
     public function Field(array $params):array;
 
+    /**
+     * 菜单配置
+     * @param array $params
+     * @return array
+     */
+    public function menuConf(array $params):array;
+
 }
