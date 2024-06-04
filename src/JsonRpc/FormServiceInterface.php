@@ -137,4 +137,12 @@ interface FormServiceInterface
      * @return array
      */
     public function getFormDateField(int $org_id):array;
+
+    /**
+     * 通过模板类别ID获取填报表单列表
+     * @param string $template_cate_id
+     * @param int $org_id
+     * @return array
+     */
+    public function templateCateIdGetFormList(string $template_cate_id, int $org_id):array;
 }
