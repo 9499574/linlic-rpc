@@ -413,4 +413,24 @@ interface DictionaryServiceInterface
      * @time 2024/4/23 下午8:42
      */
     public function getNotEditableDictKey(): array;
+
+    /**
+     * 根据字典类别获取字段key选项
+     *
+     * @return array
+     * @example
+     * [
+     *  [
+     *      'label'=>'xx',
+     *      'value'=>'xx',
+     *  ],
+     *  [
+     *       'label'=>'xx1',
+     *       'value'=>'xx2',
+     *  ],
+     * ]
+     * @user zhaodongsheng
+     * @time 2024/6/4 上午10:57
+     */
+    public function getDictKeyOptionsByDictKind(int $dictKind, string $orgId, string $systemId = null, string $menuId = null): array;
 }
