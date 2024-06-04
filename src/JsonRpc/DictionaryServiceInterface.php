@@ -415,18 +415,18 @@ interface DictionaryServiceInterface
     public function getNotEditableDictKey(): array;
 
     /**
-     * 根据字典类别获取字段key选项
+     * 根据字典类别获取字典key选项
      *
      * @return array
      * @example
      * [
      *  [
-     *      'label'=>'xx',
-     *      'value'=>'xx',
+     *      'label'=>'督导类型',
+     *      'value'=>'dict_key1',
      *  ],
      *  [
-     *       'label'=>'xx1',
-     *       'value'=>'xx2',
+     *       'label'=>'教学活动院区',
+     *       'value'=>'dict_key2',
      *  ],
      * ]
      * @user zhaodongsheng
