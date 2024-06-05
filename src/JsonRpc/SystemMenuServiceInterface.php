@@ -8,9 +8,10 @@ interface SystemMenuServiceInterface
      * 通过基础菜单编号获取关联相同的菜单配置数据
      * @param int $org_id
      * @param array $menu_id
+     * @param string $system_id
      * @return array
      */
-    public function menuIdGetSystemModuleData(int $org_id,array $menu_id):array;
+    public function menuIdGetSystemModuleData(int $org_id,array $menu_id,string $system_id=''):array;
 
     /**
      * 通过系统编号获取系统关联的功能配置
