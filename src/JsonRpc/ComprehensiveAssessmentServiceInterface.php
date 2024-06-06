@@ -29,4 +29,14 @@ interface ComprehensiveAssessmentServiceInterface
      * 机构端设置项配置
      */
     public function getSettingConf(array $params): array;
+
+    /**
+     * 综合评估设置页面字段设置
+     */
+    public function getSettingFields(): array;
+
+    /**
+     * 综合评估设置页面功能设置
+     */
+    public function getSettingConfigs(): array;
 }
