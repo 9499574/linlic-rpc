@@ -6,9 +6,10 @@ interface TeachingActivityServiceInterface
 {
     /**
      * 功能字段
+     * @param $params ['org_id'=>-1]
      * @return array
      */
-    public function getFields():array;
+    public function getFields($params):array;
 
     /**
      * 功能配置

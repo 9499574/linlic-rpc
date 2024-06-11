@@ -16,7 +16,7 @@ interface ComprehensiveAssessmentServiceInterface
      *
      * @return array
      */
-    public function getConfigs(): array;
+    public function getConfigs($params): array;
 
     /**
      * 数据共享

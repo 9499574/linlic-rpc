@@ -11,6 +11,25 @@ interface SupervisionTaskServiceInterface
      */
     public function supervisionField(array $params):array;
 
-    
+    /**
+     * 任务督导-配置字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function taskConf($params):array;
+
+    /**
+     * 自动任务督导-功能字段
+     * @param array $params
+     * @return array
+     */
+    public function supervisionTaskAutoField(array $params):array;
+
+    /**
+     * 自动任务督导-配置字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function taskAutoConf($params):array;
 
 }
