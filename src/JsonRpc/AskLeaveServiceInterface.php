@@ -2,7 +2,7 @@
 
 namespace linlic\JsonRpc;
 
-interface AttendanceServiceInterface
+interface AskLeaveServiceInterface
 {
     /**
      * 列表-功能字段列表的接口
