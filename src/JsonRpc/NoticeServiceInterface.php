@@ -5,9 +5,15 @@ namespace linlic\JsonRpc;
 interface NoticeServiceInterface
 {
     /**
-     * 获取消息推送管理列表字段数据
-     * @param $params
+     * 获取公告管理列表字段数据
+     * @param $params ['org_id'=>-1]
      * @return array
      */
     public function getFields(array $params): array;
+    /**
+     * 公告管理-功能配置
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function noticeConf($params):array;
 }
