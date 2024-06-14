@@ -1,0 +1,20 @@
+<?php
+
+namespace linlic\JsonRpc;
+
+interface AttendanceRuleServiceInterface
+{
+    /**
+     * 列表-功能字段列表的接口
+     * @param array $params
+     * @return array
+     */
+    public function getFields(array $params):array;
+
+    /**
+     * 菜单设置的接口
+     * @param array $params
+     * @return array
+     */
+    public function getConfigs(array $params):array;
+}
