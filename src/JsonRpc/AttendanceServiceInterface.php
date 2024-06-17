@@ -10,7 +10,7 @@ interface AttendanceServiceInterface
     * @param array $params
     * @return array
     */
-    public function getFuncName($funcName,array $params):array;
+    public function getFuncName(string $funcName,array $params):array;
 
     /*
      * 考勤管理-考勤列表-功能字段列表的接口
