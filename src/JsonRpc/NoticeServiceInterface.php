@@ -16,4 +16,11 @@ interface NoticeServiceInterface
      * @return array
      */
     public function noticeConf($params):array;
+
+    /**
+     * 公告管理-数量详情列表
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function getNumberInfoFields($params):array;
 }
