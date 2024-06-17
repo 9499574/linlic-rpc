@@ -34,4 +34,14 @@ interface OrgServiceInterface
      * @time 2024/1/29 10:57
      */
     public function getInfoByOrgId(string $orgId): array;
+
+    /**
+     * 根据状态获取机构列表
+     *
+     * @param int $status 状态 1:正常,0:停用
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/6/17 下午3:22
+     */
+    public function getOrgsByStatus(int $status): array;
 }

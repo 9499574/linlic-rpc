@@ -29,4 +29,9 @@ interface ComprehensiveAssessmentServiceInterface
      * 机构端设置项配置
      */
     public function getSettingConf(array $params): array;
+
+    /**
+     * 表单中心保存表单后的回调
+     */
+    public function saveFormCallback(array $params): bool;
 }
