@@ -8,7 +8,7 @@ namespace linlic\JsonRpc;
 interface SubmitFlowServiceInterface
 {
     /**
-     * 提交流程
+     * 新流程提交
      * @param int $org_id 机构编号
      * @param string $system_id 系统编号
      * @param string $menu_id 菜单编号
@@ -18,7 +18,7 @@ interface SubmitFlowServiceInterface
      * @param array $business_params 业务参数 ['ask_type'=>1,'ask_number'=>3]
      * @return array
      */
-    public function call(
+    public function newSubmit(
         int $org_id,
         string $system_id,
         string $menu_id,
@@ -27,4 +27,27 @@ interface SubmitFlowServiceInterface
         array $hd_id,
         array $business_params = []
     ): array;
+
+    /**
+     * 重新提交流程
+     * @param int $org_id 机构编号
+     * @param string $system_id 系统编号
+     * @param string $menu_id 菜单编号
+     * @param string $flow_id 流程编号
+     * @param string $business_id 业务ID
+     * @param string $uid 提交人编号
+     * @param array $hd_id 提交人科室 ["1","2"]
+     * @param array $business_params 业务参数 ['ask_type'=>1,'ask_number'=>3]
+     * @return array
+     */
+    public function reSubmit(
+        int $org_id,
+        string $system_id,
+        string $menu_id,
+        string $flow_id,
+        string $business_id,
+        string $uid,
+        array $hd_id,
+        array $business_params = []
+    ):array;
 }
