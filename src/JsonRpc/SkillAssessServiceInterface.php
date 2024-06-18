@@ -19,4 +19,11 @@ interface SkillAssessServiceInterface
      */
     public function skillAssessConf($params):array;
 
+    /**
+     * 获取设置配置
+     * @param array $params
+     * @return array
+     */
+    public function getSetConf($params):array;
+
 }
