@@ -43,11 +43,12 @@ interface FieldConfServiceInterface
 
 
     /**
-     * 通过依赖菜单编号获取基础菜单编号
+     * 通过依赖菜单编号和基础菜单编号获取菜单编号
      * @param int $org_id
      * @param array $reliance_menu_id
-     * @param string $base_menu_id 基础菜单编号过滤
+     * @param string $base_menu_id
+     * @param string $system_id
      * @return array
      */
-    public function relianceMenuIdGetBaseMenuId(int $org_id, array $reliance_menu_id, string $base_menu_id=''):array;
+    public function relianceMenuIdBaseMenuIdGetMenuId(int $org_id, array $reliance_menu_id, string $base_menu_id,string $system_id=''):array;
 }
