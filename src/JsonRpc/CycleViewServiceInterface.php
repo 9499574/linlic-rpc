@@ -43,4 +43,21 @@ interface CycleViewServiceInterface
      * @return array
      */
     public function dataSharing($params):array;
+
+    /**
+     * 获取轮转人员
+     * @param string $org_id 机构id 不能为空
+     * @param array $menu_id 轮转排班菜单数组 不能为空
+     * @param array $is_leave 是否出科，可以为空
+     * @param array $uid 学生数组，可以为空
+     * @param array $date 时间段 ['2024-05-01','2024-05-31'] 可以为空
+     * @param array $hd_id 本院科室数组 可以为空
+     * @param array $sd_id 标准科室数组 可以为空
+     * @param array $stage 轮转阶段数组 可以为空
+     * @param array $standard_base_id 基地数组 可以为空
+     * @param int $date_type 时间段查询类型 1轮转时间 2出科时间
+     * @return array 学生uid，时间段，具体轮转科室，带教老师uid
+     */
+    public function getCycleUsers(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1):array;
+
 }
