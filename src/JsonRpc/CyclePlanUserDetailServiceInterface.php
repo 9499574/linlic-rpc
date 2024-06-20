@@ -44,4 +44,15 @@ interface CyclePlanUserDetailServiceInterface
      * @return array
      */
     public function examAutoPublishGetUserId(array $params):array;
+
+    /**
+     * 根据日期范围获取用户本院科室ID集合
+     * @param int $org_id
+     * @param array $uid
+     * @param array $menu_id
+     * @param string $start_date
+     * @param string $end_date
+     * @return array
+     */
+    public function dateRangeGetUserHdIds(int $org_id,array $uid,array $menu_id,string $start_date,string $end_date):array;
 }
