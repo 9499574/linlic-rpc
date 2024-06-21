@@ -4,7 +4,7 @@ namespace linlic\JsonRpc;
 /**
  * 获取用户科室编号
  */
-interface userHdIdsServiceInterface
+interface UserHdIdsServiceInterface
 {
     /**
      * 查询用户绑定的科室或者轮转的科室编号
