@@ -48,7 +48,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/22 17:26
      */
-    public function getOptionByDictKey(string $dictKey, int $orgId, string $systemId = null, string $menuId = null): array;
+    public function getOptionByDictKey(string $dictKey, int $orgId, string $systemId = null, $menuId = null): array;
 
     /**
      * 根据字典id获取字典选项
@@ -316,7 +316,7 @@ interface DictionaryServiceInterface
      * @user zhaodongsheng
      * @time 2024/1/22 17:26
      */
-    public function getOptionByDictKeys(array $dictKeys, int $orgId, string $systemId = null, string $menuId = null): array;
+    public function getOptionByDictKeys(array $dictKeys, int $orgId, string $systemId = null, $menuId = null): array;
 
     /**
      * 根据字典labels获取字典values
