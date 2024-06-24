@@ -37,4 +37,22 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getShareFields(array $params):array;
+    /**
+     * 获取活动类型
+     * @param array $params
+     * @return array
+     */
+    public function getActivityCategorys(array $params):array;
+    /**
+     * 请假回调接口
+     * @param array $params
+     * @return void
+     */
+    public function leaveCallBack(array $params):void;
+    /**
+     * 用户评价回调接口
+     * @param array $params
+     * @return void
+     */
+    public function userAssessCallBack(array $params):void;
 }
