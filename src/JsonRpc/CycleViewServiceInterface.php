@@ -47,7 +47,7 @@ interface CycleViewServiceInterface
     /**
      * 获取轮转人员
      * @param string $org_id 机构id 不能为空
-     * @param array $menu_id 轮转排班菜单数组 不能为空
+     * @param array $menu_id 轮转总览菜单数组 不能为空
      * @param array $is_leave 是否出科，可以为空
      * @param array $uid 学生数组，可以为空
      * @param array $date 时间段 ['2024-05-01','2024-05-31'] 可以为空
