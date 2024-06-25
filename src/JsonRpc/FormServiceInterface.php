@@ -80,11 +80,14 @@ interface FormServiceInterface
 
     /**
      * 通过类别选项值获取填报表单
+     *
      * @param string $org_id 机构id
-     * @param string $option_value 类别选项值
+     * @param string $option_value 表单类别
+     * @param string $menuId 菜单ID
+     * @param string $templateType 表单类型 1表单 2用户 3评价 4评分
      * @return array [['filling_form_template_id'=>'xxx','template_name'=>'xxx']]
      */
-    public function getFillFormsByOptionValue(string $org_id,string $option_value):array;
+    public function getFillFormsByOptionValue(string $org_id, string $option_value, $menuId = '', int $templateType = 0): array;
 
     /**
      * 机构设置

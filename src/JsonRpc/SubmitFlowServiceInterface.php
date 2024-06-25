@@ -50,4 +50,21 @@ interface SubmitFlowServiceInterface
         array $hd_id,
         array $business_params = []
     ):array;
+
+    /**
+     * 销毁提交的流程
+     * @param int $org_id
+     * @param string $system_id
+     * @param string $menu_id
+     * @param string $flow_id
+     * @param string $uid
+     * @return array
+     */
+    public function destroySubmit(
+        int $org_id,
+        string $system_id,
+        string $menu_id,
+        string $flow_id,
+        string $uid
+    ):array;
 }
