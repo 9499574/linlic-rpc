@@ -44,6 +44,12 @@ interface TeachingActivityServiceInterface
      */
     public function getActivityCategorys(array $params):array;
     /**
+     * 获取指定活动类型的用户签到数据
+     * @param array $params
+     * @return array
+     */
+    public function getActivityCategoryUserSignData(array $params):array;
+    /**
      * 请假回调接口
      * @param array $params
      * @return void
