@@ -54,6 +54,7 @@ interface OnSiteSignServiceInterface
     public function activityEditQrcode(string $attendance_rule_id,string $event_name,string $start_time,string $end_time,array $uid_arr,string $qr_rf_seconds,array $module_params):array;
 
     /**
+     * 活动删除二维码
      * @param string $attendance_rule_id 现场签到id
      * @return array
      */
