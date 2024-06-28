@@ -74,4 +74,15 @@ interface UserDictServiceInterface
      * @time 2024/5/9 下午7:36
      */
     public function getRoleOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+
+    /**
+     * 获取机构系统和角色选项
+     * @param int $orgId
+     * @param int $systemId
+     * @param string $menuId
+     * @param array $select
+     * @param array $where
+     * @return array
+     */
+    public function getSystemRoleOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []):array;
 }
