@@ -29,11 +29,12 @@ interface NoticeServiceInterface
      * @param string $org_id
      * @param string $system_id
      * @param string $menu_id
-     * @param string $notice_title          标题  如果想加其他内容 请自行拼接
-     * @param string $push_content          内容
-     * @param string $push_uid              推送人
-     * @param array $push_object_value_uid  接收人 [5555,6666,7777]
-     * @param array $special                特殊信息，暂不考虑
+     * @param string $notice_title 标题  如果想加其他内容 请自行拼接
+     * @param string $push_time 推送时间。如果是定时推送，则需传推送时间；如果是立即推送则不要传该参数
+     * @param string $push_content 内容
+     * @param string $push_uid 推送人
+     * @param array $push_object_value_uid 接收人 [5555,6666,7777]
+     * @param array $special 特殊信息，暂不考虑
      * @return bool|string
      */
     public function sendMessage(
@@ -41,6 +42,7 @@ interface NoticeServiceInterface
         string $system_id,
         string $menu_id,
         string $notice_title,
+        string $push_time,
         string $push_content,
         string $push_uid,
         array $push_object_value_uid,
