@@ -87,8 +87,19 @@ interface UserServiceInterface
         string|array $ridWhere = null,
         array $columnArr = [],
         array $uidArr = [],
-        bool $showFieldName=false
+        bool $showFieldName = false,
+        int $limit = 0,
     ): array;
+
+
+    /* 此接口和上面getUserFieldByWhere是一样的。只不过此接口的$params是封在一起的。
+     * RPC接口调用
+     * 据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
+     * @param $params ['orgId'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array,'columnArr'=>[],'uidArr'=>[],'showFieldName'=>false,'limit'=>0]
+     * limit字段控制分页每页显示的条数。如果传0，则返回的数组不带分页格式，如果传非0的数值，则表示进行分页，返回的数组带分页格式。
+     * @return array
+     */
+    public function getUserFieldByWhereRpc($params): array;
     ///////////////////////////////////【最新、最全的查找方式】////////////////////////////////////////
 
     /**
@@ -101,14 +112,6 @@ interface UserServiceInterface
      * @return array
      */
     public function getUserInfo(string $orgId,array $uidArr,array $columnArr, string $systemId='',bool $showFieldName=false):array;
-
-    /**
-     * RPC接口调用
-     * 据where条件，查找出用户的字段信息【最新、最全的查找方式!!!】
-     * @param $params ['orgId'=>$orgId,'ccmtvWhere'=>string|array,'where'=>string|array,'ridWhere'=>string|array,'columnArr'=>array,'systemIdArr'=>array]
-     * @return array
-     */
-    public function getUserFieldByWhereRpc($params): array;
 
     /**
      * 机构开通系统 初始化角色数据
