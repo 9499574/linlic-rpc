@@ -89,6 +89,7 @@ interface UserServiceInterface
         array $uidArr = [],
         bool $showFieldName = false,
         int $limit = 0,
+        int $page = 0
     ): array;
 
 
