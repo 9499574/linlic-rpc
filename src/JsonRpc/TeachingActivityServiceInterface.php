@@ -61,4 +61,10 @@ interface TeachingActivityServiceInterface
      * @return void
      */
     public function userAssessCallBack(array $params):void;
+    /**
+     * 活动列表审批成功回调或退回回调
+     * @param array $params
+     * @return void
+     */
+    public function actvitiyExamineCallBack(array $params):void;
 }
