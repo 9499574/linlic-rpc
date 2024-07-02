@@ -29,10 +29,17 @@ interface FormServiceInterface
      * 根据表单ID数组获取表单标题
      *
      * @param array $filling_form_template_id_arr
-     * @param array $fields ['template_name','template_cate_id','full_score']
+     * @param array $field
+     * ```
+     * example:
+     * template_name // 模版名称
+     * template_cate_id // 模版分类
+     * full_score // 满分
+     *
+     * ```
      * @return array
      */
-    public function getFillingFormNames(array $filling_form_template_id_arr, $field = 'template_name'): array;
+    public function getFillingFormNames(array $filling_form_template_id_arr, string $field = 'template_name'): array;
 
     /**
      * 根据用户资料模板ID数组获取模板字段信息
