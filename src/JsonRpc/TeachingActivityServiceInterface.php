@@ -64,7 +64,13 @@ interface TeachingActivityServiceInterface
     /**
      * 活动列表审批成功回调或退回回调
      * @param array $params
-     * @return void
+     * @return bool
      */
-    public function actvitiyExamineCallBack(array $params):void;
+    public function actvitiyExamineCallBack(array $params):bool;
+    /**
+     * 活动管理请假审批成功回调或退回回调
+     * @param array $params
+     * @return bool
+     */
+    public function actvitiyAskExamineCallBack(array $params):bool;
 }
