@@ -17,10 +17,11 @@ interface HospitalDepartmentServiceInterface
      * @param string $orgId
      * @param array $where ['option_label'=>["眼科"],'option_value'=>["622116875481731073"]]
      * @param array $select ['option_label','option_value']
+     * @param int $type  1表示返回源格式数组 2表示返回树形结构(多层级选择时调用)。默认为1
      * @return array [["option_label"=>"眼科","option_value"=>"622116875481731073"]]
      * @deprecated 请使用UserDictOptionsServiceInterface::getHdOptions
      */
-    public function getOptions(string $orgId,array $where=[],array $select=[]):array;
+    public function getOptions(string $orgId,array $where=[],array $select=[],$type = 1):array;
 
     /**
      * 获取本院科室列表数据
