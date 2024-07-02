@@ -26,4 +26,11 @@ interface SkillAssessServiceInterface
      */
     public function getSetConf($params):array;
 
+
+    /**
+     * 表单打分数据入库
+     * @param array $params
+     * @return array
+     */
+    public function formScoreCallback($params):array;
 }
