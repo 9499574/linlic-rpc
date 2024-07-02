@@ -9,7 +9,7 @@ interface ComprehensiveAssessmentServiceInterface
      *
      * @return array
      */
-    public function getFields(): array;
+    public function getFields($params): array;
 
     /**
      * 功能配置
