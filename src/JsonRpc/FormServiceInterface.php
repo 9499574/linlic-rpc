@@ -27,10 +27,19 @@ interface FormServiceInterface
 
     /**
      * 根据表单ID数组获取表单标题
+     *
      * @param array $filling_form_template_id_arr
+     * @param array $field
+     * ```
+     * example:
+     * template_name // 模版名称
+     * template_cate_id // 模版分类
+     * full_score // 满分
+     *
+     * ```
      * @return array
      */
-    public function getFillingFormNames(array $filling_form_template_id_arr):array;
+    public function getFillingFormNames(array $filling_form_template_id_arr, string $field = 'template_name'): array;
 
     /**
      * 根据用户资料模板ID数组获取模板字段信息
@@ -145,7 +154,8 @@ interface FormServiceInterface
      * 通过模板类别ID获取填报表单列表
      * @param string $template_cate_id
      * @param int $org_id
+     * @param string $menu_id
      * @return array
      */
-    public function templateCateIdGetFormList(string $template_cate_id, int $org_id):array;
+    public function templateCateIdGetFormList(string $template_cate_id, int $org_id,string $menu_id):array;
 }

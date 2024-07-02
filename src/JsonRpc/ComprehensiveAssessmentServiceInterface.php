@@ -9,7 +9,7 @@ interface ComprehensiveAssessmentServiceInterface
      *
      * @return array
      */
-    public function getFields(): array;
+    public function getFields($params): array;
 
     /**
      * 功能配置
@@ -23,7 +23,7 @@ interface ComprehensiveAssessmentServiceInterface
      *
      * @return array
      */
-    public function getMenuConfWhere(): array;
+    public function getMenuConfWhere(array $params): array;
 
     /**
      * 机构端设置项配置
