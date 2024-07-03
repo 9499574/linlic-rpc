@@ -211,4 +211,22 @@ interface UserServiceInterface
      * @return array
      */
     public function getOrgSystemUserId(int $org_id,array $system_id,array $uid=[],string $operation='in'):array;
+
+    /**
+     * data_ranges参数直接查询uids
+     *
+     * @param int $org_id
+     * @param string $system_id
+     * @param array $params
+     * @param array $uidArr
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/7/3 下午3:12
+     */
+    public function getDataRangeWhereUserId(
+        int    $org_id,
+        string $system_id,
+        array  $params,
+        array  $uidArr = [],
+    ): array;
 }
