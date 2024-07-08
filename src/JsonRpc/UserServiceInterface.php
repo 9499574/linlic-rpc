@@ -229,4 +229,11 @@ interface UserServiceInterface
         array  $params,
         array  $uidArr = [],
     ): array;
+
+    /**
+     * 获取机构下所有角色对应的表单模板id
+     * @param array $params
+     * @return array
+     */
+    public function getOrgRoleFormIds(array $params): array;
 }
