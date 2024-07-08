@@ -26,9 +26,10 @@ interface SystemMenuServiceInterface
     /**
      * 通过系统组件编号获取数据
      * @param array $system_module_id
+     * @param array $where
      * @return array
      */
-    public function systemModuleIdGetData(array $system_module_id): array;
+    public function systemModuleIdGetData(array $system_module_id, array $where = []): array;
 
     /**
      * 通过模块功能编号获取表数据
