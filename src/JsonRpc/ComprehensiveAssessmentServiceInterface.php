@@ -34,4 +34,14 @@ interface ComprehensiveAssessmentServiceInterface
      * 表单中心保存表单后的回调
      */
     public function saveFormCallback(array $params): bool;
+
+    /**
+     * 流程参数
+     */
+    public function flowParams(array $params): array;
+
+    /**
+     * 流程回调
+     */
+    public function callBack(array $params): bool;
 }

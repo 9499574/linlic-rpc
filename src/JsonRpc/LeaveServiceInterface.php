@@ -6,10 +6,14 @@ interface LeaveServiceInterface
 {
     /**
      * 获取机构的请假类型下拉选项
-     * @param array $params
+     * @param int $orgId
+     * @param int $systemId
+     * @param string $menuId
+     * @param array $select
+     * @param array $where
      * @return array
      */
-    public function getLeaveTypeOptions(array $params):array;
+    public function getLeaveTypeOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 
     /*
     * 请假管理-根据方法名和参数，调用rpc接口
