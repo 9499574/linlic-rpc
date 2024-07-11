@@ -37,4 +37,32 @@ interface LeaveServiceInterface
      */
     public function getConfigs(array $params):array;
 
+    /**
+     * 请假流程审核回调
+     * @param array $params
+     * @return bool
+     */
+    public function leaveAuditCallback(array $params): bool;
+
+    /**
+     * 销假流程审核回调
+     * @param array $params
+     * @return bool
+     */
+    public function RevokeAuditCallback(array $params): bool;
+
+    /**
+     * 请假流程参数
+     * @param array $params
+     * @return array
+     */
+    public function leaveFlowParams(array $params): array;
+
+    /**
+     * 销假流程参数
+     * @param array $params
+     * @return array
+     */
+    public function revokeFlowParams(array $params): array;
+
 }
