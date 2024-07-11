@@ -73,4 +73,10 @@ interface TeachingActivityServiceInterface
      * @return bool
      */
     public function actvitiyAskExamineCallBack(array $params):bool;
+    /**
+     * 出科考核接入教学活动人员统计信息
+     * @param array $params
+     * @return array
+     */
+    public function activityUserJoinStatis(array $params):array;
 }
