@@ -66,7 +66,7 @@ interface CycleViewServiceInterface
      * @param array $menu_id_arr 菜单id数组
      * @return array 带教老师角色id数组
      */
-    public function getTeacherRoleId(string $org_id,array $menu_id_arr):array;
+    public function getTeacherRoleIds(string $org_id,array $menu_id_arr):array;
 
 
 }
