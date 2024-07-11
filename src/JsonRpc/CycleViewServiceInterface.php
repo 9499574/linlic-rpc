@@ -60,4 +60,13 @@ interface CycleViewServiceInterface
      */
     public function getCycleUsers(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1):array;
 
+    /**
+     *获取带教老师角色id
+     * @param string $org_id 系统id
+     * @param array $menu_id_arr 菜单id数组
+     * @return array 带教老师角色id数组
+     */
+    public function getTeacherRoleId(string $org_id,array $menu_id_arr):array;
+
+
 }
