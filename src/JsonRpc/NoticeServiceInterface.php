@@ -51,12 +51,14 @@ interface NoticeServiceInterface
 
     /**
      * 根据消息中心配置 来推送不同的消息内容
-     * @param $org_id   机构ID
-     * @param $system_id    系统id
-     * @param $menu_id  菜单ID
-     * @param $push_uid 推送人uid
-     * @param $whereArr 和配置的rpc接口定义的字段名一样，比如['title'=>'xxx活动','cate_name'=>'小讲课','user_object'=>['user'=>[1,2,3],'zjr'=>[4,5,6]]]
+     * @param string $org_id    机构ID
+     * @param string $system_id 系统id
+     * @param string $menu_id   菜单ID
+     * @param string $push_uid  推送人uid
+     * @param string $url   地址
+     * @param array $whereArr   和配置的rpc接口定义的字段名一样，比如['title'=>'xxx活动','cate_name'=>'小讲课','user_object'=>['user'=>[1,2,3],'zjr'=>[4,5,6]]]
+     * @param array $special    特殊信息，暂不考虑
      * @return array code == 0成功，否则失败
      */
-    public function modulePushNotice($org_id,$system_id,$menu_id,$push_uid,$whereArr = []): array;
+    public function modulePushNotice(string $org_id, string $system_id, string $menu_id, string $push_uid, string $url = '', array $whereArr = [], array $special = []): array;
 }
