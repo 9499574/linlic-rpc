@@ -59,4 +59,11 @@ interface OnSiteSignServiceInterface
      * @return array
      */
     public function activityDeleteQrcode(string $attendance_rule_id):array;
+
+    /**
+     * 现场签到机构设置
+     * @param array $params
+     * @return array
+     */
+    public function getSets(array $params):array;
 }
