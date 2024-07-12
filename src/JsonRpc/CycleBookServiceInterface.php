@@ -31,4 +31,34 @@ interface CycleBookServiceInterface
      * @time 2024/3/29 13:32
      */
     public function getSettingConf(array $params): array;
+
+    /**
+     * 流程参数
+     *
+     * @param array $params
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/7/12 下午5:48
+     */
+    public function flowParams(array $params): array;
+
+    /**
+     * 流程回调
+     *
+     * @param array $params
+     * @return bool
+     * @user zhaodongsheng
+     * @time 2024/7/12 下午5:49
+     */
+    public function flowCallBack(array $params): bool;
+
+    /**
+     * 流程人员类型
+     *
+     * @param array $params
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/7/12 下午5:49
+     */
+    public function flowCustomUserType(array $params): array;
 }
