@@ -61,4 +61,14 @@ interface CycleBookServiceInterface
      * @time 2024/7/12 下午5:49
      */
     public function flowCustomUserType(array $params): array;
+
+    /**
+     * 我的轮转手册菜单字段设置
+     */
+    public function myBookFields(): array;
+
+    /**
+     * 我的轮转手册菜单设置
+     */
+    public function myBookConfigs(): array;
 }
