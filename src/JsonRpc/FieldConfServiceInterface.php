@@ -25,6 +25,11 @@ interface FieldConfServiceInterface
      */
     public function getJumpBtnIdParentMenuId(string $menu_id):string;
 
+    /*
+    * 根据父级菜单，找到下面所有的跳转按钮的信息
+    */
+    public function getParentMenuIdJumpBtnIds(string $menu_id):array;
+
     /**
      * 读取页面配置参数
      * @param string $serviceName App\Service\Implement\MoudleConfServiceImpl\getPageConf
