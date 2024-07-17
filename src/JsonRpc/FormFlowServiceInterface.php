@@ -17,4 +17,11 @@ interface FormFlowServiceInterface
      * @return bool
      */
     public function callBack(array $params):bool;
+
+    /**
+     * 自定义用户类型
+     * @param array $params
+     * @return array
+     */
+    public function customUserType(array $params):array;
 }

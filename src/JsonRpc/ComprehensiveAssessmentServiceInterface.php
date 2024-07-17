@@ -44,4 +44,9 @@ interface ComprehensiveAssessmentServiceInterface
      * 流程回调
      */
     public function callBack(array $params): bool;
+
+    /**
+     * 流程人员类型
+     */
+    public function flowCustomUserType(array $params): array;
 }

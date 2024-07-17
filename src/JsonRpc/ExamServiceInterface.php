@@ -41,4 +41,10 @@ interface ExamServiceInterface
      */
     public function examSituationConf($params):array;
 
+    /**
+     * 考试-特殊考试注册后获取参数地址-测试用
+     * @param $params
+     * @return array
+     */
+    public function examRegisterParams($params):array;
 }

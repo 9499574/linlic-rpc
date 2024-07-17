@@ -73,4 +73,25 @@ interface TeachingActivityServiceInterface
      * @return bool
      */
     public function actvitiyAskExamineCallBack(array $params):bool;
+
+    /**
+     * 活动管理签到回调
+     * @param array $params
+     * @param $params['org_id'] 机构id
+     * @param $params['system_id'] 系统id
+     * @param $params['menu_id'] 菜单id
+     * @param $params ['rule_sign_id'] 签到记录ID
+     * @param $params ['business_id'] 业务ID活动模块对应activity_id
+     * @param $params ['uid'] 人员ID
+     * @param $params ['sign_type'] 签到类型1签到2签退
+     * @param $params ['sign_time'] 签到时间
+     * @return bool
+      */
+    public function signInCallBack(array $params):bool;
+    /**
+     * 出科考核接入教学活动人员统计信息
+     * @param array $params
+     * @return array
+     */
+    public function activityUserJoinStatis(array $params):array;
 }

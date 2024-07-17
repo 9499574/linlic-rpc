@@ -26,7 +26,7 @@ interface OnSiteSignServiceInterface
     public function getConfigs(array $params):array;
 
     /**
-     * 活动新增二维码
+     *
      * @param string $org_id 机构id
      * @param string $system_id 系统id
      * @param string $menu_id 菜单id
@@ -36,9 +36,17 @@ interface OnSiteSignServiceInterface
      * @param array $uid_arr 活动人员
      * @param string $qr_rf_seconds 二维码刷新时间
      * @param array $module_params 模块其他参数
-     * @return array 返回的有attendance_rule_id qrcode_url
+     * @return array
      */
-    public function activityAddQrcode(string $org_id,string $system_id,string $menu_id,string $event_name,string $start_time,string $end_time,array $uid_arr,string $qr_rf_seconds,array $module_params):array;
+    /**
+     * 活动新增二维码
+     * @param array $params
+     * $params中参数 string org_id 机构id system_id 系统id menu_id 菜单id event_name 活动名称 start_time 开始时间 end_time 结束时间
+     * int user_limit 适用考勤对象(1不限 2指定对象) array uid_arr 考勤对象user_limit为1时非必传为2时必传
+     * string qr_rf_seconds 二维码刷新时间非必填默认0 array $module_params 模块其他参数
+     * @return array
+     */
+    public function activityAddQrcode(array $params):array;
 
     /**
      * 活动编辑二维码
@@ -51,7 +59,15 @@ interface OnSiteSignServiceInterface
      * @param array $module_params 模块其他参数
      * @return array attendance_rule_id qrcode_url
      */
-    public function activityEditQrcode(string $attendance_rule_id,string $event_name,string $start_time,string $end_time,array $uid_arr,string $qr_rf_seconds,array $module_params):array;
+    /**
+     * 活动编辑二维码
+     * @param array $params
+     * $params中参数 string $attendance_rule_id 现场签到id event_name 活动名称 start_time 开始时间 end_time 结束时间
+     * int user_limit 适用考勤对象(1不限 2指定对象) array uid_arr 考勤对象user_limit为1时非必传为2时必传
+     * string qr_rf_seconds 二维码刷新时间非必填默认0 array $module_params 模块其他参数
+     * @return array
+     */
+    public function activityEditQrcode(array $params):array;
 
     /**
      * 活动删除二维码
@@ -59,4 +75,11 @@ interface OnSiteSignServiceInterface
      * @return array
      */
     public function activityDeleteQrcode(string $attendance_rule_id):array;
+
+    /**
+     * 现场签到机构设置
+     * @param array $params
+     * @return array
+     */
+    public function getSets(array $params):array;
 }

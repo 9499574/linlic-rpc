@@ -76,8 +76,9 @@ interface UserServiceInterface
     * $where：用户其它字段的查询条件,二维数组。比如：[['ks_id','like','%158412%'],['base_id','=','15231515161114']]或 使用query语句方式。
     * $ridWhere：用户组的where查询条件,二维数组。比如：[['rid','=','15231515161114']] 或 使用query语句方式。
     * $columnArr：除了uid、用户名、真实姓名、手机号、性别之外的 额外的查询字段，一维数组。如：['ks_id','base_id']，如果传空数组，则默认返回 uid、用户名、真实姓名、手机号、性别 这几个基本字段。
-     * $uidArr：用户uid的数组。比如['15231515161114','15231515161222']
-     * $showFieldName：是否显示字段名称。默认不显示。如果传true，则返回字段名称。如：['uid'=>'用户uid','user_name'=>'用户名','true_name'=>'真实姓名','mobphone'=>'手机号','sex'=>'性别']
+    * $uidArr：用户uid的数组。比如['15231515161114','15231515161222']
+    * $showFieldName：是否显示字段名称。默认不显示。如果传true，则返回字段名称。如：['uid'=>'用户uid','user_name'=>'用户名','true_name'=>'真实姓名','mobphone'=>'手机号','sex'=>'性别']
+    * $show_high_manage：是否包含最高管理员的显示。如果传true，则返回的结果中会包含最高管理员的信息,传false则不包含。
     */
     public function getUserFieldByWhere(
         string $orgId,
@@ -89,7 +90,8 @@ interface UserServiceInterface
         array $uidArr = [],
         bool $showFieldName = false,
         int $limit = 0,
-        int $page = 0
+        int $page = 0,
+        bool $show_high_manage = false
     ): array;
 
 
