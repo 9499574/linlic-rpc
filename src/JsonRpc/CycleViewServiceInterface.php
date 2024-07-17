@@ -68,5 +68,14 @@ interface CycleViewServiceInterface
      */
     public function getTeacherRoleIds(string $org_id,array $menu_id_arr):array;
 
+    /**
+     * 我的过程考核字段设置
+     */
+    public function myProcessFields(): array;
+
+    /**
+     * 我的过程考核菜单设置
+     */
+    public function myProcessConfs(): array;
 
 }
