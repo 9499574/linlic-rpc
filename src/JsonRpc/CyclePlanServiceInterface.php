@@ -55,4 +55,11 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function getUserList(int $org_id, string $system_id, string $menu_id):array;
+
+    /**
+     * 获取我的轮转计划列表字段
+     * @param array $params
+     * @return array
+     */
+    public function getMyCyclePlanFields(array $params):array;
 }
