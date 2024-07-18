@@ -68,5 +68,35 @@ interface CycleViewServiceInterface
      */
     public function getTeacherRoleIds(string $org_id,array $menu_id_arr):array;
 
+    /**
+     * 我的过程考核字段设置
+     */
+    public function myProcessFields(): array;
+
+    /**
+     * 我的过程考核菜单设置
+     */
+    public function myProcessConfs(): array;
+
+    /**
+     * 流程参数
+     * @param array $params
+     * @return array
+     */
+    public function flowParams(array $params): array;
+
+    /**
+     * 流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function flowCallBack(array $params): bool;
+
+    /**
+     * 流程人员类型
+     * @param array $params
+     * @return array
+     */
+    public function flowCustomUserType(array $params): array;
 
 }
