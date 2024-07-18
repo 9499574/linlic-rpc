@@ -49,4 +49,19 @@ interface ComprehensiveAssessmentServiceInterface
      * 流程人员类型
      */
     public function flowCustomUserType(array $params): array;
+
+    /**
+     * 获取出科百分比数据
+     */
+    public function getLeaveDeptPercentData($params): array;
+
+    /**
+     * 获取出科分数数据
+     */
+    public function getLeaveDeptScoreData($params): array;
+
+    /**
+     * 获取出科数量数据
+     */
+    public function getLeaveDeptNumData($params): array;
 }
