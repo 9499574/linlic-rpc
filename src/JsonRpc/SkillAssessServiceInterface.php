@@ -33,4 +33,12 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function formScoreCallback($params):array;
+
+
+    /**
+     * 根据轮转数据获取学生分数
+     * @param $params
+     * @return array
+     */
+    public function getLeaveDeptData($params):array;
 }
