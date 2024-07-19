@@ -47,4 +47,11 @@ interface ExamServiceInterface
      * @return array
      */
     public function examRegisterParams($params):array;
+
+    /**
+     * 根据轮转数据获取学生分数
+     * @param $params
+     * @return array
+     */
+    public function getLeaveDeptData($params):array;
 }
