@@ -99,4 +99,11 @@ interface CycleViewServiceInterface
      */
     public function flowCustomUserType(array $params): array;
 
+    /**
+     * 注册出科考核
+     * @param array $params
+     * @return array
+     */
+    public function  regLeaveDeptExam(array $params):array;
+
 }
