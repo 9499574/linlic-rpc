@@ -106,4 +106,11 @@ interface CycleViewServiceInterface
      */
     public function  regLeaveDeptExam(array $params):array;
 
+    /**
+     * 获取出科考核轮转人员列表
+     * @param array $params
+     * @return array
+     */
+    public function leaveDeptExamUserLists(array $params):array;
+
 }
