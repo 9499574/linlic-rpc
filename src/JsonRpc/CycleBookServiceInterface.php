@@ -71,4 +71,9 @@ interface CycleBookServiceInterface
      * 我的轮转手册菜单设置
      */
     public function myBookConfigs(): array;
+
+    /**
+     * 轮转手册导入模版下载
+     */
+    public function downloadSubTpl(array $params): array;
 }
