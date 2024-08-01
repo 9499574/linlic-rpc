@@ -81,10 +81,4 @@ interface SystemServiceInterface
      */
     public function dictKeyGetSystemOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 
-    /**
-     * 通过基础菜单id获取机构菜单
-     * @param array $menu_id
-     * @return array
-     */
-    public function getOrgMenuListByBaseMenuId(array $menu_id):array;
 }
