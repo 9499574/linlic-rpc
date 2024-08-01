@@ -20,4 +20,11 @@ interface FlowConfServiceInterface
      * @return array
      */
     public function config(array $params):array;
+
+    /**
+     * 消息配置
+     * @param array $params
+     * @return array
+     */
+    public function message(array $params):array;
 }
