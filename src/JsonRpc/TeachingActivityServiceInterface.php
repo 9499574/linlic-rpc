@@ -94,4 +94,10 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function activityUserJoinStatis(array $params):array;
+    /**
+     * 出科考核接入教学活动人员是否完成
+     * @param array $params
+     * @return array
+     */
+    public function activityUserIsCompleted(array $params):array;
 }
