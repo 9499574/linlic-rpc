@@ -158,4 +158,11 @@ interface FormServiceInterface
      * @return array
      */
     public function templateCateIdGetFormList(string $template_cate_id, int $org_id,string $menu_id):array;
+
+    /**
+     * 获取表单模版类型
+     * @param array $filling_form_template_id
+     * @return array
+     */
+    public function getFormTemplateType(array $filling_form_template_id):array;
 }
