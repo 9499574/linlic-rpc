@@ -56,9 +56,10 @@ interface NoticeServiceInterface
      * @param string $menu_id   菜单ID
      * @param string $push_uid  推送人uid
      * @param string $url   地址
-     * @param array $whereArr   和配置的rpc接口定义的字段名一样，比如['title'=>'xxx活动','cate_name'=>'小讲课','user_object'=>['user'=>[1,2,3],'zjr'=>[4,5,6]]]
+     * @param array $url_params  地址参数
+     * @param array $whereArr   和配置的rpc接口定义的字段名一样，比如['event_type'=>'add','user_object'=>['user'=>[1,2,3],'zjr'=>[4,5,6]],'module_field'=>["cate"=>'小讲课',"title"=>"标题","start_time"=>"2024-08-01 10:00:00"]]
      * @param array $special    特殊信息，暂不考虑
      * @return array code == 0成功，否则失败
      */
-    public function modulePushNotice(string $org_id, string $system_id, string $menu_id, string $push_uid, string $url = '', array $whereArr = [], array $special = []): array;
+    public function modulePushNotice(string $org_id, string $system_id, string $menu_id, string $push_uid, string $url = '',array $url_params = [], array $whereArr = [], array $special = []): array;
 }

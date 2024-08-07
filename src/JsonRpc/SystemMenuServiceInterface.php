@@ -63,4 +63,12 @@ interface SystemMenuServiceInterface
      * @return array
      */
     public function getOrgMenuList(int $org_id,array $select =['*'],array $where=[],string $where_raw=''):array;
+
+    /**
+     * 通过基础菜单id获取机构菜单
+     * @param array $menu_id
+     * @return array
+     */
+    public function getOrgMenuListByBaseMenuId(array $menu_id):array;
+
 }

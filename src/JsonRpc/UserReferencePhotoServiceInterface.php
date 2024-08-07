@@ -10,4 +10,11 @@ interface UserReferencePhotoServiceInterface
      * @return array
      */
     public function getFields(array $params): array;
+
+    /**
+     * 用户基准照片上传接口
+     * @param array $params
+     * @return int 0-成功，1-失败
+     */
+    public function addReferencePhoto(array $params): int;
 }

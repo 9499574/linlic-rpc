@@ -41,4 +41,11 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function getLeaveDeptData($params):array;
+
+    /**
+     * 消息配置
+     * @param $params
+     * @return array
+     */
+    public function messageConf($params):array;
 }

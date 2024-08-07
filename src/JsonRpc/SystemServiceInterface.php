@@ -80,4 +80,5 @@ interface SystemServiceInterface
      * @return array
      */
     public function dictKeyGetSystemOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+
 }
