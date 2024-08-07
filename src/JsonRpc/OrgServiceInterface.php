@@ -44,4 +44,11 @@ interface OrgServiceInterface
      * @time 2024/6/17 下午3:22
      */
     public function getOrgsByStatus(int $status): array;
+
+    /**
+     * 获取机构RSA公钥
+     * @param int $orgId
+     * @return string
+     */
+    public function getOrgRsaKey(int $orgId):string;
 }
