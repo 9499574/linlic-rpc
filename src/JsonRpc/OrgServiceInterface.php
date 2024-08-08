@@ -51,4 +51,11 @@ interface OrgServiceInterface
      * @return string
      */
     public function getOrgRsaKey(int $orgId):string;
+
+    /**
+     * 域名前缀
+     * @param int $orgId
+     * @return string
+     */
+    public function getOrgDomainPrefix(int $orgId):string;
 }
