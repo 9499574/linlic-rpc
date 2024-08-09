@@ -165,4 +165,13 @@ interface FormServiceInterface
      * @return array
      */
     public function getFormTemplateType(array $filling_form_template_id):array;
+
+    /**
+     * 获取用户字段,根据字段类型过滤
+     *
+     * @param array $params ['belong_to'=>1,'org_id'=>'-1'] belong_to:归属 1全局 2机构 org_id:机构id
+     * @param array $filter ['filter'=>['field_type'=>['input','select']] 过滤,field_type:字段类型
+     * @return array
+     */
+    public function getUserFieldsFilterByFieldType(array $params, array $filter): array;
 }
