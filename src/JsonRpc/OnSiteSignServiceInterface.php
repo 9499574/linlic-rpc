@@ -63,7 +63,7 @@ interface OnSiteSignServiceInterface
      * 活动编辑二维码
      * @param array $params
      * $params中参数 string $attendance_rule_id 现场签到id event_name 活动名称 start_time 开始时间 end_time 结束时间
-     * int user_limit 适用考勤对象(1不限 2指定对象) array uid_arr 考勤对象user_limit为1时非必传为2时必传
+     * int user_limit 适用考勤对象(0不限 1指定对象) array uid_arr 考勤对象user_limit为0时非必传 为1时必传
      * string qr_rf_seconds 二维码刷新时间非必填默认0 array $module_params 模块其他参数
      * $module_params 中包含 string callback 回调rpc string array callback_params 回调参数 string redirect_url 成功跳转地址
      * @return array
