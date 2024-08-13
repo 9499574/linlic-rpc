@@ -48,9 +48,9 @@ interface OrgServiceInterface
     /**
      * 获取机构RSA公钥
      * @param int $orgId
-     * @return string
+     * @return array
      */
-    public function getOrgRsaKey(int $orgId):string;
+    public function getOrgRsaKey(int $orgId):array;
 
     /**
      * 域名前缀
