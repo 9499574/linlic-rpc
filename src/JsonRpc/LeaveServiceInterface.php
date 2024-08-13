@@ -68,7 +68,7 @@ interface LeaveServiceInterface
     /**
      * 获取请假统计数据
      * leave_type_ids,org_id,system_id,menu_id 非必填
-     * @param array $params 'start_time' => '2024-07-10 00:00:00', 'end_time' => '2024-07-12 00:00:00', 'uids' => [], 'leave_type_ids' => [], 'org_id' => '', 'system_id' => '', 'menu_id' => '',
+     * @param array $params 'start_at' => '2024-07-10 00:00:00', 'end_at' => '2024-07-12 00:00:00', 'uids' => [], 'leave_type_ids' => [], 'org_id' => '', 'system_id' => '', 'menu_id' => '',
      * @return array
      */
     public function getLeaveStatisticData(array $params): array;

@@ -11,6 +11,7 @@ interface ResourceServiceInterface
      * @param string $module 模块名称
      * @param string $fileName 原文件名称
      * @param string $ossUrl 临时文件地址
+     * @param string $videoId 媒体文件ID，处理音视频文件时必传
      * @return array
      */
     public function tempFileTransferBucket(
@@ -18,7 +19,8 @@ interface ResourceServiceInterface
         string $uId,
         string $module,
         string $fileName,
-        string $ossUrl
+        string $ossUrl,
+        string $videoId = ''
     ): array;
 
 
