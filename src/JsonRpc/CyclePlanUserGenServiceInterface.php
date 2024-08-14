@@ -12,6 +12,8 @@ interface CyclePlanUserGenServiceInterface
      * @param string $start_date
      * @param string $end_date
      * @param array $field
+     * @param array $page
+     * @param string $system_id
      * @param string $menu_id
      * @return array
      */
