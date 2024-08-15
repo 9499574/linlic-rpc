@@ -100,4 +100,10 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function activityUserIsCompleted(array $params):array;
+
+    /**
+     * 消息字段
+     * @return array
+     */
+    public function messageConf(): array;
 }
