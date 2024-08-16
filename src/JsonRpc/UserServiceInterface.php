@@ -238,4 +238,24 @@ interface UserServiceInterface
      * @return array
      */
     public function getOrgRoleFormIds(array $params): array;
+
+    /**
+     * 下载导入模版
+     *
+     * @param array $params
+     * @return mixed
+     * @user zhaodongsheng
+     * @time 2024/8/16 上午11:00
+     */
+    public function downloadTpl(array $params): array;
+
+    /**
+     * 消息配置
+     *
+     * @param array $params
+     * @return array
+     * @user zhaodongsheng
+     * @time 2024/8/16 上午11:02
+     */
+    public function messageConf(): array;
 }
