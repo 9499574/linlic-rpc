@@ -18,4 +18,10 @@ interface QuestionServiceInterface
      */
     public function createOrganQuestionTable($params):array;
 
+    /**
+     * 题库-菜单设置
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function questionConf(array $params):array;
 }
