@@ -27,8 +27,9 @@ interface FieldConfServiceInterface
 
     /*
     * 根据父级菜单，找到下面所有的跳转按钮的信息
+    * $menu_id：单个菜单id 或者菜单id的数组 均可以
     */
-    public function getParentMenuIdJumpBtnIds(string $menu_id):array;
+    public function getParentMenuIdJumpBtnIds($menu_id):array;
 
     /**
      * 读取页面配置参数
