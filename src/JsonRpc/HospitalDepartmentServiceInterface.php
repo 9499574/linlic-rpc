@@ -48,4 +48,11 @@ interface HospitalDepartmentServiceInterface
     * @return array [["1"=>'心血科'],["2"=>'内科']]
     */
     public function getHdName($hdIdArr):array;
+
+    /**
+     * 根据base_id获取hd_id
+     * @param array $base_id
+     * @return array
+     */
+    public function baseIdGetHdId(array $base_id):array;
 }
