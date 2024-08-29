@@ -51,8 +51,9 @@ interface HospitalDepartmentServiceInterface
 
     /**
      * 根据base_id获取hd_id
+     * @param int $org_id
      * @param array $base_id
      * @return array
      */
-    public function baseIdGetHdId(array $base_id):array;
+    public function baseIdGetHdId(int $org_id,array $base_id):array;
 }
