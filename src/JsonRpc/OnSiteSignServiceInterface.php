@@ -12,14 +12,14 @@ interface OnSiteSignServiceInterface
     */
     public function getFuncName(string $funcName,array $params):array;
     /**
-     * 日常考勤列表-功能字段列表的接口
+     * 现场签到列表-功能字段列表的接口
      * @param array $params
      * @return array
      */
     public function getFields(array $params):array;
 
     /**
-     * 日常考勤列表-菜单设置的接口
+     * 现场签到列表-菜单设置的接口
      * @param array $params
      * @return array
      */
@@ -83,4 +83,18 @@ interface OnSiteSignServiceInterface
      * @return array
      */
     public function getSets(array $params):array;
+
+    /**
+     * 现场签到列表-功能字段列表的接口
+     * @param array $params
+     * @return array
+     */
+    public function getSignFields(array $params):array;
+
+    /**
+     * 现场签到列表-菜单设置的接口
+     * @param array $params
+     * @return array
+     */
+    public function getSignConfigs(array $params):array;
 }
