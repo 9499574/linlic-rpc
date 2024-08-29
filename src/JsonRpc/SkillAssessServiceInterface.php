@@ -48,4 +48,18 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function messageConf($params):array;
+
+    /**
+     * 技能考核查看-模块字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function skillAssessViewField($params):array;
+
+    /**
+     * 技能考核查看-配置字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function skillAssessViewConf($params):array;
 }
