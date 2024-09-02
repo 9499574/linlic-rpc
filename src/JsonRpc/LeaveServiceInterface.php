@@ -66,6 +66,20 @@ interface LeaveServiceInterface
     public function revokeFlowParams(array $params): array;
 
     /**
+     * 请假流程自定义用户类型
+     * @param array $params
+     * @return array
+     */
+    public function LeaveFlowCustomUserType(array $params): array;
+
+    /**
+     * 销假流程自定义用户类型
+     * @param array $params
+     * @return array
+     */
+    public function RevokeFlowCustomUserType(array $params): array;
+
+    /**
      * 获取请假统计数据
      * leave_type_ids,org_id,system_id,menu_id 非必填
      * @param array $params 'start_at' => '2024-07-10 00:00:00', 'end_at' => '2024-07-12 00:00:00', 'uids' => [], 'leave_type_ids' => [], 'org_id' => '', 'system_id' => '', 'menu_id' => '',
