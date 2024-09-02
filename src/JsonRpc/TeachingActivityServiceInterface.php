@@ -106,4 +106,13 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function messageConf(): array;
+
+    /**
+     * 获取教学活动选项
+     * @param array $whereCondition ['org_id' => 'xxxxxx', 'system_id' => 'xxxxxxx', 'menu_id' => 'xxxxxx']
+     * @param array $columns 默认为['name', 'activity_id']
+     * @param bool $formatToOptions 是否需要转换为下拉选项格式，true => [['label' => 'xxxxxx', 'value' => 'xxxxxx']], false则为查询原始数据集
+     * @return array
+     */
+    public function getActivityOptions(array $whereCondition = [], array $columns = [], bool $formatToOptions = true): array;
 }
