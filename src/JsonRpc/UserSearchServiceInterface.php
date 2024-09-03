@@ -28,4 +28,13 @@ interface UserSearchServiceInterface
      * @return array
      */
     public function whereGet(array $params):array;
+
+
+    /**
+     * 获取主用户表条件筛选用户ID
+     * @param int $org_id
+     * @param string $where
+     * @return array
+     */
+    public function getMainUserUid(int $org_id,string $where):array;
 }
