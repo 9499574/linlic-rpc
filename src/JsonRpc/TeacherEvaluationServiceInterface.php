@@ -18,4 +18,11 @@ interface TeacherEvaluationServiceInterface
      * @return array
      */
     public function teacherEvaluationConf($params):array;
+
+    /**
+     * 获取设置配置
+     * @param array $params
+     * @return array
+     */
+    public function getSetConf($params):array;
 }
