@@ -230,6 +230,7 @@ interface UserServiceInterface
         string $system_id,
         array  $params,
         array  $uidArr = [],
+        bool $emptyParamsShowAll = false,
     ): array;
 
     /**
