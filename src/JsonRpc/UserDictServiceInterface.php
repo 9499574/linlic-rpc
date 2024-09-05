@@ -88,7 +88,7 @@ interface UserDictServiceInterface
 
 
     /**
-     * 获取基地用户选项
+     * 获取导师人员列表
      * @param string $orgId
      * @param int $systemId
      * @param string $menuId
@@ -96,5 +96,5 @@ interface UserDictServiceInterface
      * @param array $where
      * @return array
      */
-    public function getBaseUserOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+    public function getTutorOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 }
