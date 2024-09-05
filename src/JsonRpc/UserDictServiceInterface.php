@@ -85,4 +85,16 @@ interface UserDictServiceInterface
      * @return array
      */
     public function getSystemRoleOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []):array;
+
+
+    /**
+     * 获取基地用户选项
+     * @param string $orgId
+     * @param int $systemId
+     * @param string $menuId
+     * @param array $select
+     * @param array $where
+     * @return array
+     */
+    public function getBaseUserOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 }
