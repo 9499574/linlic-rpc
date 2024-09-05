@@ -16,4 +16,11 @@ interface TrainingPlanServiceInterface
      * @return array
      */
     public function getConfigs():array;
+
+    /**
+     * 培养计划表单填报回调
+     * @param $params
+     * @return bool
+     */
+    public function submitTrainingPlanCallBack($params): bool;
 }
