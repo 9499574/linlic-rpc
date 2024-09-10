@@ -71,4 +71,15 @@ interface SystemMenuServiceInterface
      */
     public function getOrgMenuListByBaseMenuId(array $menu_id):array;
 
+    /**
+     * 获取用户系统菜单
+     * @param int $org_id
+     * @param string $system_id
+     * @param int $uid
+     * @param string $role_attr
+     * @param array $user_role_menu
+     * @return array
+     */
+    public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu):array;
+
 }
