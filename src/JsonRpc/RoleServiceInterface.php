@@ -21,6 +21,7 @@ interface RoleServiceInterface
      * @param int $org_id
      * @param string $system_id
      * @return array
+     * @deprecated 废弃
      */
     public function getRoleGroupInitList(int $org_id,string $system_id):array;
 
@@ -50,4 +51,19 @@ interface RoleServiceInterface
      * @return array
      */
     public function getRoleDataList(array $role_id,array $select=['role_id','role_name','pid','top_pid']):array;
+
+    /**
+     * 获取机构系统所有角色数据
+     * @param int $org_id
+     * @param string $system_id
+     * @return array
+     */
+    public function getSystemAllData(int $org_id,string $system_id):array;
+
+    /**
+     * 插入机构系统角色
+     * @param array $data
+     * @return void
+     */
+    public function insertRole(array $data):void;
 }
