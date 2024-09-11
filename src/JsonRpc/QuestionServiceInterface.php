@@ -26,6 +26,14 @@ interface QuestionServiceInterface
     public function questionConf(array $params):array;
 
     /**
+     * 题库-根据指定条件获取应用分类集合
+     * @columnArr
+     * @param $where
+     * @return array
+     */
+    public function getShowCateData(array $columnArr,$where):array;
+
+    /**
      * 题库-根据指定分类、获取题目的题型集合
      * @param $params ['sc_ids']
      * @return array
