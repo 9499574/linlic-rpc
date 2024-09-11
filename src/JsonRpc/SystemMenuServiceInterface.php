@@ -93,4 +93,16 @@ interface SystemMenuServiceInterface
      */
     public function getSystemMenuData(array $select,array $where=[],string $where_row=''):array;
 
+    /**
+     * 获取菜单配置数据
+     * @param int $org_id
+     * @param string $menu_id
+     * @param string $role_attr_id
+     * @param string $channel_id
+     * @param array $select
+     * @param array $params
+     * @return array
+     */
+    public function getMenuConf(int $org_id,string $menu_id,string $role_attr_id,string $channel_id,array $select,array $params=[]):array;
+
 }
