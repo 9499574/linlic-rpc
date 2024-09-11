@@ -103,6 +103,6 @@ interface SystemMenuServiceInterface
      * @param array $params
      * @return array
      */
-    public function getMenuConf(int $org_id,string $menu_id,string $role_attr_id,string $channel_id,array $select,array $params=[]):array;
+    public function getMenuConf(int $org_id,string $menu_id,string $role_attr_id,string $channel_id,array $select=[],array $params=[]):array;
 
 }
