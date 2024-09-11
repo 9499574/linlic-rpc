@@ -84,4 +84,13 @@ interface SystemMenuServiceInterface
      */
     public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu,int $port,array $other_param=[]):array;
 
+    /**
+     * 获取系统菜单数据
+     * @param array $select
+     * @param array $where
+     * @param string $where_row
+     * @return array
+     */
+    public function getSystemMenuData(array $select,array $where=[],string $where_row=''):array;
+
 }
