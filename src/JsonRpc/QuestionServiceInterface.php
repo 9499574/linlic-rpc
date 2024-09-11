@@ -47,17 +47,27 @@ interface QuestionServiceInterface
      */
     public function getShowQuesTypeQidNum(array $params):array;
 
-    /**
+    /*
+      * 按照分类返回各题型的题目集合
+      * $params sc_ids  指定应用分类
+      * $params ques_types 题目类型。array
+      * $params is_special是否过滤暗示性题。1表示是  0表示否  ---目前未做限制
+      * $params draw_num 抽题数量
+      * 根据指定分类、指定题型获取题目ID集合
+      *  return  [1=>['123','456','789'],2=>['123','456','789'],3=>['123','456','789']] 1,2,3 代表题型，每种题型都会返回指定抽题数量的题目集合 （共用题组的题目会放在相邻的位置）
+     * */
+    public function getShowQuesTypeQids(array $params):array;
+
+    /* 按照指定分类、指定题型返回所有困难度下的题目编号集合
      * $params sc_ids  指定应用分类
      * $params ques_type 题目类型。string
      * $params is_special是否过滤暗示性题。1表示是  0表示否  ---目前未做限制
      * $params complexity array 困难度类型(优先按传来的困难度给，没有的话，就按设置的3个困难度 依次抽取)
      * $params draw_num 抽题数量
      * 根据指定分类、指定题型获取题目ID集合
-     * return  [1=>['123','456','789'],2=>['123','456','789'],3=>['123','456','789']] 1,2,3 代表困难度，每种困哪度都会返回指定抽题数量的题目集合（共用题组的题目会放在相邻的位置）
-     */
-    public function getShowQuesTypeQids(array $params):array;
-
+     *  return  [1=>['123','456','789'],2=>['123','456','789'],3=>['123','456','789']] 1,2,3 代表困难度，每种困哪度都会返回指定抽题数量的题目集合 （共用题组的题目会放在相邻的位置）
+     * */
+    public function getShowQuesTypeComplexityQids(array $params):array;
     /**
      * 根据题目编号获取题目信息
      * $params qid
