@@ -78,8 +78,9 @@ interface SystemMenuServiceInterface
      * @param int $uid
      * @param string $role_attr
      * @param array $user_role_menu
+     * @param int $port
      * @return array
      */
-    public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu):array;
+    public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu,int $port):array;
 
 }
