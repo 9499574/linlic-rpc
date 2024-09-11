@@ -61,4 +61,11 @@ interface ExamServiceInterface
      * @return array
      */
     public function messageConf($params):array;
+
+    /**
+     * 获取试卷作答记录 key为试卷id
+     * @param $params
+     * @return array
+     */
+    public function getPaperAnswerCount($params):array;
 }
