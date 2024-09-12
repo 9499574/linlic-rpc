@@ -79,7 +79,7 @@ interface QuestionServiceInterface
      * search_key  未选题目增加关键词搜索
      * 最终返回的数据格式为：['qid1'=>[],'qid2'=>[]]
      */
-    public function getDealQuestionData($qid):array;
+    public function getDealQuestionData($params):array;
     /**
      * 根据题目编号获取题目信息
      * $params qid
