@@ -47,4 +47,14 @@ interface ResourceServiceInterface
      * @return array
      */
     public function getSpaceUseSize(string $org_id):array;
+
+    /**
+     * 处理富文本内图片地址
+     * @param string $orgId 机构编号
+     * @param string $uId 用户编号
+     * @param string $module 模块名称
+     * @param string $content 原始富文本内容字符串
+     * @return array ['code' => 0, 'message' => '', 'content' => '转换后富文本内容']
+     */
+    public function handleRichText(string $orgId, string $uId, string $module, string $content): array;
 }
