@@ -86,6 +86,12 @@ interface QuestionServiceInterface
      */
     public function getQuestionInfo($qid):array;
 
+    /*
+    * 根据关键词获取一批题目编号
+     * $keyword -搜索关键词
+    */
+    public function getEsSearchKeyQids($keyword):array;
+    
     /*脱离题库接口
       * 根据题库ID新增脱离题库题目数据
       * qids 必填 题库题目编号 （注意可能包含共用题组题目）
