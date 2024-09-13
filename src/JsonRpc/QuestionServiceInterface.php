@@ -68,20 +68,32 @@ interface QuestionServiceInterface
      *  return  [1=>['123','456','789'],2=>['123','456','789'],3=>['123','456','789']] 1,2,3 代表困难度，每种困哪度都会返回指定抽题数量的题目集合 （共用题组的题目会放在相邻的位置）
      * */
     public function getShowQuesTypeComplexityQids(array $params):array;
+    /*
+     * 根据条件获取题库的数据
+     * type:1表示未脱离(即未选) **仅存在type为1的情况
+     * qids 题目集合。type为1的时候 就是原始题库的qid,type为2的时候 就是paper_questions表里的ques_id。
+     * showAnswer  是否显示答案 1显示2不显示
+     * configShow：1表示config不显示成 key=>val的形式  2表示需要进行处理 显示成key=>val的形式
+     * is_option_shuffle 是否选项乱序 1 是 2 否
+     * is_question_shuffle 是否题目乱序 1 是2 否
+     * search_key  未选题目增加关键词搜索
+     * 最终返回的数据格式为：['qid1'=>[],'qid2'=>[]]
+     */
+    public function getDealQuestionData($params):array;
     /**
      * 根据题目编号获取题目信息
      * $params qid
      */
     public function getQuestionInfo($qid):array;
 
-    /*脱离题库接口
-      * 根据题库ID新增脱离题库题目数据
-      * qids 必填 题库题目编号 （注意可能包含共用题组题目）
-      * edit_get_data：编辑题目的时候 是否需要返回 新增后的数据。1表示是  0表示否
-      * paper_id 必填生成的试卷编号
-      * ques_score 题目得分
-      * org_id 必填
-      * arrat code 0 失败 1成功
-    * */
-    public function addNewQuestionBankToPaperQuestions($params):array;
+    /*
+    * 根据关键词获取一批题目编号
+     * $keyword -搜索关键词
+    */
+    public function getEsSearchKeyQids($keyword):array;
+
+    /*
+     * 获取一批题目全部基本信息
+    */
+    public function getQuestionData($qids):array;
 }
