@@ -2,6 +2,8 @@
 
 namespace linlic\JsonRpc;
 
+use JetBrains\PhpStorm\Deprecated;
+
 interface SystemMenuServiceInterface
 {
     /**
@@ -15,6 +17,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 通过系统编号获取系统关联的功能配置
+     * @deprecated
      * @param $system_id
      * @param array $where
      * @param string $where_raw
@@ -25,6 +28,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 通过系统组件编号获取数据
+     * @deprecated
      * @param array $system_module_id
      * @param array $where
      * @return array
@@ -47,6 +51,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 通过基础功能ID获取机构系统菜单列表
+     * @deprecated
      * @param array $menu_id
      * @param $org_id
      * @param $system_id
@@ -56,6 +61,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 获取机构菜单数据
+     * @deprecated
      * @param int $org_id
      * @param array $select
      * @param array $where
@@ -114,4 +120,10 @@ interface SystemMenuServiceInterface
      */
     public function getSystemMenuConf(int $org_id,string $menu_id,array $field=[]):array;
 
+    /**
+     * 获取跳转按钮父级菜单ID
+     * @param string $menu_id
+     * @return string
+     */
+    public function getJumpBtnIdParentMenuId(string $menu_id):string;
 }
