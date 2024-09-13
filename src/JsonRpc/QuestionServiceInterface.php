@@ -70,7 +70,7 @@ interface QuestionServiceInterface
     public function getShowQuesTypeComplexityQids(array $params):array;
     /*
      * 根据条件获取题库的数据
-     * type:1表示未脱离(即未选) 2表示已经脱离的(即已经写入正式表里的)
+     * type:1表示未脱离(即未选) **仅存在type为1的情况
      * qids 题目集合。type为1的时候 就是原始题库的qid,type为2的时候 就是paper_questions表里的ques_id。
      * showAnswer  是否显示答案 1显示2不显示
      * configShow：1表示config不显示成 key=>val的形式  2表示需要进行处理 显示成key=>val的形式
@@ -91,15 +91,9 @@ interface QuestionServiceInterface
      * $keyword -搜索关键词
     */
     public function getEsSearchKeyQids($keyword):array;
-    
-    /*脱离题库接口
-      * 根据题库ID新增脱离题库题目数据
-      * qids 必填 题库题目编号 （注意可能包含共用题组题目）
-      * edit_get_data：编辑题目的时候 是否需要返回 新增后的数据。1表示是  0表示否
-      * paper_id 必填生成的试卷编号
-      * ques_score 题目得分
-      * org_id 必填
-      * arrat code 0 失败 1成功
-    * */
-    public function addQuestionBankToPaperQuestions($params):array;
+
+    /*
+     * 获取一批题目全部基本信息
+    */
+    public function getQuestionData($qids):array;
 }
