@@ -105,4 +105,13 @@ interface SystemMenuServiceInterface
      */
     public function getMenuConf(int $org_id,string $menu_id,string $role_attr_id,string $channel_id,array $select=[],array $params=[]):array;
 
+    /**
+     * 获取系统菜单配置数据
+     * @param int $org_id
+     * @param string $menu_id
+     * @param array $field
+     * @return array
+     */
+    public function getSystemMenuConf(int $org_id,string $menu_id,array $field=[]):array;
+
 }
