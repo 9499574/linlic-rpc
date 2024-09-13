@@ -31,10 +31,13 @@ interface BaseServiceInterface
      * @param string $orgId
      * @param array $where ['option_label'=>["眼科"],'option_value'=>["622116875481731073"]]
      * @param array $select ['option_label','option_value']
+     * @param int $limit
+     * @param int $page
+     * @param string $keyword
      * @return array [["option_label"=>"眼科","option_value"=>"622116875481731073"]]
      * @deprecated 请使用UserDictOptionsServiceInterface::getBaseOptions
      */
-    public function getBaseOptions(string $orgId, array $where = [], array $select = []): array;
+    public function getBaseOptions(string $orgId, array $where = [], array $select = [],int $limit=0,int $page=0,string $keyword=''): array;
 
     /**
      * 通过标准基地ID集合,获取标准基地名称
