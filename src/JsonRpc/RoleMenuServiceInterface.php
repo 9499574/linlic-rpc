@@ -21,10 +21,10 @@ interface RoleMenuServiceInterface
 
     /**
      * 获取用户按钮ID集合
-     * @param int $uid
+     * @param string $role_id
      * @param string $channel_id
      * @param string $menu_id
      * @return array
      */
-    public function getUserBtnId(int $uid,string $channel_id,string $menu_id):array;
+    public function getRoleBtnId(string $role_id,string $channel_id,string $menu_id):array;
 }
