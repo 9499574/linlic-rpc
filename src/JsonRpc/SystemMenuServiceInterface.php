@@ -91,6 +91,19 @@ interface SystemMenuServiceInterface
     public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu,int $port,array $other_param=[]):array;
 
     /**
+     * 获取用户菜单按钮列表
+     * @param int $org_id
+     * @param string $menu_id
+     * @param int $uid
+     * @param string $role_attr_id
+     * @param array $user_role_menu
+     * @param string $channel_id
+     * @param array $other_param
+     * @return array
+     */
+    public function getUserMenuBtnList(int $org_id,string $menu_id,int $uid,string $role_attr_id,array $user_role_menu,string $channel_id,array $other_param=[]):array;
+
+    /**
      * 获取系统菜单数据
      * @param array $select
      * @param array $where
@@ -126,14 +139,4 @@ interface SystemMenuServiceInterface
      * @return string
      */
     public function getJumpBtnIdParentMenuId(string $menu_id):string;
-
-    /**
-     * 获取用户菜单按钮列表
-     * @param int $org_id
-     * @param string $menu_id
-     * @param string $role_attr_id
-     * @param string $channel_id
-     * @return array
-     */
-    public function getUserMenuBtnList(int $org_id,string $menu_id,string $role_attr_id,string $channel_id):array;
 }
