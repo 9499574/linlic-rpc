@@ -139,4 +139,11 @@ interface SystemMenuServiceInterface
      * @return string
      */
     public function getJumpBtnIdParentMenuId(string $menu_id):string;
+
+    /**
+     * 获取菜单子菜单ID
+     * @param string $menu_id
+     * @return array
+     */
+    public function getMenuChildMenuId(string $menu_id):array;
 }
