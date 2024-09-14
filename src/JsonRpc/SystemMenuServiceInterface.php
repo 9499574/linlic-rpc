@@ -96,12 +96,11 @@ interface SystemMenuServiceInterface
      * @param string $menu_id
      * @param int $uid
      * @param string $role_attr_id
-     * @param array $user_role_menu
      * @param string $channel_id
      * @param array $other_param
      * @return array
      */
-    public function getUserMenuBtnList(int $org_id,string $menu_id,int $uid,string $role_attr_id,array $user_role_menu,string $channel_id,array $other_param=[]):array;
+    public function getUserMenuBtnList(int $org_id,string $menu_id,int $uid,string $role_attr_id,string $channel_id,array $other_param=[]):array;
 
     /**
      * 获取系统菜单数据
