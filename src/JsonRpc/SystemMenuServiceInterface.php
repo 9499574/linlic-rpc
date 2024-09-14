@@ -126,4 +126,14 @@ interface SystemMenuServiceInterface
      * @return string
      */
     public function getJumpBtnIdParentMenuId(string $menu_id):string;
+
+    /**
+     * 获取用户菜单按钮列表
+     * @param int $org_id
+     * @param string $menu_id
+     * @param string $role_attr_id
+     * @param string $channel_id
+     * @return array
+     */
+    public function getUserMenuBtnList(int $org_id,string $menu_id,string $role_attr_id,string $channel_id):array;
 }
