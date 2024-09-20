@@ -2,6 +2,8 @@
 
 namespace linlic\JsonRpc;
 
+use JetBrains\PhpStorm\Deprecated;
+
 interface SystemMenuServiceInterface
 {
     /**
@@ -15,6 +17,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 通过系统编号获取系统关联的功能配置
+     * @deprecated
      * @param $system_id
      * @param array $where
      * @param string $where_raw
@@ -25,6 +28,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 通过系统组件编号获取数据
+     * @deprecated
      * @param array $system_module_id
      * @param array $where
      * @return array
@@ -47,6 +51,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 通过基础功能ID获取机构系统菜单列表
+     * @deprecated
      * @param array $menu_id
      * @param $org_id
      * @param $system_id
@@ -56,6 +61,7 @@ interface SystemMenuServiceInterface
 
     /**
      * 获取机构菜单数据
+     * @deprecated
      * @param int $org_id
      * @param array $select
      * @param array $where
@@ -78,8 +84,66 @@ interface SystemMenuServiceInterface
      * @param int $uid
      * @param string $role_attr
      * @param array $user_role_menu
+     * @param int $port
+     * @param array $other_param
      * @return array
      */
-    public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu):array;
+    public function getUserSystemMenuList(int $org_id,string $system_id,int $uid,string $role_attr,array $user_role_menu,int $port,array $other_param=[]):array;
 
+    /**
+     * 获取用户菜单按钮列表
+     * @param int $org_id
+     * @param string $menu_id
+     * @param int $uid
+     * @param string $role_id
+     * @param string $role_attr_id
+     * @param string $channel_id
+     * @param array $other_param
+     * @return array
+     */
+    public function getUserMenuBtnList(int $org_id,string $menu_id,int $uid,string $role_id,string $role_attr_id,string $channel_id,array $other_param=[]):array;
+
+    /**
+     * 获取系统菜单数据
+     * @param array $select
+     * @param array $where
+     * @param string $where_row
+     * @return array
+     */
+    public function getSystemMenuData(array $select,array $where=[],string $where_row=''):array;
+
+    /**
+     * 获取菜单配置数据
+     * @param int $org_id
+     * @param string $menu_id
+     * @param string $role_attr_id
+     * @param string $channel_id
+     * @param array $select
+     * @param array $params
+     * @return array
+     */
+    public function getMenuConf(int $org_id,string $menu_id,string $role_attr_id,string $channel_id,array $select=[],array $params=[]):array;
+
+    /**
+     * 获取系统菜单配置数据
+     * @param int $org_id
+     * @param string $menu_id
+     * @param array $field
+     * @return array
+     */
+    public function getSystemMenuConf(int $org_id,string $menu_id,array $field=[]):array;
+
+    /**
+     * 获取跳转按钮父级菜单ID
+     * @param string $menu_id
+     * @return string
+     */
+    public function getJumpBtnIdParentMenuId(string $menu_id):string;
+
+    /**
+     * 获取菜单子菜单ID
+     * @param string $menu_id
+     * @return array
+     */
+    public function getMenuChildMenuId(string $menu_id):array;
 }
