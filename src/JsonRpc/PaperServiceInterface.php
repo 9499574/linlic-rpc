@@ -71,4 +71,19 @@ interface PaperServiceInterface
     * $params['configShow']：1表示config和答案  不显示成 key=>val的形式  2表示都显示成key=>val的形式
     */
     public function getQsInfoByPaperId($params): array;
+
+    /*
+     * 根据模块业务编号、题目集合生成组卷题目信息
+     * $params['module_business_id'] 模块的业务编号
+     * $params['module_name'] 模块名称
+     * $params['title_name'] 主题名称|组卷名称（非必填项）
+     * $params['qids_data'] 题库题目编号对应分值集合[['qid'=>'123456','ques_score'=>'2.0'],
+     * ['qid'=>'456789','ques_score'=>'0']]无分值时value为0
+     * $params['pass_score'] 组卷的合格分一位小数，不存在合格分时可不传
+     * $params['org_id'] 机构编号
+     * $params['system_id'] 系统编号
+     * $params['menu_id'] 菜单编号
+     * @return paper_id
+     * */
+    public function addModulePaperQuestion($params): array;
 }
