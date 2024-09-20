@@ -10,20 +10,20 @@ interface ExamJoinModulesServiceInterface
      * @param $params
      * @return array
      */
-    public function createExam($params):array;
+    public function createModulesExam($params):array;
 
     /**
      * 添加考试人员
      * @param $params
      * @return array
      */
-    public function addExamUser($params):array;
+    public function addModulesExamUser($params):array;
 
     /**
      * 去除考试人员
      * @param $params
      * @return array
      */
-    public function deleteExamUser($params):array;
+    public function deleteModulesExamUser($params):array;
 
 }
