@@ -47,7 +47,7 @@ interface PaperServiceInterface
 
 
     /*
-    * 根据试卷的id数组获取到下面的题型设计和题目的相关信息【开始考试时 有使用】
+    * 根据试卷的id数组获取到下面的题型设计和题目的相关信息
     * $params里面的参数：
     * show_answer：  是否显示答案 1显示2不显示
     * configShow：   1表示config不显示成 key=>val的形式  2表示需要进行处理 显示成key=>val的形式
@@ -85,5 +85,5 @@ interface PaperServiceInterface
      * $params['menu_id'] 菜单编号
      * @return paper_id
      * */
-    public function addModulePaperQuestion($params): array;
+    public function addModulePaperQuestion($params): string;
 }
