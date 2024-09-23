@@ -61,8 +61,19 @@ interface ExamJoinModulesServiceInterface
 
     /**
      * 去除考试人员
-     * @param $params
-     * @return array
+     * @param $params //二维数组
+     * 必传参数
+     * system_id 字符串
+     * menu_id 字符串
+     * module_name 发布模块标识
+     * module_business_id 发布模块业务id
+     * user_data  => [
+     *      [
+     *          'exam_id', 考试id
+     *          'uid' = [] 需要添加的uid数组
+     *      ]
+     * ]
+ * @return array
      */
     public function deleteModulesExamUser($params):array;
 
