@@ -73,7 +73,7 @@ interface ExamJoinModulesServiceInterface
      *          'uid' = [] 需要添加的uid数组
      *      ]
      * ]
- * @return array
+     * @return array
      */
     public function deleteModulesExamUser($params):array;
 
