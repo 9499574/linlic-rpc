@@ -62,4 +62,11 @@ interface NoticeServiceInterface
      * @return array code == 0成功，否则失败
      */
     public function modulePushNotice(string $org_id, string $system_id, string $menu_id, string $push_uid, string $url = '',array $url_params = [], array $whereArr = [], array $special = []): array;
+
+    /**
+     * 批量插入规则配置详情
+     * @param array $data
+     * @return bool
+     */
+    public function ruleInsertConfigDetail(array $data):bool;
 }
