@@ -69,4 +69,12 @@ interface NoticeServiceInterface
      * @return bool
      */
     public function ruleInsertConfigDetail(array $data):bool;
+
+    /**
+     * 获取规则配置详情
+     * @param array $select
+     * @param array $where
+     * @return array
+     */
+    public function getRuleConfigDetail(array $select,array $where):array;
 }
