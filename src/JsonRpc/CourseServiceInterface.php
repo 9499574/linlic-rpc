@@ -32,4 +32,11 @@ interface CourseServiceInterface
      */
     public function getAppConfigs($params):array;
 
+    /**
+     * 机构端设置
+     * @param $params
+     * @return array
+     */
+    public function getSetConf($params):array;
+
 }
