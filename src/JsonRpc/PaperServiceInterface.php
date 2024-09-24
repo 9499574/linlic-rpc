@@ -83,7 +83,7 @@ interface PaperServiceInterface
      * $params['org_id'] 机构编号
      * $params['system_id'] 系统编号
      * $params['menu_id'] 菜单编号
-     * @return paper_id
+     * @return ['code'=>0,'paper_id'=>$paper_id]
      * */
-    public function addModulePaperQuestion($params): string;
+    public function addModulePaperQuestion($params):array;
 }
