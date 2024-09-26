@@ -146,9 +146,10 @@ interface FormServiceInterface
     /**
      * 获取用户表单日期字段
      * @param int $org_id
+     * @param array $select_field
      * @return array
      */
-    public function getFormDateField(int $org_id):array;
+    public function getFormDateField(int $org_id,array $select_field=[]):array;
 
     /**
      * 通过模板类别ID获取填报表单列表
