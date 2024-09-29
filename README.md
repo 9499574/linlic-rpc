@@ -1,7 +1,6 @@
 
 ```
 composer require linlic/rpc
-
 ```
 
 解除镜像并恢复到 packagist 官方源
