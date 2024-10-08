@@ -39,4 +39,11 @@ interface CourseServiceInterface
      */
     public function getSetConf($params):array;
 
+    /**
+     * 考试回调
+     * @param $params
+     * @return array
+     */
+    public function examCallback($params):array;
+
 }
