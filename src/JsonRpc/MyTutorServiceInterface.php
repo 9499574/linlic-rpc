@@ -10,12 +10,12 @@ interface MyTutorServiceInterface
      * @param $params ['status'=>0]
      * @return array
      */
-    public function MytutorServiceField($params):array;
+    public function myTutorServiceField($params):array;
 
     /**
      * 功能配置
      * @return array
      */
-    public function MytutorServiceConf():array;
+    public function myTutorServiceConf():array;
     
 }
