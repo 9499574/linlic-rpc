@@ -25,4 +25,11 @@ interface TeacherEvaluationServiceInterface
      * @return array
      */
     public function getSetConf($params):array;
+
+    /**
+     * 师资评估-科室统计-模块字段
+     * @param array $params
+     * @return array
+     */
+    public function teacherEvaluationKsField($params):array;
 }
