@@ -175,4 +175,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getUserFieldsFilterByFieldType(array $params, array $filter): array;
+
+    /**
+     * 获取填报表单填写数据
+     * @param string $filling_form_id 填报表单id
+     * @return array
+     */
+    public function getFillData(string $filling_form_id):array;
 }
