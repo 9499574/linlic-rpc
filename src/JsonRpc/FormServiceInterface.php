@@ -182,4 +182,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getFillData(string $filling_form_id):array;
+
+    /**
+     * 获取菜单对应的表单字段选项
+     * @param array $menu_id_arr
+     * @return array
+     */
+    public function getFieldsOptionsByMenuId(array $menu_id_arr):array;
 }
