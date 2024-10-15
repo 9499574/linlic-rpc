@@ -57,4 +57,11 @@ interface ResourceServiceInterface
      * @return array ['code' => 0, 'message' => '', 'content' => '转换后富文本内容']
      */
     public function handleRichText(string $orgId, string $uId, string $module, string $content): array;
+
+    /**
+     * 证书注册
+     * @param array $params
+     * @return array
+     */
+    public function certificateRegister(array $params):array;
 }
