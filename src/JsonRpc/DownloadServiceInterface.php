@@ -29,4 +29,20 @@ interface DownloadServiceInterface
     public function generateFile(string $requestRecordId, array $params):bool;
 
 
+    /**
+     * 生成PDF、Word文件
+     * $businessParams参数结构如下：business_id模块某业务编号 file_name导出文件名（不要加具体后缀）
+     * [
+     *      ["business_id" => "692476229400604673", "file_name" => "张三作答成绩"], //可继续增加业务模块参数
+     *      ["business_id" => "692476229400604674", "file_name" => "李四作答成绩"],
+     * ]
+     * @param array $businessParams
+     * @param string $businessRpc 获取业务模块数据体的rpc接口
+     * @param string $moduleName  模块名称一般为APP_NAME
+     * @param string $moduleKey  使用的静态资源key标识 不可重复 (在资源中心DownloadServiceImpl->getModuleHtml()方法中创建自己模块的静态资源模板)
+     * @param string $fileType  导出资源类型 word|pdf  小写
+     * @param string $compressName 多业务资源时压缩文件的名称（可以不传，为空时默认使用第一个业务的文件名称）
+     * @return bool 是否生成成功
+     */
+    public function generatePdfWordFileRequest(array $businessParams, string $businessRpc, string $moduleName,string $moduleKey, string $fileType, string $compressName=''):bool;
 }
