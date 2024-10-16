@@ -2,22 +2,22 @@
 
 namespace linlic\JsonRpc;
 
-interface SpaceRoomServiceInterface
+interface RoomServiceInterface
 {
 
     /**
-     * 空间管理（房间管理）-模块字段
+     * 房间管理-模块字段
      * @param $params ['org_id'=>-1]
      * @return array
      */
-    public function spaceRoomField($params):array;
+    public function roomField($params):array;
 
     /**
-     * 空间管理（房间管理）-配置字段
+     * 房间管理-配置字段
      * @param $params ['org_id'=>-1]
      * @return array
      */
-    public function spaceRoomConf($params):array;
+    public function roomConf($params):array;
 
     /**
      * 获取设置配置
