@@ -13,9 +13,10 @@ interface TrainingPlanServiceInterface
 
     /**
      * 功能配置
+     * @param $params
      * @return array
      */
-    public function getConfigs():array;
+    public function getConfigs($params):array;
 
     /**
      * 培养计划表单填报回调
