@@ -1,7 +1,7 @@
 <?php
 
 namespace linlic\JsonRpc;
-//耗材库存
+// 耗材库存
 interface ConsumServiceInterface
 {
     /**
