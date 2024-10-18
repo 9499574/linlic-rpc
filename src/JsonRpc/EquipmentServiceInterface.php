@@ -2,7 +2,7 @@
 
 namespace linlic\JsonRpc;
 
-interface EquipmentInventoryServiceInterface
+interface EquipmentServiceInterface
 {
     /**
      * 功能字段
