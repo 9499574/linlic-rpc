@@ -68,4 +68,34 @@ interface ExamServiceInterface
      * @return array
      */
     public function getPaperAnswerCount($params):array;
+
+    /**
+     * 根据业务编号获取考试试卷题目内容
+     * $params参数结构如下：business_id模块某业务编号这里特指paper_id试卷编号
+     * [
+     *    ["business_id" => "692476229400604673", "other_params" => ""],
+     *    ["business_id" => "692476229400604674", "other_params" => ""],
+     * ]
+     * @return array
+     * [
+     *    ["business_id" => "692476229400604673", "ques_list"=[] ]
+     *    ["business_id" => "692476229400604674", "ques_list"=>[] ],
+     *  ]
+     */
+    public function getExamPaperQsRecord(array $params):array;
+
+    /**
+     * 根据业务编号批量获取用户作答试卷题目内容
+     * $params参数结构如下：business_id模块某业务编号这里特指user_record_id
+     * [
+     *    ["business_id" => "692476229400604673", "other_params" => ""],
+     *    ["business_id" => "692476229400604674", "other_params" => ""],
+     * ]
+     * @return array
+     * [
+     *    ["business_id" => "692476229400604673", "exam_score" => "100", "user_record_paper"=[] ]
+     *    ["business_id" => "692476229400604674", "exam_score" => "80", "user_record_paper"=>[] ],
+     *  ]
+     */
+    public function getUserPaperAnswerRecord(array $params):array;
 }
