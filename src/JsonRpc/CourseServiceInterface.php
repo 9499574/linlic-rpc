@@ -46,4 +46,11 @@ interface CourseServiceInterface
      */
     public function examCallback($params):array;
 
+    /**
+     * 获取课程章节数据-用于课程详情筛选数据
+     * @param $params
+     * @return array
+     */
+    public function getCourseChapterData($params):array;
+
 }
