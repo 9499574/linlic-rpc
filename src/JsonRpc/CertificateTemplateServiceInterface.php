@@ -10,4 +10,12 @@ interface CertificateTemplateServiceInterface
      * @return array
      */
     public function fields(array $params):array;
+
+
+    /**
+     * 机构设置
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params):array;
 }
