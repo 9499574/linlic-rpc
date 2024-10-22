@@ -18,4 +18,11 @@ interface ConsumApplyServiceInterface
      */
     public function getConfigs($params):array;
 
+    /**
+     * 获取耗材存放地点下拉选项
+     * @param $params
+     * @return array
+     */
+    public function getRoomOptions($params):array;
+
 }
