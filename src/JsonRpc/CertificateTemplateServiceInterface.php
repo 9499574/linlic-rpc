@@ -25,4 +25,11 @@ interface CertificateTemplateServiceInterface
      * @return array
      */
     public function menuConf(array $params):array;
+
+    /**
+     * 获取模板列表
+     * @param array $params
+     * @return array
+     */
+    public function getTemplateList(array $params):array;
 }
