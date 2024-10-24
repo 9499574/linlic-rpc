@@ -17,4 +17,13 @@ interface EquipmentServiceInterface
      * @return array
      */
     public function equipmentInventoryConf(array $params):array;
+
+    /**
+     * 获取设备可用状态下拉选项
+     * @param array $params
+     * @return array
+     */
+    public function getEquipmentStatusOptions(array $params):array;
+
+
 }
