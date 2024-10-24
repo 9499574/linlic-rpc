@@ -25,5 +25,12 @@ interface EquipmentServiceInterface
      */
     public function getEquipmentStatusOptions(array $params):array;
 
+    /**
+     * 获取设备存放房间下拉选项
+     * @param array $params
+     * @return array
+     */
+    public function getRoomOptions(array $params):array;
+
 
 }
