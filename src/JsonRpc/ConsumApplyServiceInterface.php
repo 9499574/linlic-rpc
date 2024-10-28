@@ -39,4 +39,11 @@ interface ConsumApplyServiceInterface
      */
     public function flowCallBack(array $params): bool;
 
+    /**
+     * 耗材使用保存
+     * @param array $params
+     * @return array
+     */
+    public function consumUseSave(array $params):array;
+
 }
