@@ -25,4 +25,11 @@ interface SpaceUseServiceInterface
      * @return array
      */
     public function getSetConf(array $params):array;
+
+    /**
+     * 记录空间使用明细
+     * @param array $params
+     * @return array
+     */
+    public function recordSpaceUse(array $params):array;
 }
