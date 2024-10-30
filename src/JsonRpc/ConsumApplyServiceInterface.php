@@ -46,4 +46,11 @@ interface ConsumApplyServiceInterface
      */
     public function consumUseSave(array $params):array;
 
+    /**
+     * 更新耗材使用状态
+     * @param array $params
+     * @return array
+     */
+    public function consumUseStatusUpdate(array $params):array;
+
 }
