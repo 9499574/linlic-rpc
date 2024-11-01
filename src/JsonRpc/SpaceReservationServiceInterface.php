@@ -25,4 +25,11 @@ interface SpaceReservationServiceInterface
      * @return array
      */
     public function getSetConf(array $params):array;
+
+    /**
+     * 空间预约-审核回调
+     * @param array $params
+     * @return array
+     */
+    public function flowCallBack(array $params):array;
 }
