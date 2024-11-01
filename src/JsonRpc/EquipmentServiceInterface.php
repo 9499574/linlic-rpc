@@ -32,5 +32,12 @@ interface EquipmentServiceInterface
      */
     public function getRoomOptions(array $params):array;
 
+    /**
+     * 获取设备使用类型下拉选项
+     * @param array $params
+     * @return array
+     */
+    public function getUsingTypeOptions(array $params): array;
+
 
 }
