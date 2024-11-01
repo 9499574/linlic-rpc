@@ -25,7 +25,7 @@ interface ConsumServiceInterface
      */
     public function getSetConf($params):array;
 
-    //耗材过期消息提醒
-    public function expireNotice():array;
+    //耗材过期消息提醒注册
+    public function expireNoticeReg():array;
 
 }
