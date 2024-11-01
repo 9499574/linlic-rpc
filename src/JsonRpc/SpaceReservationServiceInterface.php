@@ -29,7 +29,7 @@ interface SpaceReservationServiceInterface
     /**
      * 空间预约-审核回调
      * @param array $params
-     * @return array
+     * @return bool
      */
-    public function flowCallBack(array $params):array;
+    public function flowCallBack(array $params): bool;
 }
