@@ -1,8 +1,8 @@
 <?php
 
 namespace linlic\JsonRpc;
-// 耗材库存
-interface ConsumServiceInterface
+// 耗材使用明细
+interface ConsumUseDetailServiceInterface
 {
     /**
      * 功能字段
@@ -17,15 +17,5 @@ interface ConsumServiceInterface
      * @return array
      */
     public function getConfigs($params):array;
-
-    /**
-     * 机构端设置
-     * @param $params
-     * @return array
-     */
-    public function getSetConf($params):array;
-
-    //耗材过期消息提醒注册
-    public function expireNoticeReg():array;
 
 }
