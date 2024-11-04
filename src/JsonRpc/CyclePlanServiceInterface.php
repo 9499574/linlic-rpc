@@ -62,4 +62,18 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function getMyCyclePlanFields(array $params):array;
+
+    /**
+     * 获取轮转模板筛选条件
+     * @param array $params
+     * @return array
+     */
+    public function getCycleTemplateFilter(array $params):array;
+
+    /**
+     * 获取轮转子模板筛选条件
+     * @param array $params
+     * @return array
+     */
+    public function getCycleSubTemplateFilter(array $params):array;
 }
