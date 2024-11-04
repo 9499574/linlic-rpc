@@ -2,7 +2,7 @@
 
 namespace linlic\JsonRpc;
 
-interface TeacherServiceInterface
+interface EquipmentManagementServiceInterface
 {
     /**
      * 功能字段

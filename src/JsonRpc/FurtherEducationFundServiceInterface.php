@@ -2,17 +2,22 @@
 
 namespace linlic\JsonRpc;
 
-interface TeacherServiceInterface
+interface FurtherEducationFundServiceInterface
 {
     /**
-     * 功能字段
-     * @param $params ['org_id'=>-1]
+     * @param string $funcName
+     * @param array $params
+     * @return array
+     */
+    public function getFuncName(string $funcName,array $params):array;
+
+    /**
+     * @param array $params
      * @return array
      */
     public function getFields(array $params):array;
 
     /**
-     * 功能配置
      * @param array $params
      * @return array
      */

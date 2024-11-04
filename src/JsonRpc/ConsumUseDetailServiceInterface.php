@@ -1,12 +1,12 @@
 <?php
 
 namespace linlic\JsonRpc;
-
-interface TrainingPlanServiceInterface
+// 耗材使用明细
+interface ConsumUseDetailServiceInterface
 {
     /**
      * 功能字段
-     * @param $params ['org_id'=>-1]
+     * @param $params
      * @return array
      */
     public function getFields($params):array;
@@ -18,10 +18,4 @@ interface TrainingPlanServiceInterface
      */
     public function getConfigs($params):array;
 
-    /**
-     * 培养计划表单填报回调
-     * @param $params
-     * @return bool
-     */
-    public function submitTrainingPlanCallBack($params): bool;
 }

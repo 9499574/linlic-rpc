@@ -1,12 +1,12 @@
 <?php
 
 namespace linlic\JsonRpc;
-
-interface TrainingPlanServiceInterface
+// 耗材库存
+interface ConsumServiceInterface
 {
     /**
      * 功能字段
-     * @param $params ['org_id'=>-1]
+     * @param $params
      * @return array
      */
     public function getFields($params):array;
@@ -19,9 +19,13 @@ interface TrainingPlanServiceInterface
     public function getConfigs($params):array;
 
     /**
-     * 培养计划表单填报回调
+     * 机构端设置
      * @param $params
-     * @return bool
+     * @return array
      */
-    public function submitTrainingPlanCallBack($params): bool;
+    public function getSetConf($params):array;
+
+    //耗材过期消息提醒注册
+    public function expireNoticeReg():array;
+
 }
