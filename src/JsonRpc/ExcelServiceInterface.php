@@ -28,10 +28,11 @@ interface ExcelServiceInterface
 
     /**
      * 获取excel文件内容
-     * @param string $fileName
-     * @param string $ossUrl
-     * @param bool $deleteOssFile
+     * @param string $fileName 文件名称
+     * @param string $ossUrl oss临时文件地址
+     * @param bool $deleteOssFile 是否删除oss文件，默认true
+     * @param bool $isFastRead 是否快速读取，默认false
      * @return array
      */
-    public function getContent(string $fileName,string $ossUrl, bool $deleteOssFile=true): array;
+    public function getContent(string $fileName,string $ossUrl, bool $deleteOssFile=true,bool $isFastRead=false): array;
 }
