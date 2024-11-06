@@ -50,16 +50,30 @@ interface SkillAssessServiceInterface
     public function messageConf($params):array;
 
     /**
-     * 技能考核查看-模块字段
+     * 技能考核查看-模块字段-学生端
      * @param $params ['org_id'=>-1]
      * @return array
      */
     public function skillAssessViewField($params):array;
 
     /**
-     * 技能考核查看-配置字段
+     * 技能考核查看-配置字段-学生端
      * @param $params ['org_id'=>-1]
      * @return array
      */
     public function skillAssessViewConf($params):array;
+
+    /**
+     * 技能考核查看-模块字段-考官端
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function skillAssessViewExaminerField($params):array;
+
+    /**
+     * 技能考核查看-配置字段-考官端
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function skillAssessViewExaminerConf($params):array;
 }
