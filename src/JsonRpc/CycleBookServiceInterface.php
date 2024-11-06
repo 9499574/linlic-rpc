@@ -6,9 +6,10 @@ interface CycleBookServiceInterface
 {
     /**
      * 功能字段
+     * @param array $params
      * @return array
      */
-    public function getFields():array;
+    public function getFields(array $params):array;
 
     /**
      * 功能配置
