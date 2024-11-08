@@ -115,4 +115,8 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getActivityOptions(array $whereCondition = [], array $columns = [], bool $formatToOptions = true): array;
+    /*
+     * 获取活动详情表单信息
+     * */
+    public function getActivityInfoData(array $params):array;
 }
