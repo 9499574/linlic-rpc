@@ -119,4 +119,8 @@ interface TeachingActivityServiceInterface
      * 获取活动详情表单信息
      * */
     public function getActivityInfoData(array $params):array;
+    /*
+    * 活动审核流程配置增加用户类型
+    * */
+    public function getActivityExamineCustomUserType(array $params):array;
 }
