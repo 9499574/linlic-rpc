@@ -65,4 +65,11 @@ interface OrgServiceInterface
      * @return string
      */
     public function getDomainPrefixByOrgId(string $domainPrefix):string;
+
+    /**
+     * 根据域名获取机构编号
+     * @param string $org_domain
+     * @return string
+     */
+    public function getDomainByOrgId(string $org_domain):string;
 }
