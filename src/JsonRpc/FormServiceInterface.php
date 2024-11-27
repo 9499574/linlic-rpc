@@ -189,4 +189,11 @@ interface FormServiceInterface
      * @return array
      */
     public function getFieldsOptionsByMenuId(array $menu_id_arr):array;
+
+    /**
+     * 获取填报表单列表数据
+     * @param array $params
+     * @return array
+     */
+    public function getFormListData(array $params):array;
 }

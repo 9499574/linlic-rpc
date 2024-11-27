@@ -64,4 +64,13 @@ interface ComprehensiveAssessmentServiceInterface
      * 获取出科数量数据
      */
     public function getLeaveDeptNumData($params): array;
+
+    /**
+     * 导出详情数据
+     * @param array $businessParams
+     * @return array
+     *
+     */
+    public function exportDetailData(array $businessParams):array;
+
 }

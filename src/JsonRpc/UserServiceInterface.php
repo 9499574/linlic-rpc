@@ -259,4 +259,11 @@ interface UserServiceInterface
      * @time 2024/8/16 上午11:02
      */
     public function messageConf(): array;
+
+    /**
+     * 新增用户
+     * @param array $params ["system_id","form_info"] //form_info是用户表单信息
+     * @return array
+     */
+    public function addUser(array $params): array;
 }

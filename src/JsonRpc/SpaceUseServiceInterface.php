@@ -32,4 +32,18 @@ interface SpaceUseServiceInterface
      * @return array
      */
     public function recordSpaceUse(array $params):array;
+
+    /**
+     * 查询可用房间
+     * @param array $params
+     * @return array
+     */
+    public function selectAvailableRoom(array $params):array;
+
+    /**
+     * 删除空间使用明细
+     * @param array $params
+     * @return array
+     */
+    public function deleteSpaceUse(array $params):array;
 }

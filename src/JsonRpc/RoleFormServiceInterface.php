@@ -18,4 +18,11 @@ interface RoleFormServiceInterface
      * @return void
      */
     public function insertRoleForm(array $data):void;
+
+    /**
+     * 获取多个角色关联的表单ID
+     * @param array $roleIds
+     * @return array
+     */
+    public function getFormIdsByRoleIds(array $roleIds): array;
 }

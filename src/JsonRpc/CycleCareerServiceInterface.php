@@ -26,4 +26,12 @@ interface CycleCareerServiceInterface
      */
     public function dataSharing($params):array;
 
+    /**
+     * 导出详情数据
+     * @param array $businessParams
+     * @return array
+     *
+     */
+    public function exportDetailData(array $businessParams):array;
+
 }
