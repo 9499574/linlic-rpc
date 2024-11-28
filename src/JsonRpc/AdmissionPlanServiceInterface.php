@@ -26,5 +26,19 @@ interface AdmissionPlanServiceInterface
      */
     public function getFilterOptions(array $params, string $key):array;
 
+    /**
+     * 审核参数
+     * @param array $params
+     * @return array
+     */
+    public function flowParams(array $params): array;
+
+    /**
+     * 审核回调
+     * @param array $params
+     * @return bool
+     */
+    public function flowCallBack(array $params): bool;
+
 
 }
