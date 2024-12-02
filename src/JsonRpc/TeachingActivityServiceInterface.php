@@ -123,4 +123,14 @@ interface TeachingActivityServiceInterface
     * 活动审核流程配置增加用户类型
     * */
     public function getActivityExamineCustomUserType(array $params):array;
+    /**
+     * 活动列表-rpc
+     * @param array $params
+     * @param $params['org_id'] 机构id
+     * @param $params['menu_ids'] 菜单集合
+     * @return array
+     */
+    public function getTeachingActivityList(array $params):array;
+    //活动详情-rpc
+    public function getTeachingActivityDetail($avtivity_id):array;
 }
