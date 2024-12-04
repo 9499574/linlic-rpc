@@ -133,4 +133,30 @@ interface TeachingActivityServiceInterface
     public function getTeachingActivityList(array $params):array;
     //活动详情-rpc
     public function getTeachingActivityDetail($avtivity_id):array;
+
+    /**
+     * 课程发布-rpc
+     * @param array $params 二维数组（同一次请求所有数据的org_id、system_id、menu_id要相同）
+     * @param $param['org_id'] 机构ID
+     * @param $param['system_id'] 系统ID
+     * @param $param['menu_id'] 菜单ID
+     * @param $param['name'] 活动名称
+     * @param $param['start_time'] 开始时间
+     * @param $param['end_time'] 结束时间
+     * @param $param['teaching_activity_type'] 活动类型
+     * @param $param['teaching_activity_level'] 活动级别
+     * @param $param['hd_id'] 科室ID
+     * @param $param['base_id'] 基地ID
+     * @param $param['teaching_activity_campus'] 院区ID
+     * @param $param['intro'] 活动简介
+     * @param $param['supervision_type'] 督导类型
+     * @param $param['choice_room']  选择房间
+     * @param $param['equipment']  设备
+     * @param $param['consumable']  耗材
+     * @param $param['user_object_users_config'] 用户类型人员配置(多个)
+     * @param $param['schedule_class_config']  课程通知人员配置
+     * @param $param['activity_annex_config'] 活动附件
+     * @return array
+     */
+    public function coursePlanToTeachingActivity(array $params):array;
 }
