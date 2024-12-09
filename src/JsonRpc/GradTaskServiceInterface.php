@@ -32,4 +32,17 @@ interface GradTaskServiceInterface
      */
     public function flowCallBack(array $params): bool;
 
+    /**
+     * 证书注册功能参数
+     * @param array $params
+     * @return array
+     */
+    public function certRegParams(array $params):array;
+
+    /**
+     * 证书注册数据详情
+     * @param array $params
+     * @return array
+     */
+    public function certRegDetail(array $params):array;
 }
