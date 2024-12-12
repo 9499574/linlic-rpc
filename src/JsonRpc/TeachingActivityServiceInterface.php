@@ -132,7 +132,7 @@ interface TeachingActivityServiceInterface
      */
     public function getTeachingActivityList(array $params):array;
     //活动详情-rpc
-    public function getTeachingActivityDetail($avtivity_id):array;
+    public function getTeachingActivityDetail($avtivity_ids):array;
 
     /**
      * 课程发布-rpc
