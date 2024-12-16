@@ -53,4 +53,11 @@ interface ConsumApplyServiceInterface
      */
     public function consumUseStatusUpdate(array $params):array;
 
+    /**
+     * 耗材使用删除
+     * @param array $params
+     * @return array
+     */
+    public function consumUseDel(array $params):array;
+
 }
