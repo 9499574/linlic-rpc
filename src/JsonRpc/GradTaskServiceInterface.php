@@ -45,4 +45,12 @@ interface GradTaskServiceInterface
      * @return array
      */
     public function certRegDetail(array $params):array;
+
+    /**
+     * 导出详情数据
+     * @param array $businessParams
+     * @return array
+     *
+     */
+    public function exportDetailData(array $businessParams):array;
 }
