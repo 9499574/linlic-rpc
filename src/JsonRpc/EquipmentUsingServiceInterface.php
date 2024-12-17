@@ -28,4 +28,12 @@ interface EquipmentUsingServiceInterface
      * @return array  code:1失败，0成功；msg:失败信息；data:使用记录id数组 ['code' => 0, 'msg' => '', 'data' => ['711952656657465344', '711952656661659648', '711952656670048256']];
      */
     public function useConfirm(int $type, string $requestForm, string $businessId, array $usingInfo, array $equipmentDetail): array;
+
+    /**
+     * 取消使用
+     * @param string $businessId 使用记录关联业务ID
+     * @param array $useRecordIds 使用记录ID数组
+     * @return bool
+     */
+    public function cancelUse(string $businessId,  array $useRecordIds): bool;
 }
