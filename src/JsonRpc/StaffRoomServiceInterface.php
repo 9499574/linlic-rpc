@@ -29,7 +29,7 @@ interface StaffRoomServiceInterface
     /**
      * 通过教研室编号查询科室编号
      * @param array $staffRoomIds
-     * @return string
+     * @return array
      */
-    public function getHdIdByStaffRoomId(array $staffRoomIds): string;
+    public function getHdIdByStaffRoomId(array $staffRoomIds): array;
 }
