@@ -18,4 +18,11 @@ interface StaffRoomServiceInterface
      * @return array
      */
     public function getStaffRoomOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+
+    /**
+     * 通过科室编号查询教研室
+     * @param array $hdIds
+     * @return array
+     */
+    public function getStaffRoomByHdIds(array $hdIds): array;
 }
