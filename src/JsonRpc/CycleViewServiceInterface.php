@@ -56,9 +56,10 @@ interface CycleViewServiceInterface
      * @param array $stage 轮转阶段数组 可以为空
      * @param array $standard_base_id 基地数组 可以为空
      * @param int $date_type 时间段查询类型 1轮转时间 2出科时间
+     * @param array $params 其他参数 $params['fields'] (array 需要的其他字段值 staff_room_id)
      * @return array 学生uid，时间段，具体轮转科室，带教老师uid
      */
-    public function getCycleUsers(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1):array;
+    public function getCycleUsers(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1,array $params=[]):array;
 
     /**
      *获取带教老师角色id
