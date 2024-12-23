@@ -100,7 +100,12 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function activityUserIsCompleted(array $params):array;
-
+    /**
+     * 轮转总览对接活动列表(指定人员活动信息)
+     * @param array $params
+     * @return array
+     */
+    public function cycleUseActivityList(array $params):array;
     /**
      * 消息字段
      * @return array
