@@ -28,4 +28,10 @@ interface TeacherDeclarationServiceInterface
      * @return array
      */
     public function formSubmitCallback(array $params):array;
+
+    /**
+     * @param array $params
+     * @return array
+     */
+    public function getSetConf($params): array;
 }
