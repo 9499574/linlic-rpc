@@ -105,7 +105,7 @@ interface TeachingActivityServiceInterface
      * @param array $params
      * @return array
      */
-    public function cycleUseActivityList(array $params):array;
+    public function cycleUserActivityList(array $params):array;
     /**
      * 消息字段
      * @return array
