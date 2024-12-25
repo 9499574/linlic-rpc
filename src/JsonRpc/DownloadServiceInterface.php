@@ -30,6 +30,15 @@ interface DownloadServiceInterface
 
 
     /**
+     * 生成导出文件 generateFile 参数 储存在redis内
+     * @param string $requestRecordId
+     * @param string $redisKey
+     * @return bool
+     */
+    public function generateFileRedisKey(string $requestRecordId, string $redisKey):bool;
+
+
+    /**
      * 生成PDF、Word文件
      * $businessParams参数结构如下：business_id模块某业务编号 file_name导出文件名（不要加具体后缀）
      * [

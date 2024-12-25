@@ -73,4 +73,11 @@ interface ComprehensiveAssessmentServiceInterface
      */
     public function exportDetailData(array $businessParams):array;
 
+    /**
+     * 获取评估列表
+     * @param array $params
+     * @return array
+     */
+    public function getAssessList(array $params):array;
+
 }

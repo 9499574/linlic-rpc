@@ -46,4 +46,11 @@ interface SpaceUseServiceInterface
      * @return array
      */
     public function deleteSpaceUse(array $params):array;
+
+    /**
+     * 获取房间使用时间列表
+     * @param array $params
+     * @return array
+     */
+    public function getSpaceUseTimeList(array $params):array;
 }

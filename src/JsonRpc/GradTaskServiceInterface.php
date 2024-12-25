@@ -1,8 +1,8 @@
 <?php
 
 namespace linlic\JsonRpc;
-// 耗材申领
-interface ConsumApplyServiceInterface
+// 结业任务
+interface GradTaskServiceInterface
 {
     /**
      * 功能字段
@@ -19,13 +19,6 @@ interface ConsumApplyServiceInterface
     public function getConfigs($params):array;
 
     /**
-     * 获取耗材存放地点下拉选项
-     * @param $params
-     * @return array
-     */
-    public function getRoomOptions($params):array;
-
-    /**
      * 流程参数
      * @param array $params
      * @return array
@@ -40,24 +33,24 @@ interface ConsumApplyServiceInterface
     public function flowCallBack(array $params): bool;
 
     /**
-     * 耗材使用保存
+     * 证书注册功能参数
      * @param array $params
      * @return array
      */
-    public function consumUseSave(array $params):array;
+    public function certRegParams(array $params):array;
 
     /**
-     * 更新耗材使用状态
+     * 证书注册数据详情
      * @param array $params
      * @return array
      */
-    public function consumUseStatusUpdate(array $params):array;
+    public function certRegDetail(array $params):array;
 
     /**
-     * 耗材使用删除
-     * @param array $params
+     * 导出详情数据
+     * @param array $businessParams
      * @return array
+     *
      */
-    public function consumUseDel(array $params):array;
-
+    public function exportDetailData(array $businessParams):array;
 }
