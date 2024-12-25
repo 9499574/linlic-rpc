@@ -43,6 +43,13 @@ interface SkillAssessServiceInterface
     public function getLeaveDeptData($params):array;
 
     /**
+     * 根据轮转数据获取学生参加详情
+     * @param $params
+     * @return array
+     */
+    public function getLeaveDeptDetailList($params):array;
+
+    /**
      * 消息配置
      * @param $params
      * @return array
