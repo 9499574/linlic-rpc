@@ -53,4 +53,11 @@ interface GradTaskServiceInterface
      *
      */
     public function exportDetailData(array $businessParams):array;
+
+    /**
+     * 获取菜单配置选项(非字典类型)
+     * @param array $params
+     * @return array
+     */
+    public function getMenuConfOptions(array $params=[]):array;
 }
