@@ -57,5 +57,19 @@ interface AttendanceServiceInterface
      */
     public function getSignConfigs(array $params):array;
 
+    /**
+     * 轮转总览人员考勤统计
+     * @param array $params
+     * @return array
+     */
+    public function getAttendanceStatisticForCycle(array $params): array;
+
+    /**
+     * 轮转总览人员科室考勤明细
+     * @param array $params
+     * @return array
+     */
+    public function getAttendanceListForCycle(array $params): array;
+
 
 }
