@@ -207,4 +207,11 @@ interface FormServiceInterface
      * @return array
      */
     public function formContentTempFileMigrate(array $formContent,string $orgId,string $uid,string $appName):array;
+
+    /**
+     * 获取表单模版
+     * @param array $filling_form_template_id
+     * @return array
+     */
+    public function getFormTemplateList(array $filling_form_template_id):array;
 }
