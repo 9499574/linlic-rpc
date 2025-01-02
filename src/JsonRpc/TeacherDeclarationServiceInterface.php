@@ -34,4 +34,18 @@ interface TeacherDeclarationServiceInterface
      * @return array
      */
     public function getSetConf($params): array;
+
+    /**
+     * 获取证书参数
+     * @param $params
+     * @return array
+     */
+    public function getCertificateParams($params):array;
+
+    /**
+     * 获取证书详情参数
+     * @param $params
+     * @return array
+     */
+    public function getCertificateDetail($params):array;
 }
