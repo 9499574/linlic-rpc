@@ -81,4 +81,13 @@ interface SystemServiceInterface
      */
     public function dictKeyGetSystemOptions(int $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 
+
+    /**
+     * 获取系统信息列表
+     * @param array $systemId
+     * @param array $select
+     * @return array
+     */
+    public function getSystemInfoList(array $systemId,array $select=["*"]):array;
+
 }
