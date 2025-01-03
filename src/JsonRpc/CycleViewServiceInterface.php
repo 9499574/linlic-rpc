@@ -114,4 +114,10 @@ interface CycleViewServiceInterface
      */
     public function leaveDeptExamUserLists(array $params):array;
 
+    /**
+     * 分配带教老师消息注册
+     * @return array
+     */
+    public function assignTeacherNoticeReg():array;
+
 }
