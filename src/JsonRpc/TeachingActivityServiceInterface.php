@@ -164,4 +164,10 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function coursePlanToTeachingActivity(array $params):array;
+
+
+    /*
+    * 获取教学活动相关配置字段内容
+    * */
+    public function getTeachingActivityRuleConf(string $orgId, array $menuIds) :array;
 }
