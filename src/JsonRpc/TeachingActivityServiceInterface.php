@@ -88,6 +88,16 @@ interface TeachingActivityServiceInterface
      * @return bool
       */
     public function signInCallBack(array $params):bool;
+
+    /**
+     * 活动指定人员签到验证
+     * @param array $params
+     * @param $params['uid'] 签到人员
+     * @param $params['business_id'] 业务ID
+     * @param $params ['config_id'] 活动配置ID
+     * @return bool
+     */
+    public function checkSignCallBack(array $params):bool;
     /**
      * 出科考核接入教学活动人员统计信息
      * @param array $params
