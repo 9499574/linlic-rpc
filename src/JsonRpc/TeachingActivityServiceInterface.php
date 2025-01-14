@@ -95,9 +95,9 @@ interface TeachingActivityServiceInterface
      * @param $params['uid'] 签到人员
      * @param $params['business_id'] 业务ID
      * @param $params ['config_id'] 活动配置ID
-     * @return bool
+     * @return array
      */
-    public function checkSignCallBack(array $params):bool;
+    public function checkSignCallBack(array $params):array;
     /**
      * 出科考核接入教学活动人员统计信息
      * @param array $params
