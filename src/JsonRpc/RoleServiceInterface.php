@@ -66,4 +66,11 @@ interface RoleServiceInterface
      * @return void
      */
     public function insertRole(array $data):void;
+
+    /**
+     * 更新用户角色
+     * @param array $params ["org_id"=>1,"uid"=>'123',"role_id"=>['1','2'],"is_delete"=>0]  is_delete=1表示删除之前的数据组数据，否则是追加数据，该字段不必传
+     * @return array  code=0表示成功，code=1表示失败，msg表示失败原因
+     */
+    public function updateUserRole(array $params):array;
 }
