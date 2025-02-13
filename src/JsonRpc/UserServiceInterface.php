@@ -269,4 +269,6 @@ interface UserServiceInterface
 
     //获取用户角色列表
     public function getUserRoloList($params):array;
+    //获取用户角色列表权限
+    public function getUserList($params):array;
 }
