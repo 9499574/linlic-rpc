@@ -266,4 +266,7 @@ interface UserServiceInterface
      * @return array
      */
     public function addUser(array $params): array;
+
+    //获取用户角色列表
+    public function getUserRoloList($params):array;
 }
