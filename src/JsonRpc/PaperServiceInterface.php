@@ -86,4 +86,9 @@ interface PaperServiceInterface
      * @return ['code'=>0,'paper_id'=>$paper_id]
      * */
     public function addModulePaperQuestion($params):array;
+
+    //通过缓存获取getPaperQsList 数据
+    public function getPaperQsListCache($params):string;
+    //通过缓存获取getQsInfoByPaperId数据
+    public function getQsInfoByPaperIdCache($params):string;
 }
