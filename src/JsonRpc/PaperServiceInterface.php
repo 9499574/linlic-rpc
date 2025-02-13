@@ -91,4 +91,8 @@ interface PaperServiceInterface
     public function getPaperQsListCache($params):string;
     //通过缓存获取getQsInfoByPaperId数据
     public function getQsInfoByPaperIdCache($params):string;
+    /**
+     * 获取题目信息（脱离未脱离题库）
+     */
+    public function getDealQuestionData($params): array;
 }
