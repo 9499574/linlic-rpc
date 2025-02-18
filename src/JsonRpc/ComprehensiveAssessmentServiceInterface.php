@@ -80,4 +80,10 @@ interface ComprehensiveAssessmentServiceInterface
      */
     public function getAssessList(array $params):array;
 
+    /**
+     * 综合评估消息注册 
+     * @return array
+     */
+    public function caNoticeReg():array;
+
 }
