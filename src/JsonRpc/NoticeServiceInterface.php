@@ -77,4 +77,14 @@ interface NoticeServiceInterface
      * @return array
      */
     public function getRuleConfigDetail(array $select,array $where):array;
+
+    /**
+     * 获取多条规则配置详情
+     * @param array $select
+     * @param array $where
+     * @param array $pageParams
+     * @param array $whereSpecial
+     * @return array
+     */
+    public function getRuleConfigDetails(array $select,array $where,array $pageParams = [],array $whereSpecial = []):array;
 }
