@@ -16,6 +16,15 @@ interface UserServiceInterface
     */
     public function setManageUser($orgId, $userName): array;
 
+    /**
+     * 设置机构管理员账号密码
+     * @param $orgId
+     * @param $userName
+     * @param $password
+     * @return array
+     */
+    public function setManageUserPass($orgId, $userName, $password): array;
+
     /*
     * 根据机构id，获取到机构下用户的数量信息
     * @param string $orgId 机构的id编号

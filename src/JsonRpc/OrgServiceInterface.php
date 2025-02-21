@@ -36,6 +36,13 @@ interface OrgServiceInterface
     public function getInfoByOrgId(string $orgId): array;
 
     /**
+     * 获取机构信息(表里面的一条记录)
+     * @param int $orgId
+     * @return array
+     */
+    public function getOrgSimpleInfo(int $orgId):array;
+
+    /**
      * 根据状态获取机构列表
      *
      * @param int $status 状态 1:正常,0:停用
