@@ -10,4 +10,12 @@ interface MenuServiceInterface
      * @return array
      */
     public function getMenuName(array $menu_ids):array;
+
+
+    /**
+     * 获取接口地址
+     * @param array $menuIds
+     * @return array
+     */
+    public function getInterfaceUrl(array $menuIds):array;
 }
