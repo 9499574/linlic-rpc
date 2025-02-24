@@ -7,10 +7,17 @@ namespace linlic\JsonRpc;
 interface CycleViewDataRegisterServiceInterface
 {
     /**
-     * 带教学员
+     * 带教老师
      * @param string $orgId
      * @param array $menuId
      * @return array
      */
     public function registerWithTeacher(string $orgId, array $menuId):array;
+    /**
+     * 带教学员
+     * @param string $orgId
+     * @param array $menuId
+     * @return array
+     */
+    public function registerWithStudent(string $orgId, array $menuId):array;
 }
