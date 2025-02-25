@@ -105,4 +105,9 @@ interface ExamServiceInterface
      *  ]
      */
     public function getUserPaperAnswerRecord(array $params):array;
+
+    /*
+     * 获取考试规则配置项
+     * */
+    public function getExamRuleConf(string $orgId, array $menuId): array;
 }
