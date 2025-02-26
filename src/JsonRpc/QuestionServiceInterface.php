@@ -103,4 +103,11 @@ interface QuestionServiceInterface
      * 获取一批题目全部基本信息
     */
     public function getQuestionData($qids):array;
+
+    /**
+     * 批量导入题目
+     * @param string $redisKey
+     * @return string
+     */
+    public function batchImportQuestion(string $redisKey):string;
 }
