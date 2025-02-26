@@ -34,6 +34,13 @@ interface QuestionServiceInterface
     public function getShowCateData(array $columnArr,$where):array;
 
     /**
+     * 根据指定分类ID获取分类名称和上级名称
+     * @param string $scId
+     * @return string
+     */
+    public function getShowCateLevelName(string $scId):string;
+
+    /**
      * 题库-根据指定分类、获取题目的题型集合
      * @param $params ['sc_ids']
      * @return array
