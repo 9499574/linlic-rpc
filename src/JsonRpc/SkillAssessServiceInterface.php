@@ -83,4 +83,9 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function skillAssessViewExaminerConf($params):array;
+
+    /*
+     * 技能考核规则配置项
+     * */
+    public function getSkillAssessRuleConf(string $orgId, array $menuId): array;
 }
