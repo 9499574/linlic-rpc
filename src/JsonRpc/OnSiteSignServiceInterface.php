@@ -97,4 +97,18 @@ interface OnSiteSignServiceInterface
      * @return array
      */
     public function getSignConfigs(array $params):array;
+
+    /**
+     * 轮转总览人员现场签到统计
+     * @param array $params
+     * @return array
+     */
+    public function getOnsiteSignStatisticForCycle(array $params): array;
+
+    /**
+     * 轮转总览人员现场签到明细
+     * @param array $params
+     * @return array
+     */
+    public function getOnsiteSignListForCycle(array $params): array;
 }
