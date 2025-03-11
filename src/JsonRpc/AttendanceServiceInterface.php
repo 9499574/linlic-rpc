@@ -33,6 +33,13 @@ interface AttendanceServiceInterface
     */
     public function getUserAtdcStatus($params):array;
 
+    /**
+     * 日常考勤明细
+     * @param array $params
+     * @return array
+     */
+    public function getUserAtdcList(array $params): array;
+
     /*
    * 根据用户的uid数组、起始时间、结束时间、分别返回用户的考勤信息
    * $uidArr：用户的uid数组、$atdcStatusArr：考勤状态的数组。含义：1正常 2缺卡 3迟到 4早退。如果传多个，则表示或的含义，比如传2、3则表示 缺卡或迟到的次数。
