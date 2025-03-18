@@ -73,4 +73,7 @@ interface RoleServiceInterface
      * @return array  code=0表示成功，code=1表示失败，msg表示失败原因
      */
     public function updateUserRole(array $params):array;
+
+    //功能配置（角色管理使用）
+    public function getConfigs($params): array;
 }
