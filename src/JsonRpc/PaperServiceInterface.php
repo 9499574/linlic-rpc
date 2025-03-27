@@ -103,4 +103,11 @@ interface PaperServiceInterface
      * @return array
      */
     public function getPapersQuestions(array $paper_id_arr,array $ques_id_arr=[]):array;
+
+    /**
+     * 根据条件获取试卷id数组
+     * @param $params $params['where'] 查询条件
+     * @return array
+     */
+    public function getPaperIdsByWhere($params):array;
 }
