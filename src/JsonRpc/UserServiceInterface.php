@@ -21,9 +21,10 @@ interface UserServiceInterface
      * @param $orgId
      * @param $userName
      * @param $password
+     * @param $mobphone
      * @return array
      */
-    public function setManageUserPass($orgId, $userName, $password): array;
+    public function setManageUserPass($orgId, $userName, $password, $mobphone): array;
 
     /*
     * 根据机构id，获取到机构下用户的数量信息
