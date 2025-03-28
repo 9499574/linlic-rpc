@@ -26,6 +26,14 @@ interface UserServiceInterface
      */
     public function setManageUserPass($orgId, $userName, $password, $mobphone): array;
 
+    /**
+     * 更新机构管理员的手机号
+     * @param $uId
+     * @param $mobPhone
+     * @return mixed
+     */
+    public function updateMangeMobPhone($uId, $mobPhone):bool;
+
     /*
     * 根据机构id，获取到机构下用户的数量信息
     * @param string $orgId 机构的id编号
