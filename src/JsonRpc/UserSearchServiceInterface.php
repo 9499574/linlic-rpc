@@ -37,4 +37,12 @@ interface UserSearchServiceInterface
      * @return array
      */
     public function getMainUserUid(int $org_id,string $where):array;
+
+    /**
+     * 通过手机号获取用户
+     * @param int $orgId
+     * @param string $mobPhone
+     * @return array
+     */
+    public function getOrgMobPhoneUser(int $orgId,string $mobPhone):array;
 }
