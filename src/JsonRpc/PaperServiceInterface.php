@@ -95,4 +95,19 @@ interface PaperServiceInterface
      * 获取题目信息（脱离未脱离题库）
      */
     public function getDealQuestionData($params): array;
+
+    /**
+     * 获取试卷和题目信息
+     * @param array $paper_id_arr
+     * @param array $ques_id_arr
+     * @return array
+     */
+    public function getPapersQuestions(array $paper_id_arr,array $ques_id_arr=[]):array;
+
+    /**
+     * 根据条件获取试卷id数组
+     * @param $params $params['where'] 查询条件
+     * @return array
+     */
+    public function getPaperIdsByWhere($params):array;
 }
