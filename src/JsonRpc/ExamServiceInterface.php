@@ -123,4 +123,7 @@ interface ExamServiceInterface
      * @return array
      */
     public function exemptExamFormSubmitCallback(array $params): array;
+
+    //获取常量选择
+    public function getConstOptions():array;
 }
