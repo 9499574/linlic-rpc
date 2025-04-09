@@ -110,4 +110,12 @@ interface PaperServiceInterface
      * @return array
      */
     public function getPaperIdsByWhere($params):array;
+
+    /**
+     * 获取题目信息带考试信息
+     * @param array $params $params['select'] 查询字段 $params['where'] 查询条件 $params
+     * $params['paperSelect'] 查询字段 $params['paperWhere']
+     * @return array
+     */
+    public function getQuestionsWithPapers(array $params):array;
 }

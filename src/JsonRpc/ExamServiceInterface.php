@@ -110,4 +110,20 @@ interface ExamServiceInterface
      * 获取考试规则配置项
      * */
     public function getExamRuleConf(string $orgId, array $menuId): array;
+
+    /**
+     * 免考流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function exemptExamFlowCallBack(array $params): bool;
+    /**
+     * 免考申请表单提交回调
+     * @param array $params
+     * @return array
+     */
+    public function exemptExamFormSubmitCallback(array $params): array;
+
+    //获取常量选择
+    public function getConstOptions():array;
 }
