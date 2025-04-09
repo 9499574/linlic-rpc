@@ -18,4 +18,12 @@ interface MenuServiceInterface
      * @return array
      */
     public function getInterfaceUrl(array $menuIds):array;
+
+    /**
+     * 获取行数据
+     * @param array $select
+     * @param $where
+     * @return array
+     */
+    public function getRow(array $select,$where):array;
 }
