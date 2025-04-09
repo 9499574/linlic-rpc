@@ -114,9 +114,9 @@ interface ExamServiceInterface
     /**
      * 免考流程回调
      * @param array $params
-     * @return array
+     * @return bool
      */
-    public function exemptExamFlowCallBack(array $params): array;
+    public function exemptExamFlowCallBack(array $params): bool;
     /**
      * 免考申请表单提交回调
      * @param array $params
