@@ -180,4 +180,25 @@ interface TeachingActivityServiceInterface
     * 获取教学活动相关配置字段内容
     * */
     public function getTeachingActivityRuleConf(string $orgId, array $menuId) :array;
+
+    /**
+     * 批量导入-校验rpc
+     * @param array $params org_id system_id menu_id pre_params
+     * @return array
+     */
+    public function validConfig(array $params):array;
+
+    /**
+     * 批量导入-模版rpc
+     * @param array $params org_id system_id menu_id pre_params
+     * @return array
+     */
+    public function templateConfig(array $params):array;
+
+    /**
+     * 批量导入-导入rpc
+     * @param array $params org_id system_id menu_id pre_params
+     * @return array
+     */
+    public function importData(array $params):array;
 }
