@@ -76,4 +76,26 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function getCycleSubTemplateFilter(array $params):array;
+
+
+    /**
+     * 导入模板配置
+     * @param array $params
+     * @return array
+     */
+    public function importTemplateConfig(array $params): array;
+
+    /**
+     * 导入模板校验
+     * @param array $params
+     * @return array
+     */
+    public function importValidConfig(array $params): array;
+
+    /**
+     * 导入模板数据
+     * @param array $params
+     * @return array
+     */
+    public function importData(array $params): array;
 }
