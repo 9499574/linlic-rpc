@@ -45,4 +45,13 @@ interface UserSearchServiceInterface
      * @return array
      */
     public function getOrgMobPhoneUser(int $orgId,string $mobPhone):array;
+
+
+    /**
+     * 通过用户名获取用户编号
+     * @param int $orgId
+     * @param array $userName
+     * @return array
+     */
+    public function getUserNameListByUserIds(int $orgId,array $userName):array;
 }
