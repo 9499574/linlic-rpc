@@ -79,6 +79,13 @@ interface CyclePlanServiceInterface
 
 
     /**
+     * 导入前置表单配置
+     * @param array $params
+     * @return array
+     */
+    public function importPreFormConfig(array $params): array;
+
+    /**
      * 导入模板配置
      * @param array $params
      * @return array
