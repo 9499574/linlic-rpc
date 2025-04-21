@@ -61,6 +61,13 @@ interface RoleServiceInterface
     public function getSystemAllData(int $org_id,string $system_id):array;
 
     /**
+     * 获取机构系统角色数据
+     * @param int $orgId
+     * @return array
+     */
+    public function getOrgSystemRoleData(int $orgId):array;
+
+    /**
      * 插入机构系统角色
      * @param array $data
      * @return void
