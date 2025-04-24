@@ -110,4 +110,14 @@ interface QuestionServiceInterface
      * @return string
      */
     public function batchImportQuestion(string $redisKey):string;
+
+    /*
+      * 指定分类指定题型指定抽题数量抽题(非分组抽题）
+      * $params sc_ids  指定应用分类
+      * $params ques_types 题目类型。array
+      * $params draw_num 抽题数量
+      * 根据指定分类、指定题型获取题目ID集合
+      *  return  [1=>['123','456','789'],2=>['123','456','789'],3=>['123','456','789']] 1,2,3 代表题型，每种题型都会返回指定抽题数量的题目集合 （共用题组的题目会放在相邻的位置）
+     * */
+    public function getWhereQuesTypeQids(array $params):array;
 }
