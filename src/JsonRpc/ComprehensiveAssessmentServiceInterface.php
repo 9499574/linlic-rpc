@@ -85,10 +85,4 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function caNoticeReg():array;
-
-    /**
-     * 获取出科考核项审核分数数据
-     */
-    public function getLeaveDeptFlowScoreData($params): array;
-
 }
