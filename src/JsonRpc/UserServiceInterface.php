@@ -289,4 +289,13 @@ interface UserServiceInterface
     public function getUserRoloList($params):array;
     //获取用户角色列表权限
     public function getUserList($params):array;
+
+    /**
+     * 批量处理用户
+     * @param array $params
+     * @param array $data
+     * @param int $type 1添加 2更新
+     * @return array
+     */
+    public function userBatchHandle(array $params, array $data ,int $type):array;
 }
