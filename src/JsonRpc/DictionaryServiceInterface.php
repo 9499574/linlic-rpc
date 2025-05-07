@@ -318,6 +318,8 @@ interface DictionaryServiceInterface
      */
     public function getOptionByDictKeys(array $dictKeys, int $orgId, string $systemId = null, $menuId = null): array;
 
+    public function getOptionByDictKeysRedis(array $dictKeys, int $orgId, string $systemId = null, $menuId = null): array;
+
     /**
      * 根据字典labels获取字典values
      *
