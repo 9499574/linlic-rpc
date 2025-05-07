@@ -318,7 +318,7 @@ interface DictionaryServiceInterface
      */
     public function getOptionByDictKeys(array $dictKeys, int $orgId, string $systemId = null, $menuId = null): array;
 
-    public function getOptionByDictKeysRedis(string $redisKey,array $dictKeys, int $orgId, string $systemId = null, $menuId = null): array;
+    public function getOptionByDictKeysRedis(string $redisKey,array $dictKeys, int $orgId, string $systemId = null, $menuId = null): bool;
 
     /**
      * 根据字典labels获取字典values
