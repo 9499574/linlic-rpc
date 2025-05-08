@@ -120,4 +120,10 @@ interface CycleViewServiceInterface
      */
     public function assignTeacherNoticeReg():array;
 
+    /**
+     * 获取指定出科考核轮转人员数据
+     * @param array $params
+     * @return array
+     */
+    public function leaveDeptExamUserData(array $params):array;
 }
