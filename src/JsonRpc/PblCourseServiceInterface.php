@@ -17,4 +17,11 @@ interface PblCourseServiceInterface
      * @return array
      */
     public function getConfigs($params):array;
+
+    /**
+     * 我的PBL功能字段
+     * @param $params
+     * @return array
+     */
+    public function myPblFields($params):array;
 }
