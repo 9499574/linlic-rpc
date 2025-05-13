@@ -201,4 +201,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function importData(array $params):array;
+
+    /**
+     * 表单统计功能字段
+     * @param $params ['org_id'=>-1]
+     * @return array
+     */
+    public function formFields($params):array;
 }
