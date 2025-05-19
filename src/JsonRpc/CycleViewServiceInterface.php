@@ -126,4 +126,10 @@ interface CycleViewServiceInterface
      * @return array
      */
     public function leaveDeptExamUserData(array $params):array;
+    /**
+     * 按照指定条件获取出科考核轮转人员数据（无分页）
+     * @param array $params
+     * @return array
+     */
+    public function getCycleUserGenData(array $params):array;
 }
