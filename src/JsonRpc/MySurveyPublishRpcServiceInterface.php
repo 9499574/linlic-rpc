@@ -26,4 +26,11 @@ interface MySurveyPublishRpcServiceInterface
      * @return array
      */
     public function orgSet(array $params):array;
+
+    /**
+     * 问卷提交回调接口
+     * @param array $params
+     * @return void
+     */
+    public function formFillCallback(array $params):void;
 }
