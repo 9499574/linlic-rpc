@@ -192,6 +192,13 @@ interface FormServiceInterface
     public function getFillData(string $filling_form_id):array;
 
     /**
+     * 获取填报表单填写结果数据
+     * @param array $filling_form_ids
+     * @return array
+     */
+    public function getFillResultData(array $filling_form_ids):array;
+
+    /**
      * 获取菜单对应的表单字段选项
      * @param array $menu_id_arr
      * @return array
