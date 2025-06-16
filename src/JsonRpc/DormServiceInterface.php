@@ -24,4 +24,11 @@ interface DormServiceInterface
      * @return array
      */
     public function myDormFields($params):array;
+
+    /**
+     * 我的宿舍功能配置
+     * @param $params
+     * @return array
+     */
+    public function myDormConfigs($params):array;
 }
