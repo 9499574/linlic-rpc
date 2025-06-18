@@ -33,16 +33,30 @@ interface DormServiceInterface
     public function myDormConfigs($params):array;
 
     /**
-     * 流程参数
+     * 入住流程参数
      * @param array $params
      * @return array
      */
     public function flowParams(array $params): array;
 
     /**
-     * 流程回调
+     * 入住流程回调
      * @param array $params
      * @return bool
      */
     public function flowCallBack(array $params): bool;
+
+    /**
+     * 退宿流程参数
+     * @param array $params
+     * @return array
+     */
+    public function flowParamsOut(array $params): array;
+
+    /**
+     * 退宿流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function flowCallBackOut(array $params): bool;
 }
