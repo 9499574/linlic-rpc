@@ -152,12 +152,20 @@ interface FormServiceInterface
     public function getFormDateField(int $org_id,array $select_field=[]):array;
 
     /**
-     * 获取用户表单非字典字段
+     * 获取表单非字典字段
      * @param int $orgId
      * @param array $select_field
      * @return array
      */
     public function getFormNoDictField(int $orgId, array $select_field=[]):array;
+
+    /**
+     * 获取用户表单非字典选项
+     * @param int $orgId
+     * @param array $userField
+     * @return array
+     */
+    public function getUserFieldNoDictOptions(int $orgId, array $userField):array;
 
     /**
      * 通过模板类别ID获取填报表单列表
