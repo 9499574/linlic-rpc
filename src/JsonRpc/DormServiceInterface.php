@@ -59,4 +59,7 @@ interface DormServiceInterface
      * @return bool
      */
     public function flowCallBackOut(array $params): bool;
+
+    //获取常量选择
+    public function getConstOptions():array;
 }
