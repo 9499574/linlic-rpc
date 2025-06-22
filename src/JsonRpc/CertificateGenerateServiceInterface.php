@@ -23,4 +23,11 @@ interface CertificateGenerateServiceInterface
      * @return array
      */
     public function getUserCertificate(array $params):array;
+
+    /**
+     * 获取用户证书生成信息
+     * @param array $params
+     * @return array
+     */
+    public function getCertificateGenerates(array $params):array;
 }
