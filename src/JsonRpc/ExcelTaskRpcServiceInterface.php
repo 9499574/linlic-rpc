@@ -4,6 +4,10 @@ namespace linlic\JsonRpc;
 
 interface ExcelTaskRpcServiceInterface
 {
+    public function getMainFields(array $params):array;
+
+    public function getMainMenuConf(array $params):array;
+
     public function funConf(array $params):array;
 
     public function menuConf(array $params):array;
