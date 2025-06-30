@@ -19,7 +19,7 @@ interface ExcelTaskRpcServiceInterface
     /**
      * 流程回调
      * @param array $params
-     * @return array
+     * @return bool
      */
-    public function flowCallback(array $params):array;
+    public function flowCallback(array $params):bool;
 }
