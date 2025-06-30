@@ -14,4 +14,12 @@ interface ExcelTaskRpcServiceInterface
      * @return array
      */
     public function getExcelTaskList(array $params):array;
+
+
+    /**
+     * 流程回调
+     * @param array $params
+     * @return array
+     */
+    public function flowCallback(array $params):array;
 }
