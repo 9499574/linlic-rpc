@@ -26,4 +26,12 @@ interface ExcelTaskRpcServiceInterface
      * @return bool
      */
     public function flowCallback(array $params):bool;
+
+
+    /**
+     * 获取详情数据
+     * @param array $params
+     * @return array
+     */
+    public function getDetailData(array $params):array;
 }
