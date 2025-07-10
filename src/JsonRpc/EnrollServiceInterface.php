@@ -32,4 +32,7 @@ interface EnrollServiceInterface
      */
     public function flowCallBack(array $params): bool;
 
+    //获取常量选择
+    public function getConstOptions():array;
+
 }
