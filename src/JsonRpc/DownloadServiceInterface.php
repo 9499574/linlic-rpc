@@ -54,4 +54,21 @@ interface DownloadServiceInterface
      * @return bool 是否生成成功
      */
     public function generatePdfWordFileRequest(array $businessParams, string $businessRpc, string $moduleName,string $moduleKey, string $fileType, string $compressName=''):bool;
+
+    /**
+     * 生成ZIP文件
+     * [
+     *      "org_id"=>"100000",
+     *      "uid"=>"1000",
+     *      "module_name"=>"exam_plan",
+     *      "file_name"=>"xxx.zip",
+     *      "rpc_url"=>"linlic\JsonRpc\xxxServiceInterface\getData",
+     *      "rpc_params"=>[
+     *          "这里是请求rpc url的参数，根据模块所需编写"
+     *      ]
+     * ]
+     * @param array $params
+     * @return bool true 弹出下载中心
+     */
+    public function generateZipFileRequest(array $params):bool;
 }
