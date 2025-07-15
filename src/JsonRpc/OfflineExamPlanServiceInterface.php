@@ -19,4 +19,18 @@ interface OfflineExamPlanServiceInterface
      * @return array
      */
     public function menuConf(array $params):array;
+
+    /**
+     * 证书功能字段
+     * @param array $params
+     * @return array
+     */
+    public function certificateFields(array $params):array;
+
+    /**
+     * 证书详情数据
+     * @param array $params
+     * @return array
+     */
+    public function certificateDetail(array $params):array;
 }
