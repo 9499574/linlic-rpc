@@ -435,4 +435,11 @@ interface DictionaryServiceInterface
      * @time 2024/6/4 上午10:57
      */
     public function getDictKeyOptionsByDictKind(int $dictKind, string $orgId, string $systemId = null, string $menuId = null): array;
+
+    /**
+     * 获取机构可用字典key
+     * @param string $orgId
+     * @return array
+     */
+    public function getDictKeys(string $orgId): array;
 }
