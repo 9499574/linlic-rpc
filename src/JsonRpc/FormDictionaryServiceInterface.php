@@ -22,4 +22,18 @@ interface FormDictionaryServiceInterface
      * @return array
      */
     public function getOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = [], int $limit=0, int $page=0, string $keyword='', string $dict_key=''):array;
+
+    /**
+     * 获取宁夏培训-专业基地values
+     * @param array $params string org_id string menu_id
+     * @return array
+     */
+    public function getNingXiaTrainMajorBaseValues(array $params):array;
+
+    /**
+     * 获取宁夏培训-专业基地labels
+     * @param array $params array training_bases array standard_base_ids
+     * @return array
+     */
+    public function getNingXiaTrainBaseLabels(array $params):array;
 }
