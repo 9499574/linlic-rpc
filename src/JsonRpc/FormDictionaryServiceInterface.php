@@ -32,7 +32,7 @@ interface FormDictionaryServiceInterface
 
     /**
      * 获取宁夏培训-专业基地labels
-     * @param array $params array training_base array standard_base_id
+     * @param array $params array training_base array standard_base_id int org_id
      * @return array
      */
     public function getNingXiaTrainBaseLabels(array $params):array;
