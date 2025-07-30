@@ -253,8 +253,8 @@ interface FormServiceInterface
      * 表单填写字段处理
      * @param array $filling_fields 表单填写字段
      * @param string $filling_form_template_id 表单模版id
-     * @param array $template_fields 表单模版字段
+     * @param array $filling_form_template 表单模版数据
      * @return array
      */
-    public function getFillingFieldHandle(array $filling_fields,string $filling_form_template_id,array $template_fields=[]):array;
+    public function getFillingFieldHandle(array $filling_fields,string $filling_form_template_id,array $filling_form_template=[]):array;
 }
