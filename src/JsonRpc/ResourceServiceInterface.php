@@ -66,7 +66,7 @@ interface ResourceServiceInterface
      * @param string $fileName 文件名
      * @param string $base64Data base64 图片数据（格式：data:image/png;base64,xxxx）
      * @param array $callback 回调 func 回调方法 params 回调参数
-     * @return string
+     * @return array
      */
-    public function base64Upload(string $orgId, string $uId, string $module, string $fileName,string $base64Data,array $callback=[]):string;
+    public function base64Upload(string $orgId, string $uId, string $module, string $fileName,string $base64Data,array $callback=[]):array;
 }
