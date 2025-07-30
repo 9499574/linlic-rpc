@@ -248,4 +248,13 @@ interface FormServiceInterface
      * @return array
      */
     public function getFormTemplateList(array $filling_form_template_id):array;
+
+    /**
+     * 表单填写字段处理
+     * @param array $filling_fields 表单填写字段
+     * @param string $filling_form_template_id 表单模版id
+     * @param array $template_fields 表单模版字段
+     * @return array
+     */
+    public function getFillingFieldHandle(array $filling_fields,string $filling_form_template_id,array $template_fields=[]):array;
 }
