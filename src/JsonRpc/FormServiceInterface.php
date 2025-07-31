@@ -250,7 +250,7 @@ interface FormServiceInterface
     public function getFormTemplateList(array $filling_form_template_id):array;
 
     /**
-     *  表单填写字段处理
+     * 表单填写字段处理 base64转resource_id
      * @param string $org_id 系统id
      * @param string $uid 用户id
      * @param array $filling_fields 表单填写字段
@@ -259,4 +259,13 @@ interface FormServiceInterface
      * @return array
      */
     public function getFillingFieldHandle(string $org_id,string $uid, array $filling_fields,string $filling_form_template_id,array $filling_form_template=[]): array;
+
+    /**
+     * 表单填写字段处理 resource_id转base64
+     * @param array $filling_fields 表单填写字段
+     * @param string $filling_form_template_id 表单模版id
+     * @param array $filling_form_template 表单模版数据
+     * @return array
+     */
+    public function fillingFieldResourceIdToBase64(array $filling_fields,string $filling_form_template_id,array $filling_form_template=[]):array;
 }
