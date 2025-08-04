@@ -71,4 +71,13 @@ interface DownloadServiceInterface
      * @return bool true 弹出下载中心
      */
     public function generateZipFileRequest(array $params):bool;
+
+
+    /**
+     * 更新下载请求
+     * @param int $request_record_id download_request_records表业务ID
+     * @param array $data generated_file_endpoint generated_file_url  generated_file_size
+     * @return bool
+     */
+    public function updateDownloadRequest(int $request_record_id,array $data):bool;
 }
