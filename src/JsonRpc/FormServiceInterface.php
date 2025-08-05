@@ -50,7 +50,7 @@ interface FormServiceInterface
      * @param string $menuId
      * @return array
      */
-    public function getPersonalDataTemplateNames(array $filling_form_template_id_arr,array $colNameArr= ['template_name'],int $orgId=-1, string $systemId = '', string $menuId = ''):array;
+    public function getPersonalDataTemplateNames(array $filling_form_template_id_arr,array $colNameArr= ['template_name'],int $orgId=-1, string $systemId = '', string $menuId = '',$fields=[]):array;
 
     /**
      * 根据用户资料模板ID数组获取模板字段信息(选项异步)
