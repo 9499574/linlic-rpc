@@ -17,4 +17,10 @@ interface RadarChartAnalysisServiceInterface
      * @return array
      */
     public function getConfigs($params):array;
+
+    /**
+     * 获取常量选择
+     * @return array
+     */
+    public function getConstOptions():array;
 }
