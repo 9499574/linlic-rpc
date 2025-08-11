@@ -268,4 +268,11 @@ interface FormServiceInterface
      * @return array
      */
     public function fillingFieldResourceIdToBase64(array $filling_fields,string $filling_form_template_id,array $filling_form_template=[]):array;
+
+    /**
+     * 获取表单远程数据
+     * @param array $params ['menu_id'=>"","system_id"=>"","user_range"=>[],"widget_type"=>""]
+     * @return array
+     */
+    public function getWidgetOptions(array $params):array;
 }
