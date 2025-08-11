@@ -272,7 +272,6 @@ interface FormServiceInterface
     /**
      * 获取表单远程数据
      * @param array $params ['menu_id'=>"","system_id"=>"","user_range"=>[],"widget_type"=>""]
-     * @return array
      */
-    public function getWidgetOptions(array $params):array;
+    public function getWidgetOptions(array $params);
 }
