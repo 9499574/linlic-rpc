@@ -40,9 +40,11 @@ interface FormDictionaryServiceInterface
     /**
      * 自选科室设置
      * @param array $menuIds
+     * @param string $baseKey
+     * @param string $hdKey
      * @param array $baseIds
-     * @param array $hdIds
+     * @param array $ksIds
      * @return array
      */
-    public function getSelfSelectedDepartment(array $menuIds,array $baseIds=[],array $hdIds=[]):array;
+    public function getSelfSelectedDepartment(array $menuIds,string $baseKey,string $hdKey,array $baseIds=[],array $ksIds=[]):array;
 }
