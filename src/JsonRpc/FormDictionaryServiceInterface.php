@@ -36,4 +36,13 @@ interface FormDictionaryServiceInterface
      * @return array
      */
     public function getNingXiaTrainBaseLabels(array $params):array;
+
+    /**
+     * 自选科室设置
+     * @param array $menuIds
+     * @param array $baseIds
+     * @param array $hdIds
+     * @return array
+     */
+    public function getSelfSelectedDepartment(array $menuIds,array $baseIds=[],array $hdIds=[]):array;
 }
