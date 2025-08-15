@@ -66,4 +66,11 @@ interface CourseServiceInterface
      * @return array
      */
     public function getCertificateDetail($params):array;
+
+    /**
+     * 消息注册
+     * @param array $params
+     * @return array
+     */
+    public function messageConfig(array $params):array;
 }
