@@ -26,4 +26,11 @@ interface SurveyPublishRpcServiceInterface
      * @return array
      */
     public function orgSet(array $params):array;
+
+    /**
+     * 分析报告word|pdf导出
+     * @param array $businessParams
+     * @return array
+     */
+    public function exportReportList(array $businessParams):array;
 }
