@@ -17,5 +17,11 @@ interface SelfselectdptServiceInterface
      * @return array
      */
     public function getSettingConf(array $params): array;
-
+    /**
+     * 自选科室流程审核回调
+     *
+     * @param array $params
+     * @return bool
+     */
+    public function selfSelectDptCallBack(array $params):bool;
 }
