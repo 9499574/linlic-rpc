@@ -5,6 +5,17 @@ namespace linlic\JsonRpc;
 interface FundUseInfoBatchServiceInterface
 {
     /**
+     * 前置 RPC
+     * org_id string 机构编号
+     * system_id string 系统编号
+     * menu_id string 菜单编号
+     * pre_params array 前置页保存参数
+     * @param array $params
+     * @return array
+     */
+    public function preFormConfig(array $params): array;
+    
+    /**
      * 模板 RPC
      * org_id string 机构编号
      * system_id string 系统编号
