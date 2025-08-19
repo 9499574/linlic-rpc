@@ -274,4 +274,11 @@ interface FormServiceInterface
      * @param array $params ['menu_id'=>"","system_id"=>"","user_range"=>[],"widget_type"=>""]
      */
     public function getWidgetOptions(array $params);
+
+    /**
+     * 添加表单数据(接口添加支持多条)
+     * @param array $data
+     * @return array
+     */
+    public function insertFormData(array $data):array;
 }
