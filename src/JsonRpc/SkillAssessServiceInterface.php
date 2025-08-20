@@ -88,4 +88,9 @@ interface SkillAssessServiceInterface
      * 技能考核规则配置项
      * */
     public function getSkillAssessRuleConf(string $orgId, array $menuId): array;
+
+    /*
+     *技能考核签到回调
+     * */
+    public function signInCallBack($params): bool;
 }
