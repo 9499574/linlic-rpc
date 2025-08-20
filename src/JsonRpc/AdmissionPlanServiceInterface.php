@@ -18,6 +18,14 @@ interface AdmissionPlanServiceInterface
      */
     public function admissionPlanConf(array $params):array;
 
+
+    /**
+     * 机构设置
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params):array;
+
     /**
      * 获取筛选下拉选项
      * @param array $params
