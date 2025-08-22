@@ -10,4 +10,11 @@ interface FundUseInfoServiceInterface
      * @return array
      */
     public function getFields(array $params) :array;
+
+    /**
+     * 资金使用信息菜单配置
+     * @param array $params
+     * @return array
+     */
+    public function menuConf(array $params) :array;
 }
