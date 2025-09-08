@@ -2,7 +2,7 @@
 
 namespace linlic\JsonRpc;
 
-interface TeacherStudentRelation
+interface TeacherStudentRelationServiceInterface
 {
     /**
      * 菜单配置
