@@ -77,4 +77,9 @@ interface CycleBookServiceInterface
      * 轮转手册导入模版下载
      */
     public function downloadSubTpl(array $params): array;
+    /**
+     * 轮转手册绩效规则配置
+     */
+    public function getCycleBookRuleConf(array $params): array;
+
 }
