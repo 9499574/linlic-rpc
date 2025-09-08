@@ -80,6 +80,6 @@ interface CycleBookServiceInterface
     /**
      * 轮转手册绩效规则配置
      */
-    public function getCycleBookRuleConf(array $params): array;
+    public function getCycleBookRuleConf(string $orgId, array $menuIds): array;
 
 }
