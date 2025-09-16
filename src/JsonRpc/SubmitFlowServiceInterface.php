@@ -74,4 +74,10 @@ interface SubmitFlowServiceInterface
      * @return array
      */
     public function getAuditingForms(string $flow_id): array;
+    /**
+     * 获取审核主表信息
+     * @param string $flow_id
+     * @return array
+     */
+    public function getFlowInfo(string $flow_id): array;
 }

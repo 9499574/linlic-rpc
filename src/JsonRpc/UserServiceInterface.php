@@ -298,4 +298,12 @@ interface UserServiceInterface
      * @return array
      */
     public function userBatchHandle(array $params, array $data ,int $type):array;
+
+    /**
+     * 批量更新学生的导师
+     * @param string $orgId 机构Id
+     * @param array $data 数据格式：[['student_id'=>1,'tutor_id'=>2],['student_id'=>3,'tutor_id'=>4]]
+     * @return bool
+     */
+    public function batchUpdateStudentTutors(string $orgId, array $data): bool;
 }

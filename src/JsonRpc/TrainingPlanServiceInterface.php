@@ -24,4 +24,15 @@ interface TrainingPlanServiceInterface
      * @return bool
      */
     public function submitTrainingPlanCallBack($params): bool;
+
+    /**
+     * 获取学生=>导师培养计划
+     * @param string $orgId 机构id
+     * @param string $systemId 系统id
+     * @param array $menuId 多个菜单ID
+     * @param array $pairs 要查询的学生id和导师ID例：[['uid' => '学生ID', 'teacher_uid' => '导师ID'],...]
+     * @param array $select 要查询的字段
+     * @return array
+     */
+    public function getStudentTrainingPlan(string $orgId, string $systemId, array $menuId, array $pairs, array $select = ['*']): array;
 }
