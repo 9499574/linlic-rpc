@@ -85,4 +85,11 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function caNoticeReg():array;
+
+    /**
+     * 获取访谈记录列表
+     * @param array $params string org_id 系统id array reliance_menu_id 调用该rpc接口模块的依赖菜单id array student_uid_arr 学生uid数组 teacher_uid_arr 导师uid数组 limit 每页显示条数 page 当前页数
+     * @return array
+     */
+    public function getInterviewsList(array $params):array;
 }
