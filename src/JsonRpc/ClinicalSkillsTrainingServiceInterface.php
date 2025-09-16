@@ -9,7 +9,7 @@ interface ClinicalSkillsTrainingServiceInterface
      * @param array $params
      * @return array
      */
-    public function getFields(array $params) :array;
+    public function getFields(array $params):array;
 
     /**
      * 技能训练菜单配置
