@@ -120,4 +120,13 @@ interface QuestionServiceInterface
       *  return  [1=>['123','456','789'],2=>['123','456','789'],3=>['123','456','789']] 1,2,3 代表题型，每种题型都会返回指定抽题数量的题目集合 （共用题组的题目会放在相邻的位置）
      * */
     public function getWhereQuesTypeQids(array $params):array;
+
+
+    /**
+     * 获取一批分类名称和上级名称集合
+     * @param array $scIds
+     * @return array
+     */
+    public function getShowCateLevelNameData(array $scIds):array;
+
 }
