@@ -87,4 +87,11 @@ interface NoticeServiceInterface
      * @return array
      */
     public function getRuleConfigDetails(array $select,array $where,array $pageParams = [],array $whereSpecial = []):array;
+
+    /**
+     * 导出数据
+     * @param array $businessParams
+     * @return array
+     */
+    public function exportData(array $businessParams):array;
 }
