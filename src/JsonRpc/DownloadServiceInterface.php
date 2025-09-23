@@ -80,4 +80,13 @@ interface DownloadServiceInterface
      * @return bool
      */
     public function updateDownloadRequest(int $request_record_id,array $data):bool;
+
+
+    /**
+     * 生成压缩文件 根据URL列表
+     * @param int $request_record_id
+     * @param array $data [{name:'1.pdf',url:'',resource_id:''}]
+     * @return bool
+     */
+    public function generateFileUrlZip(int $request_record_id,array $data):bool;
 }
