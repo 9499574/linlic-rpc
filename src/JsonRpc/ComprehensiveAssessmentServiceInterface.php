@@ -92,4 +92,11 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function getInterviewsList(array $params):array;
+
+    /**
+     * 获取轮转生涯需要的雷达图
+     * @param array $params sting org_id 系统id string uid 学生id menu_id_arr 综合评估菜单id数组
+     * @return array
+     */
+    public function getRadarForCycleCareer(array $params):array;
 }
