@@ -12,6 +12,13 @@ interface ClinicalSkillsTrainingServiceInterface
     public function getFields(array $params):array;
 
     /**
+     * 技能训练功能字段(App)
+     * @param array $params
+     * @return array
+     */
+    public function getAppFields(array $params):array;
+
+    /**
      * 技能训练菜单配置
      * @param array $params
      * @return array
