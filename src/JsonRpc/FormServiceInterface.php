@@ -281,4 +281,11 @@ interface FormServiceInterface
      * @return array
      */
     public function insertFormData(array $data):array;
+
+    /**
+     * 批量导出数据
+     * @param array $businessParams
+     * @return array
+     */
+    public function batchExportData(array $businessParams):array;
 }
