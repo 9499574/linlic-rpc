@@ -62,4 +62,11 @@ interface DormServiceInterface
 
     //获取常量选择
     public function getConstOptions():array;
+
+    /**
+     * 获取页面配置
+     * @param array $params
+     * @return bool
+     */
+    public function getSetConf(array $params):array;
 }
