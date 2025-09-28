@@ -79,4 +79,12 @@ interface OrgServiceInterface
      * @return string
      */
     public function getDomainByOrgId(string $org_domain):string;
+
+    /**
+     * 批量获取机构信息
+     * @param array $orgId
+     * @param array $select
+     * @return mixed
+     */
+    public function getOrgesInfo(array $orgId,array $select=['*']):array;
 }
