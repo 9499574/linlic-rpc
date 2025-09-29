@@ -208,4 +208,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function formFields($params):array;
+
+    /**
+     * 通过菜单id获取活动类型接口
+     * @param array $params (params:string org_id array menu_ids)
+     * @return array
+     */
+    public function getActivityCateByMenuIds(array $params):array;
 }
