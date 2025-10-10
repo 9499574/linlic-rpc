@@ -80,4 +80,11 @@ interface CourseServiceInterface
      * @return bool
      */
     public function appraiseSave(array $params):bool;
+
+    /**
+     * 问卷保存
+     * @param array $params
+     * @return bool
+     */
+    public function surveyQuestionSave(array $params):bool;
 }
