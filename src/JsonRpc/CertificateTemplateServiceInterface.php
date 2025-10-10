@@ -32,4 +32,11 @@ interface CertificateTemplateServiceInterface
      * @return array
      */
     public function getTemplateList(array $params):array;
+
+    /**
+     * 获取模板预览图片
+     * @param int $templateId
+     * @return string
+     */
+    public function getTemplatePreviewImage(int $templateId):string;
 }
