@@ -17,4 +17,11 @@ interface AttendanceCountServiceInterface
      * @return array
      */
     public function menuConf(array $params):array;
+
+    /**
+     * 考勤统计流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function attendanceFlowCallback(array $params): bool;
 }
