@@ -34,4 +34,11 @@ interface SupervisionFeedbackServiceInterface
 
     //获取常量选择
     public function getConstOptions():array;
+
+    /**
+     * 打分回调
+     * @param $params
+     * @return void
+     */
+    public function scoreCallBack($params):void;
 }
