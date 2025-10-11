@@ -29,4 +29,11 @@ interface EmailServiceInterface
      * @return array
      */
     public function resetPassSendMail(array $params):array;
+
+    /**
+     * 意见反馈 发送邮件
+     * @param array $params
+     * @return array
+     */
+    public function feedbackSendMail(array $params):array;
 }
