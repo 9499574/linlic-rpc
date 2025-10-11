@@ -126,4 +126,11 @@ interface ExamServiceInterface
 
     //获取常量选择
     public function getConstOptions():array;
+
+    /*
+     * 考试详情信息统计生成oss上json文件(AI 数据分析使用)
+     * @param array businessId
+     * @param array redisKey  oss地址最终存放位置
+     */
+    public function getExamDetailToOssFile(array $params):bool;
 }
