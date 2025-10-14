@@ -13,5 +13,3 @@ composer项目地址
 ```
 https://packagist.org/packages/linlic/rpc
 ```
-
-提交自动创建tags测试
