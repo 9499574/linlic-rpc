@@ -222,4 +222,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getActivityOptionsForSupFdbk(array $params):array;
+
+    /**
+     * 获取活动类型科室次数设置
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','hd_id'=>[]]
+     * @return array
+     */
+    public function getActivityKsNumSetData(array $params):array;
 }
