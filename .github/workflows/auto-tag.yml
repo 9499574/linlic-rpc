@@ -42,8 +42,6 @@ jobs:
 
           echo "next_tag=$next_tag" >> $GITHUB_ENV
           echo "Next tag will be $next_tag"
-
-      - name: Create and push new tag
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           run: |
