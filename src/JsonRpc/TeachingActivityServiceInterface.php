@@ -215,4 +215,18 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getActivityCateByMenuIds(array $params):array;
+
+    /**
+     * 获取督导反馈需要的教学活动选项 $params string org_id string menu_id string standard_base_id string hd_id string type string start_time string end_time
+     * @param array $params
+     * @return array
+     */
+    public function getActivityOptionsForSupFdbk(array $params):array;
+
+    /**
+     * 获取活动类型科室次数设置
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','hd_id'=>[]]
+     * @return array
+     */
+    public function getActivityKsNumSetData(array $params):array;
 }
