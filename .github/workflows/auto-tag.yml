@@ -48,4 +48,4 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git tag $next_tag
-            git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git $next_tag
+            git push origin refs/tags/$next_tag
