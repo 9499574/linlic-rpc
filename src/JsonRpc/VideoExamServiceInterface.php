@@ -24,4 +24,11 @@ interface VideoExamServiceInterface
      * @return array
      */
     public function SetConf(array $params):array;
+
+    /**
+     * 音视频考试功能字段(App)
+     * @param array $params
+     * @return array
+     */
+    public function getAppFields(array $params) :array;
 }
