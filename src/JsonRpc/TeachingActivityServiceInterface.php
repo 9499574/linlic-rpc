@@ -225,7 +225,7 @@ interface TeachingActivityServiceInterface
 
     /**
      * 获取活动类型科室次数设置
-     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','hd_id'=>[]]
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','hd_id'=>[]] hd_id可为空
      * @return array
      */
     public function getActivityKsNumSetData(array $params):array;
