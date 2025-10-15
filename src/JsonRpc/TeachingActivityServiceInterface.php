@@ -229,4 +229,10 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getActivityKsNumSetData(array $params):array;
+    /**
+     * 机构设置配置
+     * @param array $params
+     * @return mixed
+     */
+    public function orgSetConf(array $params): array;
 }
