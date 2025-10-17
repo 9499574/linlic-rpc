@@ -236,4 +236,11 @@ interface TeachingActivityServiceInterface
      * @return mixed
      */
     public function orgSetConf(array $params): array;
+
+    /**
+     * 获取用户活动类型科室次数
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','user_gen_id'=>'','hd_id'=>[]] hd_id可为空
+     * @return array
+     */
+    public function getUserActivityKsNumData(array $params):array;
 }
