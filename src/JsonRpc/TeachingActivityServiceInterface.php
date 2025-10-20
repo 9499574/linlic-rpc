@@ -243,4 +243,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getUserActivityKsNumData(array $params):array;
+
+    /**
+     * 获取督导反馈需要的教学活动名称
+     * @param array $params ['org_id'=>'','module_business_ids'=>[]]
+     * @return array
+     */
+    public function getActivityNamesForSupFdbk(array $params):array;
 }
