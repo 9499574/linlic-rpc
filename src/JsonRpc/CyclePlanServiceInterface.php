@@ -111,5 +111,5 @@ interface CyclePlanServiceInterface
      * @param array $params
      * * @return array
      * * */
-    public function serMakeUp(array $params): array;
+    public function userMakeUp(array $params): array;
 }
