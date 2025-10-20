@@ -250,4 +250,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getActivityNamesForSupFdbk(array $params):array;
+
+    /**
+     * 获取用户活动列表
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','user_gen_id'=>'','hd_id'=>[]]
+     * @return array
+     */
+    public function getUserActivityKsListData(array $params):array;
 }
