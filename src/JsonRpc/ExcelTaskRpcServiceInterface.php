@@ -34,4 +34,11 @@ interface ExcelTaskRpcServiceInterface
      * @return array
      */
     public function getDetailData(array $params):array;
+
+    /**
+     * 获取Excel任务解析列表数据
+     * @param array $params
+     * @return array
+     */
+    public function getExcelTaskParsedList(array $params):array;
 }
