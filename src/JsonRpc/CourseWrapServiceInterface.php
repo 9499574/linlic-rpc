@@ -26,4 +26,10 @@ interface CourseWrapServiceInterface
      */
     public function orgSetConf(array $params):array;
 
+
+    //人员分组管理功能字段
+    public function getUserGroupFields($params):array;
+    //人员分组管理菜单设置
+    public function userMenuConf(array $params):array;
+
 }
