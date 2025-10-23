@@ -24,4 +24,11 @@ interface VideoExamMarkingServiceInterface
      * @return array
      */
     public function SetConf(array $params):array;
+
+    /**
+     * 视频考试评分回调接口
+     * @param array $params
+     * @return array
+     */
+    public function RatingBack(array $params):array;
 }

@@ -132,4 +132,10 @@ interface CycleViewServiceInterface
      * @return array
      */
     public function getCycleUserGenData(array $params):array;
+
+
+    //指定用户的轮转手册及填写数量(指定我的轮转手册菜单)
+    public function getUserGenTrainTypeData(array $params):array;
+
+
 }

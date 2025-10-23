@@ -105,4 +105,11 @@ interface CyclePlanServiceInterface
      * @return array
      */
     public function importData(array $params): array;
+
+    /**
+     * 销假排班
+     * @param array $params
+     * * @return array
+     * * */
+    public function userMakeUp(array $params): array;
 }

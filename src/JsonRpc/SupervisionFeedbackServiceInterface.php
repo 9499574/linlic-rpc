@@ -41,4 +41,11 @@ interface SupervisionFeedbackServiceInterface
      * @return void
      */
     public function scoreCallBack($params):void;
+
+    /**
+     * 消息注册配置
+     * @param $params
+     * @return array
+     */
+    public function messageConf($params):array;
 }

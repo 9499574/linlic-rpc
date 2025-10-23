@@ -99,4 +99,8 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function getRadarForCycleCareer(array $params):array;
+
+
+   //根据条件获取评估记录
+    public function getComprehensiveAssessList(array $params):array;
 }

@@ -229,4 +229,32 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function getActivityKsNumSetData(array $params):array;
+    
+    /**
+     * 机构设置配置
+     * @param array $params
+     * @return mixed
+     */
+    public function orgSetConf(array $params): array;
+
+    /**
+     * 获取用户活动类型科室次数
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','user_gen_id'=>'','hd_id'=>[]] hd_id可为空
+     * @return array
+     */
+    public function getUserActivityKsNumData(array $params):array;
+
+    /**
+     * 获取督导反馈需要的教学活动名称
+     * @param array $params ['org_id'=>'','module_business_ids'=>[]]
+     * @return array
+     */
+    public function getActivityNamesForSupFdbk(array $params):array;
+
+    /**
+     * 获取用户活动列表
+     * @param $params ['org_id'=>'','system_id'=>'','menu_id'=>'','user_gen_id'=>'','hd_id'=>[]]
+     * @return array
+     */
+    public function getUserActivityKsListData(array $params):array;
 }
