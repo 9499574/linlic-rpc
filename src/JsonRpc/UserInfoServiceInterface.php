@@ -11,4 +11,12 @@ interface UserInfoServiceInterface
      * @return bool
      */
     public function updateUserInfoField(int $uid,array $data):bool;
+
+
+    /**
+     * 批量更新用户字段
+     * @param array $data [['uid'=>1,'data'=>['a'=>1,'b'=>2]],['uid'=>2,'data'=>['a'=>1,'b'=>2]]]
+     * @return bool
+     */
+    public function batchUpdateUserInfoField(array $data):bool;
 }
