@@ -137,5 +137,12 @@ interface CycleViewServiceInterface
     //指定用户的轮转手册及填写数量(指定我的轮转手册菜单)
     public function getUserGenTrainTypeData(array $params):array;
 
+    /**
+     * 获取科室已分配带教老师的学员
+     * @param array $params ['org_id'=>'系统ID','menu_id'=>'轮转总览菜单ID']
+     * @return array
+     */
+    public function getKsAssignTeacherStudents(array $params):array;
+
 
 }
