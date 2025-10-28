@@ -139,7 +139,7 @@ interface CycleViewServiceInterface
 
     /**
      * 获取科室已分配带教老师的学员
-     * @param array $params ['org_id'=>'机构ID','menu_id'=>'轮转总览菜单ID']
+     * @param array $params ['org_id'=>'系统ID','menu_id'=>'轮转总览菜单ID','start_date'=>'开始日期','end_date'=>'结束日期']
      * @return array
      */
     public function getKsAssignTeacherStudents(array $params):array;
