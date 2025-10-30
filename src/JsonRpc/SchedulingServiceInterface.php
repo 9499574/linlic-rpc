@@ -25,4 +25,11 @@ interface SchedulingServiceInterface
      */
     public function schedulingSetConf(array $params):array;
 
+    /**
+     * 获取某一天的考勤排班数据
+     * @param string $menuId
+     * @param string $date
+     * @return array
+     */
+    public function getShiftSchedulingData(string $menuId, string $date):array;
 }
