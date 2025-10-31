@@ -17,4 +17,6 @@ interface UserSubjectServiceInterface
      * @return array
      */
     public function userSubjectConf($params):array;
+
+    public function getSetConf($params):array;
 }
