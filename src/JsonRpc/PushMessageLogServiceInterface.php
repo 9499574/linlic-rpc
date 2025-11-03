@@ -17,4 +17,11 @@ interface PushMessageLogServiceInterface
      * @return array
      */
     public function getModuleFields(array $params):array;
+
+    /**
+     * 导出数据
+     * @param array $businessParams
+     * @return array
+     */
+    public function exportData(array $businessParams):array;
 }
