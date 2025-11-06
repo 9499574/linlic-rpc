@@ -260,7 +260,4 @@ interface TeachingActivityServiceInterface
 
     //定制化获取一批制定科室人员的完成情况（签到阅读等）
     public function getUserActivitySituation($params): array;
-
-    // 根据菜单ID获取级别
-    public function getActivityLevelByMenuIds(array $params): array;
 }
