@@ -48,4 +48,11 @@ interface SupervisionFeedbackServiceInterface
      * @return array
      */
     public function messageConf($params):array;
+
+    /**
+     * 详情导出数据
+     * @param array $businessParams
+     * @return array
+     */
+    public function detailExportData(array $businessParams):array;
 }
