@@ -10,7 +10,8 @@ interface SupervisionKsServiceInterface
      * @return array
      */
     public function supervisionKsFields(array $params):array;
-
+    //菜单设置
+    public function menuConf(array $params): array;
     /**
      * 获取设置配置
      * @param array $params
