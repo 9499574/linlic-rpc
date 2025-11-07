@@ -33,4 +33,10 @@ interface SurveyPublishRpcServiceInterface
      * @return array
      */
     public function exportReportList(array $businessParams):array;
+    /**
+     * 调查问卷接口
+     * @param array $params
+     * @return array
+     */
+    public function surveyPublishList(array $params): array;
 }
