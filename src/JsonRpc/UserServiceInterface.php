@@ -306,4 +306,13 @@ interface UserServiceInterface
      * @return bool
      */
     public function batchUpdateStudentTutors(string $orgId, array $data): bool;
+
+
+    /**
+     * 用户功能配置接口
+     * @param array $params
+     * @return array
+     */
+    public function moduleConfig(array $params):array;
+
 }
