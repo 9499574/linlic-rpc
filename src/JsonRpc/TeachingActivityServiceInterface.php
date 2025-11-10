@@ -260,4 +260,8 @@ interface TeachingActivityServiceInterface
 
     //定制化获取一批制定科室人员的完成情况（签到阅读等）
     public function getUserActivitySituation($params): array;
+
+    //统计某个人的活动配置完成项情况统计
+    public function teachingFinishCase($params): array;
+
 }
