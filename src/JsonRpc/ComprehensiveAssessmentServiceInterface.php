@@ -103,4 +103,11 @@ interface ComprehensiveAssessmentServiceInterface
 
    //根据条件获取评估记录
     public function getComprehensiveAssessList(array $params):array;
+
+    /**
+     * 综合评估完成情况
+     * @param array $params {"org_id":"692476229400604673","menu_id":"menu-715928095764918273-692770740211326976","start_date":"2025-11-01","end_date":"2025-11-30","hd_id":"693464082071179264","uid":"760504013518630912","status":["submit","review"],"num":true,"score":true}
+     * @return array {"status":{"submit":true,"review":true},"num":5,"score":99}
+     */
+    public function assessFinishCase(array $params):array;
 }
