@@ -40,10 +40,4 @@ interface SupervisionKsServiceInterface
      */
     public function supervisionTeamConf(array $params):array;
 
-    /**
-     * 督导流-自定义用户类型
-     * @param array $params
-     * @return array
-     */
-    public function supervisionFlowCustomUserType(array $params): array;
 }
