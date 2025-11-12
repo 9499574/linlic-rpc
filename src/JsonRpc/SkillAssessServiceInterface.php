@@ -93,4 +93,11 @@ interface SkillAssessServiceInterface
      *技能考核签到回调
      * */
     public function signInCallBack($params): bool;
+
+    /**
+     * 技能考核信息统计生成oss上json文件(AI 数据分析使用)
+     * @param array $params
+     * @return bool
+     * */
+    public function getSkillAssessAnalyzeToOssFile(array $params):bool;
 }
