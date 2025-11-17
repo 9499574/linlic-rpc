@@ -87,4 +87,11 @@ interface CourseServiceInterface
      * @return bool
      */
     public function surveyQuestionSave(array $params):bool;
+
+    /**
+     * 课程规则
+     * @param array $params
+     * @return array
+     */
+    public function getCourseRuleConf(array $params):array;
 }
