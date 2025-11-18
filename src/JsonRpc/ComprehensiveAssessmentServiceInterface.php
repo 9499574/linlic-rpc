@@ -110,4 +110,12 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array {"status":{"submit":true,"review":true},"num":5,"score":99}
      */
     public function assessFinishCase(array $params):array;
+
+    /**
+     * 综合评估-表单填报汇总表注册接口
+     * @param string $orgId
+     * @param array $menuId
+     * @return array
+     */
+    public function fillSummaryReg(string $orgId, array $menuId): array;
 }
