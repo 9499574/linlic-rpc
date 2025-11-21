@@ -288,4 +288,11 @@ interface FormServiceInterface
      * @return array
      */
     public function batchExportData(array $businessParams):array;
+
+    /**
+     * 获取表单填报生成PDF文件上传到OSS
+     * @param array $params
+     * @return bool
+     */
+    public function getFormFillingGeneratePDFToOssFile(array $params): bool;
 }
