@@ -34,4 +34,7 @@ interface CycleCareerServiceInterface
      */
     public function exportDetailData(array $businessParams):array;
 
+    //华南导出详情数据
+    public function hnExportDetailData(array $businessParams):array;
+
 }
