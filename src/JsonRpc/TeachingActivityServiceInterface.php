@@ -263,5 +263,7 @@ interface TeachingActivityServiceInterface
 
     //统计某个人的活动配置完成项情况统计
     public function teachingFinishCase($params): array;
+    //活动审核模块参数
+    public function getActivityExamineFlowParams(array $params):array;
 
 }
