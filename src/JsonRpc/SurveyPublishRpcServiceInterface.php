@@ -39,4 +39,11 @@ interface SurveyPublishRpcServiceInterface
      * @return array
      */
     public function surveyPublishList(array $params): array;
+
+    /**
+     * 新增调查问卷
+     * @param array $params
+     * @return bool
+     */
+    public function addSurveyPublish(array $params): bool;
 }
