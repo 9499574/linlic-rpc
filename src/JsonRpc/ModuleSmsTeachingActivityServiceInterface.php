@@ -3,9 +3,9 @@
 namespace linlic\JsonRpc;
 
 /**
- * 模块短信服务接口
+ * 模块短信服务接口（教学活动）
  */
-interface ModuleSmsServiceInterface
+interface ModuleSmsTeachingActivityServiceInterface
 {
     /**
      * 获取模块短信服务配置参数
