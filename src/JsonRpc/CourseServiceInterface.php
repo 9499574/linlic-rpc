@@ -93,5 +93,5 @@ interface CourseServiceInterface
      * @param array $params
      * @return array
      */
-    public function getCourseRuleConf(array $params):array;
+    public function getCourseRuleConf(string $orgId, array $menuId):array;
 }
