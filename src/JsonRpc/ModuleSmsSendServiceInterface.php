@@ -10,6 +10,8 @@ interface ModuleSmsSendServiceInterface
     /**
      * 批量发送短信
      * @param string $orgId
+     * @param string $systemId
+     * @param string $menuId
      * @param string $smsKey
      * @param array $userIds
      * @param array $variable
