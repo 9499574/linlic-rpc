@@ -25,4 +25,11 @@ interface RoomServiceInterface
      * @return array
      */
     public function getSetConf(array $params):array;
+
+    /**
+     * 房间管理-分析数据导出到OSS文件
+     * @param array $params
+     * @return bool
+     */
+    public function getRoomAnalyzeToOssFile(array $params): bool;
 }
