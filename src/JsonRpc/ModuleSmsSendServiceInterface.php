@@ -7,5 +7,5 @@ namespace linlic\JsonRpc;
  */
 interface ModuleSmsSendServiceInterface
 {
-    public function batchSendNoticeSms(string $orgId,string $smsKey,array $phones,array $variable):bool;
+    public function batchSendNoticeSms(string $orgId,string $smsKey,array $userIds,array $variable):bool;
 }
