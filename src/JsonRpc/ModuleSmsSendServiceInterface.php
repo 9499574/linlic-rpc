@@ -15,5 +15,5 @@ interface ModuleSmsSendServiceInterface
      * @param array $variable
      * @return array ['status'=>0|1|2,'msg'=>''] 0是全部成功，1是部分成功，2是全部失败
      */
-    public function batchSendNoticeSms(string $orgId,string $smsKey,array $userIds,array $variable):array;
+    public function batchSendNoticeSms(string $orgId,string $systemId,string $menuId,string $smsKey,array $userIds,array $variable):array;
 }
