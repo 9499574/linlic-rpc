@@ -33,4 +33,11 @@ interface MySurveyPublishRpcServiceInterface
      * @return void
      */
     public function formFillCallback(array $params):void;
+
+    /**
+     * 问卷反馈回调接口
+     * @param array $params
+     * @return void
+     */
+    public function feedbackFillCallback(array $params):void;
 }
