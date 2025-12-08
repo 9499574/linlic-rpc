@@ -118,4 +118,14 @@ interface PaperServiceInterface
      * @return array
      */
     public function getQuestionsWithPapers(array $params):array;
+
+    /**
+     * 根据菜单id获取对应的试卷列表
+     * @param $select
+     * @param $org_id
+     * @param $menu_id
+     * @param string $system_id
+     * @return array
+     */
+    public function getPaperList($select,$org_id,$menu_id,$system_id=''):array;
 }
