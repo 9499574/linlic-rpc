@@ -133,4 +133,11 @@ interface ExamServiceInterface
      * @return bool
      */
     public function getExamDetailToOssFile(array $params):bool;
+
+    /**
+     * 外部数据同步考试
+     * @param array $params
+     * @return array
+     * */
+    public function addExternalToExam(array $params):array;
 }
