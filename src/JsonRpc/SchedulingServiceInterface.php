@@ -36,22 +36,16 @@ interface SchedulingServiceInterface
     /**
      * 获取指定月份未排班的人数统计
      * @param string $month Y-m
-     * @param string $orgId
-     * @param string $systemId
-     * @param string $menuId
-     * @param array $hdId
+     * @param array $params
      * @return array
      */
-    public function countNoSchedulingUserNum(string $month, string $orgId, string $systemId, string $menuId, array $hdId = []): array;
+    public function countNoSchedulingUserNum(string $month, array $params): array;
 
     /**
      * 获取某一天没有排班的用户ID列表
      * @param string $day Y-m-d
-     * @param string $orgId
-     * @param string $systemId
-     * @param string $menuId
-     * @param array $hdId
+     * @param array $params
      * @return array
      */
-    public function getNoSchedulingUserIdsByDay(string $day, string $orgId, string $systemId, string $menuId, array $hdId = []): array;
+    public function getNoSchedulingUserIdsByDay(string $day, array $params): array;
 }
