@@ -140,4 +140,11 @@ interface ExamServiceInterface
      * @return array
      * */
     public function addExternalToExam(array $params):array;
+
+    /**
+     * 考试获取用户考试数据
+     * @param array $params
+     * @return array
+     * */
+    public function getExamUserRecordData(array $params): array;
 }
