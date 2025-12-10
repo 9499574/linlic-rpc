@@ -442,4 +442,12 @@ interface DictionaryServiceInterface
      * @return array
      */
     public function getDictKeys(string $orgId): array;
+
+    /**
+     * 获取字典主表的数据字段
+     * @param array $select
+     * @param array $dictKeys
+     * @return array
+     */
+    public function getDictData(array $select,array $dictKeys):array;
 }
