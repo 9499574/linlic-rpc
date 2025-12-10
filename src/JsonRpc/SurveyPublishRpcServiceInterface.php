@@ -46,4 +46,11 @@ interface SurveyPublishRpcServiceInterface
      * @return bool
      */
     public function addSurveyPublish(array $params): bool;
+
+    /**
+     * 获取调查问卷用户填写信息
+     * @param array $params
+     * @return array
+     * */
+    public function getSurveyPublishUserData(array $params): array;
 }
