@@ -18,4 +18,11 @@ interface SkillAssessPersonExamStatServiceInterface
      */
     public function getConfigs($params):array;
 
+    /**
+     * 考核类型权重得分选项
+     * @param $params
+     * @return array
+     */
+    public function assessTypeWeightScoreOptions($params):array;
+
 }
