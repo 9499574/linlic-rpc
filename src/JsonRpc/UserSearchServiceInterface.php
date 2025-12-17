@@ -54,4 +54,11 @@ interface UserSearchServiceInterface
      * @return array
      */
     public function getUserNameListByUserIds(int $orgId,array $userName):array;
+
+    /**
+     * 通过ccmtv用户编号获取用户编号
+     * @param array $ccmtvUid
+     * @return array
+     */
+    public function getCcmtvUidByUserIds(array $ccmtvUid):array;
 }
