@@ -266,4 +266,40 @@ interface TeachingActivityServiceInterface
     //活动审核模块参数
     public function getActivityExamineFlowParams(array $params):array;
 
+    /**
+     * 活动列表和用户列表统计
+     * @param $params
+     * @return bool
+     */
+    public function activityAndUserAnalyze($params):bool;
+
+    /**
+     * 课程资源使用情况统计分析
+     * @param $params
+     * @return bool
+     */
+    public function classSourceUseAnalyze($params):bool;
+
+    /**
+     * 个人报告统计分析
+     * @param $params
+     * @return bool
+     */
+    public function personalReportAnalyze($params):bool;
+
+    /**
+     * 单位报告统计分析
+     * @param $params
+     * @return bool
+     */
+    public function unitReportAnalyze($params):bool;
+
+    /**
+     * 师资授课情况统计分析
+     * @param $params
+     * @return bool
+     */
+    public function teacherWorkingAnalyze($params):bool;
+
+
 }
