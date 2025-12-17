@@ -118,4 +118,12 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function fillSummaryReg(string $orgId, array $menuId): array;
+
+    /**
+     * 甘肃妇幼-综合评估-表单填报汇总表注册接口
+     * @param string $orgId
+     * @param array $menuId
+     * @return array
+     */
+    public function gsfyFillSummaryReg(string $orgId, array $menuId): array;
 }
