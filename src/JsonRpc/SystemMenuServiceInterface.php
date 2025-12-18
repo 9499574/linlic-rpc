@@ -146,4 +146,13 @@ interface SystemMenuServiceInterface
      * @return array
      */
     public function getMenuChildMenuId(string $menu_id):array;
+
+
+    /**
+     * 保存菜单配置数据
+     * @param string $menu_id
+     * @param array $menu_conf
+     * @return bool
+     */
+    public function saveMenuConf(string $menu_id,array $menu_conf):bool;
 }
