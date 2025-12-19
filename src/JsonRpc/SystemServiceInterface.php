@@ -90,4 +90,12 @@ interface SystemServiceInterface
      */
     public function getSystemInfoList(array $systemId,array $select=["*"]):array;
 
+
+    /**
+     * 获取机构全局系统ID(有可能返回空)
+     * @param int $orgId
+     * @return string
+     */
+    public function getOrgGlobalSystemId(int $orgId):string;
+
 }
