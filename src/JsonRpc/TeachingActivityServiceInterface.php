@@ -301,5 +301,11 @@ interface TeachingActivityServiceInterface
      */
     public function teacherWorkingAnalyze($params):bool;
 
+    /**
+     * 向活动人员添加参与人
+     * @param $params
+     * @return bool
+     * */
+    public function addActivityUser($params):bool;
 
 }
