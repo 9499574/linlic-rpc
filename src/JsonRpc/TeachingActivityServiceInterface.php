@@ -308,4 +308,11 @@ interface TeachingActivityServiceInterface
      * */
     public function addActivityUser($params):bool;
 
+    /**
+     * 向活动人员添加参与人
+     * @param $params
+     * @return bool
+     * */
+    public function addActivityUser2($params):bool;
+
 }
