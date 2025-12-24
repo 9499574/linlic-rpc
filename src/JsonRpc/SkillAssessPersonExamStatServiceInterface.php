@@ -25,4 +25,11 @@ interface SkillAssessPersonExamStatServiceInterface
      */
     public function assessTypeWeightScoreOptions($params):array;
 
+    /**
+     * 考生完成度
+     * @param $params $params = ['reliance_menu_id'=>[],'uid'=>[]]
+     * @return array
+     */
+    public function userFinishDegree($params):array;
+
 }
