@@ -113,10 +113,4 @@ interface CyclePlanServiceInterface
      * * */
     public function userMakeUp(array $params): array;
 
-    /**
-     * 删除轮转计划
-     * @param array $params
-     * * @return bool
-     * * */
-    public function delUserPlan(array $params):bool;
 }
