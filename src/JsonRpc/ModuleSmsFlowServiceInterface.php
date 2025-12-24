@@ -19,4 +19,11 @@ interface ModuleSmsFlowServiceInterface
      * @return array
      */
     public function getModuleFilterData(array $params):array;
+
+    /**
+     * 获取模块短信服务待办数量数据
+     * @param array $params
+     * @return array
+     */
+    public function getModuleSmsFlowNumberData(array $params):array;
 }
