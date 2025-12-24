@@ -47,4 +47,11 @@ interface FormDictionaryServiceInterface
      * @return array
      */
     public function getSelfSelectedDepartment(array $menuIds,string $baseKey,string $hdKey,array $baseIds=[],array $ksIds=[]):array;
+    /**
+     * 考勤排班 科室-班次绑定设置
+     * @param array $menuIds
+     * @param array $ksIds
+     * @return array
+     */
+    public function getSchedulingCategoryDepartment(array $menuIds,array $ksIds):array;
 }

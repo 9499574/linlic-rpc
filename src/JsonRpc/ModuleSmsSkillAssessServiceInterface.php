@@ -2,7 +2,10 @@
 
 namespace linlic\JsonRpc;
 
-interface ModuleSmsFlowServiceInterface
+/**
+ * 模块短信服务接口（技能考核）
+ */
+interface ModuleSmsSkillAssessServiceInterface
 {
     /**
      * 获取模块短信服务配置参数
@@ -20,10 +23,4 @@ interface ModuleSmsFlowServiceInterface
      */
     public function getModuleFilterData(array $params):array;
 
-    /**
-     * 获取模块短信服务待办数量数据
-     * @param array $params
-     * @return array
-     */
-    public function getModuleSmsFlowNumberData(array $params):array;
 }

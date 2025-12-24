@@ -55,4 +55,11 @@ interface CyclePlanUserDetailServiceInterface
      * @return array
      */
     public function dateRangeGetUserHdIds(int $org_id,array $uid,array $menu_id,string $start_date,string $end_date):array;
+
+    /**
+     * 删除轮转计划
+     * @param array $params
+     * * @return bool
+     * * */
+    public function delUserPlan(array $params):bool;
 }

@@ -126,4 +126,18 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function gsfyFillSummaryReg(string $orgId, array $menuId): array;
+
+    /**
+     * 获取综合评估科室得分统计
+     * @param $params
+     * @return bool
+     */
+    public function userCaKsScoreAnalyze($params):bool;
+
+    /**
+     * 获取综合评估填写内容统计
+     * @param $params
+     * @return bool
+     */
+    public function userCaFormContentAnalyze($params):bool;
 }
