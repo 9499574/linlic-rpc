@@ -78,5 +78,10 @@ interface AttendanceServiceInterface
      */
     public function getAttendanceListForCycle(array $params): array;
 
-
+    /**
+     * 获取用户考勤签到/签退信息
+     * @param array $params
+     * @return array
+     */
+    public function getUserAttendanceRuleSign(array $params): array;
 }
