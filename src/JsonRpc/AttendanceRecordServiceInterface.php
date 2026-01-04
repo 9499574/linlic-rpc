@@ -11,4 +11,12 @@ interface AttendanceRecordServiceInterface
      */
     public function getFields(array $params):array;
 
+    /**
+     * 考勤记录菜单设置的接口
+     * @param array $params
+     * @return array
+     * @Author: chengshuang
+     */
+    public function getConfigs(array $params): array;
+
 }
