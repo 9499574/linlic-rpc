@@ -151,5 +151,4 @@ interface CycleViewServiceInterface
      */
     public function getTeachersTeachingStudents(array $params):array;
 
-
 }
