@@ -62,4 +62,11 @@ interface CyclePlanUserDetailServiceInterface
      * * @return bool
      * * */
     public function delUserPlan(array $params):bool;
+
+    /**
+     * 退培用户置灰轮转计划
+     * @param array $params
+     * * * @return bool
+    * */
+    public function revokeUserPlan(array $params):bool;
 }
