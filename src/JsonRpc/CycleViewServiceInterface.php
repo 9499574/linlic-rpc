@@ -144,5 +144,12 @@ interface CycleViewServiceInterface
      */
     public function getKsAssignTeacherStudents(array $params):array;
 
+    /**
+     * 获取带教老师带教学生
+     * @param array $params 'org_id'=>'机构ID','menu_id'=>'轮转总览菜单ID 支持传依赖了轮转总览菜单的依赖菜单ID','start_date'=>'开始日期','end_date'=>'结束日期','teacher_ids'=>'带教老师ID数组'
+     * @return array
+     */
+    public function getTeachersTeachingStudents(array $params):array;
+
 
 }

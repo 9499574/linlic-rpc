@@ -17,4 +17,6 @@ interface CycleOutScoreServiceInterface
      * @return array
      */
     public function getConfigs($params):array;
+
+
 }
