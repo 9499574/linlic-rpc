@@ -17,21 +17,6 @@ interface CyclePlanUserDetailServiceInterface
     public function hdIdGetNowUserId(int $org_id,array $hd_ids,array $uid=[],array $system_id=[],array $menu_id=[],string $operation='in'):array;
 
     /**
-     * 根据日期范围获取用户ID集合
-     * @param int $org_id
-     * @param array $hd_ids
-     * @param string $start_date
-     * @param string $end_date
-     * @param array $uid
-     * @param array $system_id
-     * @param array $menu_id
-     * @param string $operation
-     * @param string[] $fields
-     * @return array
-     */
-    public function getDateRangeUserId(int $org_id,array $hd_ids,string $start_date,string $end_date,array $uid=[],array $system_id=[],array $menu_id=[],string $operation='in',array $fields=['uid']):array;
-
-    /**
      * 根据本院科室ID集合获取日期范围用户ID集合
      * @param int $org_id
      * @param array $hd_ids
