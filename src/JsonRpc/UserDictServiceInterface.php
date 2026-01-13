@@ -20,7 +20,7 @@ interface UserDictServiceInterface
      * @param array $select ['option_label','option_value']
      * @return array [["option_label"=>"眼科","option_value"=>"622116875481731073"]]
      */
-    public function getBaseOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+    public function getBaseOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = [],$limit=0,$page=0,$keyword='',$dict_key=''): array;
 
     /**
      * 获取标准科室选项
@@ -45,7 +45,7 @@ interface UserDictServiceInterface
      * @param array $select ['option_label','option_value']
      * @return array [["option_label"=>"眼科","option_value"=>"622116875481731073"]]
      */
-    public function getHdOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+    public function getHdOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = [],$limit=0,$page=0,$keyword='',$dict_key=''): array;
 
     /**
      * 获取机构系统角色组选项
