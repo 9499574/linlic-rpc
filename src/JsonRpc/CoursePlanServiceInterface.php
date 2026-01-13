@@ -33,4 +33,12 @@ interface CoursePlanServiceInterface
      */
     public function messageConf($params):array;
 
+
+    /**
+     * 节次数据获取
+     * @param $params
+     * @return array
+     */
+    public function getFestivalTime($params):array;
+
 }
