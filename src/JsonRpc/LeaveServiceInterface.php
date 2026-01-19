@@ -86,5 +86,11 @@ interface LeaveServiceInterface
      * @return array
      */
     public function getLeaveStatisticData(array $params): array;
-
+    /**
+     * 获取请假记录
+     * menu_ids 必填,conditions 必填 month=>uids,月份key=>uids value用户ids数组 ;
+     * @param array $params  'menu_ids' => [],'conditions'=>['2026-01' => ['1','2'], '2026-02' => ['1','2']]
+     * @return array [['uid1'=>[‘2026-01-01’=>'事假',‘2026-01-02’=>'年假'],'uid2'=>[‘2026-01-01’=>'病假',‘2026-01-02’=>'年假']]]
+     */
+    public function getLeaveRecordData(array $params): array;
 }
