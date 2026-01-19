@@ -129,4 +129,12 @@ interface QuestionServiceInterface
      */
     public function getShowCateLevelNameData(array $scIds):array;
 
+    /**
+     * 根据分类id获取分类名称
+     * @param array $scIds
+     * @return array
+     */
+    public function getShowCateName(array $scIds): array;
+
+
 }
