@@ -308,4 +308,11 @@ interface TeachingActivityServiceInterface
      * */
     public function addActivityUser($params):bool;
 
+    /**
+     * 数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function dataInit(array $params):bool;
+
 }
