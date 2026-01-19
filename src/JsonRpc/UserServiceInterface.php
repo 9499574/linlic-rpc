@@ -291,6 +291,11 @@ interface UserServiceInterface
     public function getUserList($params):array;
 
     /**
+     * 获取指定用户的角色attr
+     * */
+    public function getUserRoleAttr($orgId,$systemId,$uid):array;
+
+    /**
      * 批量处理用户
      * @param array $params
      * @param array $data
