@@ -84,8 +84,8 @@ interface CycleBookServiceInterface
 
     /**
      * 轮转手册完成情况
-     * @param array $params {"org_id":"692476229400604673","menu_id":"menu-715928095764918273-692770740211326976","user_gen_id":"760504013518630912","status":["submit","review"],"rate":true}
-     * @return array {"status":{"submit":true,"review":true},"rate":'50%'}
+     * @param array $params
+     * @return array
      */
     public function bookFinishCase(array $params):array;
 
