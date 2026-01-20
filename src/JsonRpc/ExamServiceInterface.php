@@ -147,4 +147,11 @@ interface ExamServiceInterface
      * @return array
      * */
     public function getExamUserRecordData(array $params): array;
+
+    /**
+     * 出科理论考试完成情况
+     * @param array $params {"org_id":"692476229400604673","menu_id":"menu-715928095764918273-692770740211326976","user_gen_id":"760504013518630912","status":["submit"],"score":true}
+     * @return array {"status":{"submit":true},"score":99}
+     */
+    public function ckTheoryFinishCase(array $params):array;
 }
