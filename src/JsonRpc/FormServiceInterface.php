@@ -295,4 +295,12 @@ interface FormServiceInterface
      * @return bool
      */
     public function getFormFillingGeneratePDFToOssFile(array $params): bool;
+
+    /**
+     * 执行表单自定义处理
+     * @param string $handler
+     * @param array $params
+     * @return array
+     */
+    public function executeHandler(string $handler,array $params): array;
 }
