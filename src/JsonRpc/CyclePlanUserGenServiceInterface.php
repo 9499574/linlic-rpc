@@ -15,7 +15,8 @@ interface CyclePlanUserGenServiceInterface
      * @param array $page
      * @param array $system_id
      * @param array $menu_id
+     * @param array $params start_date,end_date搜索条件
      * @return array
      */
-    public function getUserGenInfo(int $org_id,array $hd_id,array $uid,string $start_date,string $end_date,array $field=['*'],array $page=[],array $system_id=[],array $menu_id=[]):array;
+    public function getUserGenInfo(int $org_id,array $hd_id,array $uid,string $start_date,string $end_date,array $field=['*'],array $page=[],array $system_id=[],array $menu_id=[],array $params=[]):array;
 }
