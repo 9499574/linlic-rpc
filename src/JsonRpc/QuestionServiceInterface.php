@@ -136,5 +136,12 @@ interface QuestionServiceInterface
      */
     public function getShowCateName(array $scIds): array;
 
+    /**
+     * 获取题库上传记录是否结束状态
+     * @param array $uploadIds
+     * @return array
+     */
+    public function getQuestionUploadRecordIsEndStatus(array $uploadIds):array;
+
 
 }
