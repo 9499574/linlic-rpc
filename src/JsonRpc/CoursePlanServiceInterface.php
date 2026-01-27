@@ -41,4 +41,12 @@ interface CoursePlanServiceInterface
      */
     public function getFestivalTime($params):array;
 
+
+    /**
+     * 根据名称获取节次数据
+     * @param $params
+     * @return array
+     */
+    public function getNamesFestivalTime($params):array;
+
 }
