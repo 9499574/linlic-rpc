@@ -303,4 +303,13 @@ interface FormServiceInterface
      * @return array
      */
     public function executeHandler(string $handler,array $params): array;
+
+    /**
+     * 查询表单是否已经存在
+     * @param string $formId 表单id
+     * @param string $uid 用户id
+     * @param string $menuId 菜单id
+     * @param string $systemId 系统id
+     * */
+    public function isUserFormExist($formId,$uid,$menuId,$systemId): bool;
 }
