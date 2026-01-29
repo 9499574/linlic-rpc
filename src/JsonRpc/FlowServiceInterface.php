@@ -10,4 +10,11 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
      * @return array
      */
     public function getFlowNodeUserList(array $flowIds):array;
+
+    /**
+     * 获取流程日志列表
+     * @param array $flowIds
+     * @return array
+     */
+    public function getFlowLogList(array $flowIds):array;
 }
