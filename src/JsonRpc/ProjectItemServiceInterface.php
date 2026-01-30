@@ -5,14 +5,14 @@ namespace linlic\JsonRpc;
 interface ProjectItemServiceInterface
 {
     /**
-     * 项目评审功能字段
+     * 项目立项功能字段
      * @param array $params
      * @return array
      */
     public function getFields(array $params): array;
 
     /**
-     * 项目评审菜单配置
+     * 项目立项菜单配置
      * @param array $params
      * @return array
      */
