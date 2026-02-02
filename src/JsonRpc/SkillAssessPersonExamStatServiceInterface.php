@@ -32,4 +32,11 @@ interface SkillAssessPersonExamStatServiceInterface
      */
     public function userFinishDegree($params):array;
 
+    /**
+     * 技能考核信息统计生成oss上json文件(AI 数据分析使用)
+     * @param array $params
+     * @return bool
+     * */
+    public function getPersonExamAnalyzeToOssFile(array $params):bool;
+
 }
