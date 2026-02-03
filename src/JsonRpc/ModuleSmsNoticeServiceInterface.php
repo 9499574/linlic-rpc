@@ -19,4 +19,20 @@ interface ModuleSmsNoticeServiceInterface
      * @return array
      */
     public function getModuleFilterData(array $params):array;
+
+    /**
+     * 获取模块短信服务配置数据
+     * @param int $orgId
+     * @param int $systemId
+     * @param array $menuIds
+     * @return array
+     */
+    public function getModuleSmsConfData(int $orgId,int $systemId,array $menuIds):array;
+
+    /**
+     * 添加模块短信服务配置数据
+     * @param array $data
+     * @return bool
+     */
+    public function addModuleSmsConfData(array $data):bool;
 }
