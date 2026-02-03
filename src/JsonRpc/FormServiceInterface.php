@@ -312,4 +312,12 @@ interface FormServiceInterface
      * @param string $systemId 系统id
      * */
     public function isUserFormExist($formId,$uid,$menuId,$systemId): bool;
+
+    /**
+     * 用户表单初始化【开通系统复制机构系统表单】
+     * @param int $orgId
+     * @param array $templateIds
+     * @return bool
+     */
+    public function userFormInit(int $orgId,array $templateIds):bool;
 }
