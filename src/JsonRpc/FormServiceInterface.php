@@ -314,6 +314,21 @@ interface FormServiceInterface
     public function isUserFormExist($formId,$uid,$menuId,$systemId): bool;
 
     /**
+     * 获取用户表单数据
+     * @param int $orgId
+     * @param array $templateIds
+     * @return array
+     */
+    public function getUserOrgFormData(int $orgId,array $templateIds):array;
+
+    /**
+     * 用户表单初始化【开通系统复制机构系统表单】
+     * @param array $data
+     * @return bool
+     */
+    public function orgUserFormInit(array $data):bool;
+
+    /**
      * 华西-培训计划要求数量
      * @param array $params
      * @return array

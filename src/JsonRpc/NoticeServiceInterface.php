@@ -94,4 +94,20 @@ interface NoticeServiceInterface
      * @return array
      */
     public function exportData(array $businessParams):array;
+
+    /**
+     * 获取规则配置详情数据
+     * @param int $orgId
+     * @param int $systemId
+     * @param array $menuIds
+     * @return mixed
+     */
+    public function getNoticeConfDetailData(int $orgId,int $systemId,array $menuIds):array;
+
+    /**
+     * 添加规则配置详情数据
+     * @param array $data
+     * @return bool
+     */
+    public function addNoticeConfDetailData(array $data):bool;
 }
