@@ -312,4 +312,11 @@ interface FormServiceInterface
      * @param string $systemId 系统id
      * */
     public function isUserFormExist($formId,$uid,$menuId,$systemId): bool;
+
+    /**
+     * 华西-培训计划要求数量
+     * @param array $params
+     * @return array
+     */
+    public function trainPlanRequireNums(array $params):array;
 }
