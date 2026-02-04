@@ -39,7 +39,7 @@ interface FormServiceInterface
      * ```
      * @return array
      */
-    public function getFillingFormNames(array $filling_form_template_id_arr, string $field = 'template_name'): array;
+    public function getFillingFormNames(array $filling_form_template_id_arr, string $field = 'template_name',array $extends=[]): array;
 
     /**
      * 根据用户资料模板ID数组获取模板字段信息
