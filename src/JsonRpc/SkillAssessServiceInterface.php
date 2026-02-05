@@ -107,4 +107,11 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function ckSkillFinishCase(array $params):array;
+
+    /**
+     * 技能考核详情打分问题情况分析
+     * @param array $params
+     * @return bool
+     * */
+    public function getSkillAssessQuestionFormAnalyze(array $params):bool;
 }
