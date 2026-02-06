@@ -329,6 +329,13 @@ interface FormServiceInterface
     public function orgUserFormInit(array $data):bool;
 
     /**
+     * 根据表单ID获取表单内容【开通系统复制机构表单】
+     * @param array $templateIds
+     * @return array
+     */
+    public function getOrgFormData(array $templateIds):array;
+
+    /**
      * 华西-培训计划要求数量
      * @param array $params
      * @return array
