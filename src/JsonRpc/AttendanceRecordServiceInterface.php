@@ -19,4 +19,12 @@ interface AttendanceRecordServiceInterface
      */
     public function getConfigs(array $params): array;
 
+    /**
+     * 修改考勤记录的备注
+     * @param string $attendance_record_id
+     * @param string $remark
+     * @return bool
+     */
+    public function editAttendanceRecordRemark(string $attendance_record_id, string $remark): bool;
+
 }
