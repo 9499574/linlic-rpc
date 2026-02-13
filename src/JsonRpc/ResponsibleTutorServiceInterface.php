@@ -12,4 +12,9 @@ interface ResponsibleTutorServiceInterface
      * @return array
      */
     public function responsibleTutorList( array $params):array;
+
+    /**
+     * 责任导师管理-菜单配置项
+     */
+    function responsibleTutorConf(array $params): array;
 }
