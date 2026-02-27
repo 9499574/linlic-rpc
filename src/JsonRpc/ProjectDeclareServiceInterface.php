@@ -24,4 +24,11 @@ interface ProjectDeclareServiceInterface
       * @return bool
       */
     public function projectDeclareFlowCallback(array $params): bool;
+
+    /**
+     * 机构设置
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params): array;
 }

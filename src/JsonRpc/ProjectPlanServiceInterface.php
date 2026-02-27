@@ -17,4 +17,11 @@ interface ProjectPlanServiceInterface
      * @return array
      */
     public function menuConf(array $params): array;
+
+    /**
+     * 机构设置
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params): array;
 }

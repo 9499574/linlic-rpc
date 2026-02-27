@@ -24,4 +24,11 @@ interface ProjectInspectServiceInterface
      * @return bool
      */
     public function projectInspectFlowCallback(array $params): bool;
+
+    /**
+     * 机构设置
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params): array;
 }
