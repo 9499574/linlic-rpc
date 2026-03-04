@@ -55,4 +55,11 @@ interface SupervisionFeedbackServiceInterface
      * @return array
      */
     public function detailExportData(array $businessParams):array;
+
+    /**
+     * 督导任务统计字段
+     * @param array $params
+     * @return array
+     * */
+    public function getAnalysisFields($params):array;
 }
