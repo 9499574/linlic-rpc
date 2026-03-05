@@ -23,7 +23,8 @@ interface SdHdRelationServiceInterface
     /**
      * 本院科室与标准科室关联选项 返回级联数据格式
      * @param int $org_id
+     * @param int|null $system_id
      * @return array
      */
-    public function hdSdRelationCascaderOptions(int $org_id):array;
+    public function hdSdRelationCascaderOptions(int $org_id, int $system_id = null):array;
 }
