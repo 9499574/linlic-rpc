@@ -41,4 +41,12 @@ interface StandardDepartmentServiceInterface
      * @return array
      */
     public function getStandardDepartmentList(string $orgId,array $select,array $where,array $pageParams=[],bool $sdHdRel=false,array $orderBy=[]):array;
+
+
+    /**
+     * 数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function dataInit(array $params):bool;
 }
