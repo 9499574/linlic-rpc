@@ -58,4 +58,11 @@ interface BaseServiceInterface
      * @return array
      */
     public function getDepartmentIdsByBaseId(array $params): array;
+
+    /**
+     * 机构端数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function dataInit(array $params):bool;
 }
