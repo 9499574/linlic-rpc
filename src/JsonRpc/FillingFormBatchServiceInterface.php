@@ -45,6 +45,17 @@ interface FillingFormBatchServiceInterface
      */
     public function redisBatchDeleteAndInsert(string $orgId,string $uid,string $redisKey):bool;
 
-
+    /**
+     * 新增模板表单
+     * @param $params
+     * @return void
+     */
+    public function addFormTemplate($params): void;
+    /**
+     * 指定的表单内容修改
+     * @param $params
+     * @return void
+     */
+    public function formTemplateDesign($params): void;
 
 }
