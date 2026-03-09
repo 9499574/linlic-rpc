@@ -48,9 +48,9 @@ interface FillingFormBatchServiceInterface
     /**
      * 新增模板表单
      * @param $params
-     * @return void
+     * @return array
      */
-    public function addFormTemplate($params): void;
+    public function addFormTemplate($params): array;
     /**
      * 指定的表单内容修改
      * @param $params
