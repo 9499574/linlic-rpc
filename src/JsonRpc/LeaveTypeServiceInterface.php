@@ -9,6 +9,6 @@ interface LeaveTypeServiceInterface
     public function getConfigs(array $params):array;
 
 
-    public function dataInit(array $params):array;
+    public function dataInit(array $params):bool;
 
 }
