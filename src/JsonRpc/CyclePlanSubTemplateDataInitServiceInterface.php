@@ -6,7 +6,7 @@ namespace linlic\JsonRpc;
  * 轮转计划子模板服务接口
  */
 
-interface CyclePlanSubTemplateServiceInterface
+interface CyclePlanSubTemplateDataInitServiceInterface
 {
     /**
      * 1.2022国标-超声医学科处理方法
