@@ -154,4 +154,12 @@ interface ExamServiceInterface
      * @return array
      */
     public function ckTheoryFinishCase(array $params):array;
+
+
+    /**
+     * 机构端考试分类数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function cateDataInit(array $params):bool;
 }
