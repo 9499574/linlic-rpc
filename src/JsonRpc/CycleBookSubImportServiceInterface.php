@@ -6,6 +6,13 @@ interface CycleBookSubImportServiceInterface
 {
 
     /**
+     * 前置PRC
+     * @param array $params
+     * @return array
+     */
+    public function preFormConfig(array $params): array;
+
+    /**
      * 校验RPC
      * @param array $params
      * @return array
