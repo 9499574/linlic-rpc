@@ -315,4 +315,23 @@ interface TeachingActivityServiceInterface
      */
     public function dataInit(array $params):bool;
 
+    /**
+     * 住培-入院教育数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function zpRyJyDataInit(array $params): bool;
+    /**
+     * 住培-入基地教育数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function zpRzJyDataInit(array $params): bool;
+    /**
+     * 住培-入科教育数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function zpRkJyDataInit(array $params): bool;
+
 }
