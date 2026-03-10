@@ -333,5 +333,23 @@ interface TeachingActivityServiceInterface
      * @return bool
      */
     public function zpRkJyDataInit(array $params): bool;
+    /**
+     * 教学活动数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function teachingActivityDataInit(array $params): bool;
+    /**
+     * 院级活动数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function collegeLevelActivityDataInit(array $params): bool;
+    /**
+     * 约课数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function scheduleClassDataInit(array $params): bool;
 
 }
