@@ -179,9 +179,14 @@ interface TeachingActivityServiceInterface
     public function coursePlanToTeachingActivity(array $params): array;
 
     /*
-    * 获取教学活动相关配置字段内容
+    * 获取教学活动相关配置字段内容-数据汇总
     * */
     public function getTeachingActivityRuleConf(string $orgId, array $menuId): array;
+
+    /*
+    * 获取教学活动字段内容-数据汇总
+    * */
+    public function getTeachingActivityFieldConf(string $orgId, array $menuId): array;
 
     /**
      * 批量导入-校验rpc
