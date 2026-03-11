@@ -115,11 +115,13 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function cycleUserActivityList(array $params): array;
+
     /**
      * 消息字段
+     * @param $params
      * @return array
      */
-    public function messageConf(): array;
+    public function messageConf($params): array;
 
     /**
      * 获取教学活动选项
