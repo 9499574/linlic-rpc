@@ -189,6 +189,11 @@ interface TeachingActivityServiceInterface
     public function getTeachingActivityFieldConf(string $orgId, array $menuId): array;
 
     /**
+     * 获取教学活动列表详情-数据汇总
+     */
+    public function getTeachingActivityListDetail(string $orgId,array $businessId,array $fields):array;
+
+    /**
      * 批量导入-校验rpc
      * @param array $params org_id system_id menu_id pre_params
      * @return array
