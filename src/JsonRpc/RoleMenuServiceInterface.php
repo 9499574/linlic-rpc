@@ -27,4 +27,15 @@ interface RoleMenuServiceInterface
      * @return array
      */
     public function getRoleBtnId(string $role_id,string $channel_id,string $menu_id):array;
+
+
+    /**
+     * 获取用户菜单列表
+     * @param int $orgId
+     * @param int $uid
+     * @param string $channelId
+     * @param int $systemId
+     * @return array
+     */
+    public function getUserMenuList(int $orgId,int $uid,string $channelId,int $systemId=0):array;
 }
