@@ -33,4 +33,11 @@ interface CycleBookSubImportServiceInterface
      */
     public function importData(array $params): array;
 
+    /**
+     * 2022国标大纲轮转手册数据初始化
+     * @param array $params
+     * @return bool
+     */
+    public function handle2022CycleBookStandardDataInit(array $params): bool;
+
 }
