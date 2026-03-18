@@ -16,7 +16,7 @@ interface TodoBaseServiceInterface
 
     /**
      * 获取todo数量
-     * @param array $params int $orgId 当前机构ID int $uid 当前用户ID array $menuId 菜单ID集合 int $port 1电脑端 2手机端
+     * @param array $params int $orgId 当前机构ID int $uid 当前用户ID array $menuId 菜单ID集合 int $port 1电脑端 2手机端 $keyword 搜索关键字
      * @return int
      */
     public function getTodoNumber(array $params): int;
