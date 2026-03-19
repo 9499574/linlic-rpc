@@ -32,4 +32,11 @@ interface StaffRoomServiceInterface
      * @return array
      */
     public function getHdIdByStaffRoomId(array $staffRoomIds): array;
+
+    /**
+     * 通过教研室编号获取教研室名称
+     * @param array $staffRoomIds
+     * @return array
+     */
+    public function getNameByStaffRoomId(array $staffRoomIds): array;
 }
