@@ -341,4 +341,11 @@ interface FormServiceInterface
      * @return array
      */
     public function trainPlanRequireNums(array $params):array;
+
+    /**
+     * 获取填报表单数据
+     * @param array $params int $orgId 当前机构ID int $systemId 系统ID string $menuId 菜单ID int $filling_form_template_id 表单模版ID array $form_field 需要表单字段 array $search_params 查询条件
+     * @return array
+     */
+    public function getFillingFormData(array $params):array;
 }
