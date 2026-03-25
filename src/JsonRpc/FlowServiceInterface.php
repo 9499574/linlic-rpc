@@ -22,7 +22,7 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
     /**
      * 获取业务表单评分
      * @param array $flowIds
-     * @return array
+     * @return array key flowId total累加总分 node_avg节点平均分 avg_total节点平均分 avg_total_avg节点平均平均分 person_avg 个人平均分
      */
     public function getBusinessFormScore(array $flowIds):array;
 
