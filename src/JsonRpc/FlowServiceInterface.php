@@ -17,4 +17,20 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
      * @return array
      */
     public function getFlowLogList(array $flowIds):array;
+
+
+    /**
+     * 获取业务表单评分
+     * @param array $flowIds
+     * @return array
+     */
+    public function getBusinessFormScore(array $flowIds):array;
+
+
+    /**
+     * 获取流程表单内容(包含业务表单和流程表单)
+     * @param array $flowIds
+     * @return array
+     */
+    public function getFlowFormContent(array $flowIds):array;
 }
