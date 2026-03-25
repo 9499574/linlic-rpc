@@ -162,4 +162,11 @@ interface ExamServiceInterface
      * @return bool
      */
     public function cateDataInit(array $params):bool;
+
+    /**
+     * 年度考核平均分字段列表
+     * @param array $params
+     * * @return array
+     * */
+    public function averageListField(array $params):array;
 }
