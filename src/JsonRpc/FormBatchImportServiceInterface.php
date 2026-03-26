@@ -40,4 +40,10 @@ interface FormBatchImportServiceInterface
      * data:["sheet1"=>[["user_name"=>"1111"]]]
      */
     public function importData(array $params): array;
+
+    public function replaceTemplateConfig(array $params): array;
+
+    public function replaceValidConfig(array $params): array;
+
+    public function replaceImportData(array $params): array;
 }
