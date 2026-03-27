@@ -151,4 +151,14 @@ interface CycleViewServiceInterface
      */
     public function getTeachersTeachingStudents(array $params):array;
 
+    /**
+     * 带教绩效列表字段
+     * */
+    public function getMentorField(array $params):array;
+
+    /**
+     * 带教绩效配置
+     * */
+    public function getMentorConf(array $params):array;
+
 }
