@@ -45,4 +45,11 @@ interface EquipmentLendServiceInterface
      * @return array
      */
     public function returnFlowParams(array $params): array;
+
+    /**
+     * 消息字段
+     * @param $params
+     * @return array
+     */
+    public function messageConf($params): array;
 }
