@@ -364,4 +364,11 @@ interface TeachingActivityServiceInterface
      */
     public function scheduleClassDataInit(array $params): bool;
 
+    /**
+     * 教学活动参与人员列表统计功能字段
+     * @param $params
+     * @return array
+     */
+    public function getJoinUserListFields($params): array;
+
 }
