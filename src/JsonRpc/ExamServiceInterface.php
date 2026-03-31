@@ -169,4 +169,13 @@ interface ExamServiceInterface
      * * @return array
      * */
     public function averageListField(array $params):array;
+
+    /**
+     * 获取用户理论考试分数
+     * @param array $uids
+     * @param array $examIds
+     * @param array $timeRange
+     * @return array
+     */
+    public function getUserExamScores(array $uids, array $examIds, array $timeRange): array;
 }

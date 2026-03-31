@@ -114,4 +114,13 @@ interface SkillAssessServiceInterface
      * @return bool
      * */
     public function getSkillAssessQuestionFormAnalyze(array $params):bool;
+
+    /**
+     * 获取用户技能考核分数
+     * @param array $uids
+     * @param array $skillAssessIds
+     * @param array $timeRange
+     * @return array
+     */
+    public function getUserSkillAssessScores(array $uids, array $skillAssessIds, array $timeRange): array;
 }
