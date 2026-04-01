@@ -365,10 +365,17 @@ interface TeachingActivityServiceInterface
     public function scheduleClassDataInit(array $params): bool;
 
     /**
-     * 教学活动参与人员列表统计功能字段
+     * 教学活动未参与人员列表统计功能字段
      * @param $params
      * @return array
      */
-    public function getJoinUserListFields($params): array;
+    public function getNoJoinUserListFields($params): array;
+
+    /**
+     * 教学活动未参与人员列表统计功能配置
+     * @param $params
+     * @return array
+     */
+    public function getNoJoinUserListConf($params): array;
 
 }
