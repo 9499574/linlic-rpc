@@ -140,4 +140,11 @@ interface ComprehensiveAssessmentServiceInterface
      * @return bool
      */
     public function userCaFormContentAnalyze($params):bool;
+
+    /**
+     * 获取用户综合评估分数
+     * @param array $params
+     * @return array
+     */
+    public function getUserComprehensiveAssessmentScores(array $params): array;
 }
