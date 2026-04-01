@@ -369,13 +369,13 @@ interface TeachingActivityServiceInterface
      * @param $params
      * @return array
      */
-    public function getNoJoinUserListFields($params): array;
+    public function getNoJoinUserListFields(array $params): array;
 
     /**
      * 教学活动未参与人员列表统计功能配置
      * @param $params
      * @return array
      */
-    public function getNoJoinUserListConf($params): array;
+    public function getNoJoinUserListConf(array $params): array;
 
 }
