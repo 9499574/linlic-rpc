@@ -175,7 +175,8 @@ interface ExamServiceInterface
      * @param array $uids
      * @param array $examIds
      * @param array $timeRange
+     * @param array $menuIdArr
      * @return array
      */
-    public function getUserExamScores(array $uids, array $examIds, array $timeRange): array;
+    public function getUserExamScores(array $uids, array $examIds, array $timeRange, array $menuIdArr): array;
 }

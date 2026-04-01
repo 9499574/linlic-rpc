@@ -120,7 +120,8 @@ interface SkillAssessServiceInterface
      * @param array $uids
      * @param array $skillAssessIds
      * @param array $timeRange
+     * @param array $menuIdArr
      * @return array
      */
-    public function getUserSkillAssessScores(array $uids, array $skillAssessIds, array $timeRange): array;
+    public function getUserSkillAssessScores(array $uids, array $skillAssessIds, array $timeRange, array $menuIdArr): array;
 }
