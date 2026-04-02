@@ -93,4 +93,11 @@ interface LeaveServiceInterface
      * @return array [['uid1'=>[‘2026-01-01’=>'事假',‘2026-01-02’=>'年假'],'uid2'=>[‘2026-01-01’=>'病假',‘2026-01-02’=>'年假']]]
      */
     public function getLeaveRecordData(array $params): array;
+
+    /**
+     * 获取用户的请假天数，列表
+     * @param array $params //org_id start_at end_at system_id uid
+     * */
+    public function getUserLeaveDays(array $params): array;
+
 }
