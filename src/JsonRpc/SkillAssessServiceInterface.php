@@ -124,4 +124,11 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function getUserSkillAssessScores(array $uids, array $skillAssessIds, array $timeRange, array $menuIdArr): array;
+
+    /**
+     * 获取用户技能考核数据记录
+     * @param array $params
+     * @return array
+     */
+    public function getUserSkillAssessRecordData(array $params): array;
 }
