@@ -5,7 +5,7 @@ namespace linlic\JsonRpc;
 /**
  * 填报表单证书注册rpc
  * */
-interface FillingFormServiceInterface
+interface FillingFormCertificateServiceInterface
 {
     /**
      * 功能参数
