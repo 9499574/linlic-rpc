@@ -100,4 +100,37 @@ interface LeaveServiceInterface
      * */
     public function getUserLeaveDays(array $params): array;
 
+    /**
+     * 证书功能参数
+     * @param $params
+     * @return array
+     */
+    public function getCertDomainParams($params): array;
+    /**
+     * 证书模块数据详情
+     * @param $params
+     * @return array
+     */
+    public function getCertModuleDataDetail($params): array;
+    /**
+     * 证书获取模块列表数据
+     * @param $params
+     * @return array
+     */
+    public function getCertModuleDataList($params): array;
+    /**
+     * 证书模块功能规则
+     * @param $params
+     * @return array
+     */
+    public function getCertModuleRule($params): array;
+
+    /**
+     * 证书模块人员列表
+     * @param $params
+     * @return array
+     */
+    public function getCertModuleUser($params): array;
+
+
 }
