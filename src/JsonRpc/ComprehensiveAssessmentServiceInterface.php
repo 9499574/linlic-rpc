@@ -147,4 +147,11 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function getUserComprehensiveAssessmentScores(array $params): array;
+
+    /**
+     * 获取综合评估列表
+     * @param array $params
+     * @return array
+     */
+    public function getUserComprehensiveAssessmentList(array $params): array;
 }
