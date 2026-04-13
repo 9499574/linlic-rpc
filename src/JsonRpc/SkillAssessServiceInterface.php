@@ -124,4 +124,12 @@ interface SkillAssessServiceInterface
      * @return array
      */
     public function getUserSkillAssessScores(array $uids, array $skillAssessIds, array $timeRange, array $menuIdArr): array;
+
+    /**
+     * 技能考核缺考人员列表统计功能字段
+     * @param $params
+     * @return array
+     */
+    public function getNoExamUserListFields(array $params): array;
+
 }
