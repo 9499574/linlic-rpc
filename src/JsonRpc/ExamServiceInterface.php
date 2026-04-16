@@ -179,4 +179,12 @@ interface ExamServiceInterface
      * @return array
      */
     public function getUserExamScores(array $uids, array $examIds, array $timeRange, array $menuIdArr): array;
+
+    /**
+     * 考试未达标人员列表统计功能字段
+     * @param $params
+     * @return array
+     */
+    public function getFailedUserListFields(array $params): array;
+
 }
