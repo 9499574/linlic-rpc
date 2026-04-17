@@ -39,5 +39,11 @@ interface EquipmentServiceInterface
      */
     public function getUsingTypeOptions(array $params): array;
 
+    /**
+     * 获取设备相关信息
+     * @param array $params
+     * @return array
+     */
+    public function getEquipmentData(array $params): array;
 
 }
