@@ -15,6 +15,6 @@ interface FeedbackServiceInterface
      * @param array $params
      * @return array
      */
-    public function getConfigs(array $params):array;
+    public function menuConf(array $params):array;
 
 }
