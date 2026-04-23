@@ -87,4 +87,11 @@ interface OrgServiceInterface
      * @return mixed
      */
     public function getOrgesInfo(array $orgId,array $select=['*']):array;
+
+    /**
+     * 根据机构编号获取机构ID
+     * @param string $hospitalId
+     * @return string
+     */
+    public function getHospitalIdByOrgId(string $hospitalId):string;
 }
