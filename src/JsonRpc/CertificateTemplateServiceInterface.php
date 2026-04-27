@@ -43,7 +43,7 @@ interface CertificateTemplateServiceInterface
     /**
      * 获取模板具体内容
      * @param int $templateId
-     * @return string
+     * @return array
      */
-    public function getTemplateContent(int $templateId):string;
+    public function getTemplateContent(int $templateId):array;
 }
