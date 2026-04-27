@@ -27,4 +27,12 @@ interface CyclePlanUserGenServiceInterface
      * @return bool
      */
     public function hasCycleData(string $org_id, string $uid): bool;
+
+    /**
+     * 获取轮转生成表数据的编号
+     * @param int $orgId
+     * @param array $userIds
+     * @return array
+     */
+    public function getUserGenIds(int $orgId,array $userIds):array;
 }
