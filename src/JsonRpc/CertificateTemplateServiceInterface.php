@@ -39,4 +39,11 @@ interface CertificateTemplateServiceInterface
      * @return string
      */
     public function getTemplatePreviewImage(int $templateId):string;
+
+    /**
+     * 获取模板具体内容
+     * @param int $templateId
+     * @return string
+     */
+    public function getTemplateContent(int $templateId):string;
 }
