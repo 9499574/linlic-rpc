@@ -35,4 +35,12 @@ interface CyclePlanUserGenServiceInterface
      * @return array
      */
     public function getUserGenIds(int $orgId,array $userIds):array;
+
+    /**
+     * 获取生成表科室信息
+     * @param int $orgId
+     * @param array $userGenIds
+     * @return array
+     */
+    public function getGenKsIds(int $orgId,array $userGenIds):array;
 }
