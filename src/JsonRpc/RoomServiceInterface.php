@@ -32,4 +32,11 @@ interface RoomServiceInterface
      * @return bool
      */
     public function getRoomAnalyzeToOssFile(array $params): bool;
+
+    /**
+     * 获取房间名称
+     * @param array $roomIds
+     * @return array [room_id=>room_name]
+     */
+    public function getRoomName(array $roomIds):array;
 }

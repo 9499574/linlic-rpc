@@ -28,4 +28,10 @@ interface ConsumServiceInterface
     //耗材过期消息提醒注册
     public function expireNoticeReg():array;
 
+    /**
+     * 获取耗材入库数据
+     * @param $params
+     * @return array
+     */
+    public function getConsumStoreData($params): array;
 }

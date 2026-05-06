@@ -92,4 +92,19 @@ interface AdmissionManageServiceInterface
      */
     public function certificateSelectUserList(array $params):array;
 
+
+    /**
+     * 获取录取证书字段
+     * @param array $params
+     * @return array
+     */
+    public function admissionCertificateFields(array $params):array;
+
+    /**
+     * 获取录取证书数据
+     * @param array $params
+     * @return array
+     */
+    public function admissionCertificateDetail(array $params):array;
+
 }

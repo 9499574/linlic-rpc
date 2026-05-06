@@ -80,4 +80,12 @@ interface SubmitFlowServiceInterface
      * @return array
      */
     public function getFlowInfo(string $flow_id): array;
+
+    /**
+     * 批量删除流程
+     * @param int $orgId
+     * @param array $flowIds
+     * @return bool
+     */
+    public function deleteFlow(int $orgId,array $flowIds):bool;
 }

@@ -155,4 +155,13 @@ interface SystemMenuServiceInterface
      * @return bool
      */
     public function saveMenuConf(string $menu_id,array $menu_conf):bool;
+
+    /**
+     * 获取多个系统菜单配置数据
+     * @param int $orgId
+     * @param array $menuId
+     * @param array $field
+     * @return array
+     */
+    public function getSystemMenuConfArr(int $orgId, array $menuId, array $field=[]): array;
 }

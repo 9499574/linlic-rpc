@@ -277,6 +277,8 @@ interface TeachingActivityServiceInterface
     public function teachingFinishCase($params): array;
     //活动审核模块参数
     public function getActivityExamineFlowParams(array $params):array;
+    //活动（请假）审核模块参数
+    public function getLeaveActivityExamineFlowParams(array $params):array;
 
     /**
      * 活动列表和用户列表统计
