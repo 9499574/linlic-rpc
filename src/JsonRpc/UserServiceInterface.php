@@ -319,5 +319,12 @@ interface UserServiceInterface
      * @return array
      */
     public function moduleConfig(array $params):array;
+    /**
+     * 编辑用户信息流程审核回调
+     *
+     * @param array $params
+     * @return bool
+     */
+    public function editUserTmpCallBack(array $params):bool;
 
 }
