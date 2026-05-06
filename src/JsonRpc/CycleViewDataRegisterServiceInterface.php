@@ -20,18 +20,4 @@ interface CycleViewDataRegisterServiceInterface
      * @return array
      */
     public function registerWithStudent(string $orgId, array $menuId):array;
-    /**
-     * 带教学员 字段RPC
-     * @param string $orgId
-     * @param array $menuId
-     * @return array
-     */
-    public function registerWithStudentFields(string $orgId, array $menuId):array;
-    /**
-     * 带教学员 列表RPC
-     * @param string $orgId
-     * @param array $menuId
-     * @return array
-     */
-    public function registerWithStudentTable(string $orgId, array $menuId):array;
 }
