@@ -6,7 +6,7 @@
  * Created by IntelliJ IDEA.
  */
 
-namespace App\JsonRpc;
+namespace linlic\JsonRpc;
 
 interface BeijingReportServiceInterface
 {
