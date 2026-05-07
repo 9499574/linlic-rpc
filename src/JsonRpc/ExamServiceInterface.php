@@ -194,11 +194,4 @@ interface ExamServiceInterface
      */
     public function getPersonalProfileFields(array $params): array;
 
-    /**
-     * 科室档案功能字段
-     * @param $params
-     * @return array
-     */
-    public function getDepartmentFilesFields(array $params): array;
-
 }
