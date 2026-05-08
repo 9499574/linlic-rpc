@@ -89,9 +89,27 @@ interface CourseServiceInterface
     public function surveyQuestionSave(array $params):bool;
 
     /**
-     * 课程规则
-     * @param array $params
+     * 课程规则-数据汇总
+     * @param string $orgId
+     * @param array $menuId
      * @return array
      */
     public function getCourseRuleConf(string $orgId, array $menuId):array;
+
+    /**
+     * 数据汇总-字段接口
+     * @param string $orgId
+     * @param array $menuId
+     * @return array
+     */
+    public function getCourseFieldConf(string $orgId, array $menuId):array;
+
+    /**
+     * 数据汇总-数据列表
+     * @param string $orgId
+     * @param array $businessId
+     * @param array $fields
+     * @return array
+     */
+    public function getCourseListDetail(string $orgId,array $businessId,array $fields):array;
 }
