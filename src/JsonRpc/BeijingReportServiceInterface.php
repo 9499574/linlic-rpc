@@ -11,4 +11,11 @@ namespace linlic\JsonRpc;
 interface BeijingReportServiceInterface
 {
     public function uploadSeniorDoctor(string $orgId, array $doctorList, string $systemId): array;
+
+    /**
+     * 获取日志事件key
+     * @param string $event_const
+     * @return string
+     */
+    public function getEventKey(string $event_const):string;
 }
