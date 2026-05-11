@@ -194,4 +194,14 @@ interface ExamServiceInterface
      */
     public function getPersonalProfileFields(array $params): array;
 
+    /**
+     * 获取 本院科室+考试名称 选项
+     * @param string $orgId
+     * @param string $systemId
+     * @param string $menuId
+     * @param array $select
+     * @param array $where
+     * @return array
+     */
+    public function getHdExamNameOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 }
