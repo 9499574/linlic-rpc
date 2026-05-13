@@ -31,11 +31,4 @@ interface ProjectDeclareServiceInterface
      * @return array
      */
     public function orgSet(array $params): array;
-
-    /**
-     * 项目申报表单回调(数据入库到当前模块表)
-     * @param array $params
-     * @return array
-     */
-    public function formProjectDeclareCallback(array $params): array;
 }
