@@ -13,9 +13,10 @@ interface CycleBookNewServiceInterface
 
     /**
      * 功能配置
+     * @param array $params
      * @return array
      */
-    public function getConfigs():array;
+    public function getConfigs(array $params):array;
 
     /**
      * 获取设置配置
