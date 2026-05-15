@@ -1,0 +1,27 @@
+<?php
+
+namespace linlic\JsonRpc;
+
+interface CycleBookNewServiceInterface
+{
+    /**
+     * 功能字段
+     * @param array $params
+     * @return array
+     */
+    public function getFields(array $params):array;
+
+    /**
+     * 功能配置
+     * @return array
+     */
+    public function getConfigs():array;
+
+    /**
+     * 获取设置配置
+     * @param array $params
+     * @return array
+     */
+    public function getSettingConf(array $params):array;
+
+}
