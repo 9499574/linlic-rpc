@@ -31,4 +31,11 @@ interface ProjectItemServiceInterface
      * @return array
      */
     public function orgSet(array $params): array;
+
+    /**
+     * 项目立项审核流程参数
+     * @param array $params
+     * @return array
+     */
+    public function projectItemFlowParams(array $params): array;
 }
