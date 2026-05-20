@@ -352,7 +352,9 @@ interface FormServiceInterface
     /**
      * 获取选择填报表单
      * @param array $params
+     * @param null $formTemplateId
+     * @param string $type
      * @return array
      */
-    public function getUseForm(array $params): array;
+    public function getUseForm(array $params, $formTemplateId = null, string $type = ''): array;
 }
