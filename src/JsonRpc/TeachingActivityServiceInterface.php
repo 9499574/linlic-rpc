@@ -380,4 +380,9 @@ interface TeachingActivityServiceInterface
      */
     public function getNoJoinUserListConf(array $params): array;
 
+    /**
+     * 获取教学活动参与次数
+     * */
+    public function getUserActivityCount(int $org_id,string $system_id,string $uid): int;
+
 }
