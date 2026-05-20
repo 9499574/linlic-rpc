@@ -383,6 +383,6 @@ interface TeachingActivityServiceInterface
     /**
      * 获取教学活动参与次数
      * */
-    public function getUserActivityCount(int $org_id,string $system_id,string $uid): int;
+    public function getUserActivityCount(int $org_id,string $system_id,string $uid,string $start_date = '',string $end_date = ''): int;
 
 }

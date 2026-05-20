@@ -42,7 +42,7 @@ interface CyclePlanUserGenServiceInterface
      * @param array $userId
      * @return array
      */
-    public function getUserPreviewInfo(int $orgId,string $userId):array;
+    public function getUserPreviewInfo(int $orgId,string $userId,string $start_date = '',string $end_date = ''):array;
 
 
 }
