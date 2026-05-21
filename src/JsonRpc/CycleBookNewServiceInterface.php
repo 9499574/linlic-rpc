@@ -25,4 +25,11 @@ interface CycleBookNewServiceInterface
      */
     public function getSettingConf(array $params):array;
 
+    /**
+     * 获取轮转配置常量
+     * @param array $params
+     * @return array
+     */
+    public function getCycleBookConstOptions(array $params):array;
+
 }
