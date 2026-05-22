@@ -40,4 +40,33 @@ interface CycleBookSubImportServiceInterface
      */
     public function handle2022CycleBookStandardDataInit(array $params): bool;
 
+
+    /**
+     * 新版轮转手册要求导入前置PRC
+     * @param array $params
+     * @return array
+     */
+    public function requirePreConfig(array $params): array;
+
+    /**
+     * 新版轮转手册要求导入校验RPC
+     * @param array $params
+     * @return array
+     */
+    public function requireValidConfig(array $params): array;
+
+    /**
+     * 新版轮转手册要求导入模板RPC
+     * @param array $params
+     * @return array
+     */
+    public function requireTemplateConfig(array $params): array;
+
+    /**
+     * 新版轮转手册要求导入导入PRC
+     * @param array $params
+     * @return array
+     */
+    public function requireImportData(array $params): array;
+
 }
