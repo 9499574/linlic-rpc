@@ -17,4 +17,11 @@ interface AnnualAssessmentServiceInterface
      * @return array
      */
     public function menuConf(array $params): array;
+
+    /**
+     * 获取考核项目配置
+     * @param array $params
+     * @return array
+     */
+    public function getAssessmentItemsConfig(array $params): array;
 }
