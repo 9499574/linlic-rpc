@@ -76,7 +76,7 @@ interface CycleViewServiceInterface
      * @param array $params 其他参数 $params['fields'] (array 需要的其他字段值 staff_room_id)
      * @return array 学生uid，时间段，具体轮转科室，带教老师uid 轮转详情和带教姓名
      */
-    public function easyGetCycleUsers(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1,array $params=[]):array;
+    public function easyGetCycleUsers(string $org_id,string $system_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1,array $params=[]):array;
 
     /**
      *获取带教老师角色id
