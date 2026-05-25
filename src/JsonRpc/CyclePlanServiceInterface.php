@@ -113,4 +113,9 @@ interface CyclePlanServiceInterface
      * * */
     public function userMakeUp(array $params): array;
 
+    /**
+     * 获取轮转退出设置
+     * */
+    public function getCyclePlanDelSet(array $params,array $menu_id): array;
+
 }
