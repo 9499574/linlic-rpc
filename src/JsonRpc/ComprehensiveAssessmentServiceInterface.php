@@ -154,4 +154,10 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function getUserComprehensiveAssessmentList(array $params): array;
+
+    /**
+     * 获取单个用户综合评估数据
+     * $params org_id system_id
+     * */
+    public function getUserScoreList($params,$uid,$start_date = '',$end_date = ''): array;
 }
