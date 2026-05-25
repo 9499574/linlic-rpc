@@ -185,4 +185,9 @@ interface CycleViewServiceInterface
      */
     public function orgSet(array $params): array;
 
+    /**
+     * 根据轮转id获取本院科室id列表
+     * */
+    public function getHdsIdsByGenIds(array $gen_id_list):array;
+
 }
