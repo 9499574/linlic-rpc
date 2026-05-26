@@ -204,4 +204,10 @@ interface ExamServiceInterface
      * @return array
      */
     public function getHdExamNameOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
+
+    /**
+     * 获取用户考试列表数据
+     * 用户画像用
+     * */
+    public function getUserExams($params,$uid,$start_date = '',$end_date = ''): array;
 }
