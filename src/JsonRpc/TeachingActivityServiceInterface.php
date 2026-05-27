@@ -392,4 +392,10 @@ interface TeachingActivityServiceInterface
      */
     public function getUserJoinActivityRuleConf(string $orgId, array $menuId): array;
 
+    /**
+     * 获取用户的教学活动列表
+     * @return array
+     */
+    public function getUserActivities($params,$uid,$start_time = '',$end_time = ''): array;
+
 }
