@@ -84,4 +84,12 @@ interface AttendanceServiceInterface
      * @return array
      */
     public function getUserAttendanceRuleSign(array $params): array;
+
+
+    /**
+     * 根据id获取班次名称
+     * @param array $id_list
+     * @return array
+     * */
+    public function getShiftNames(array $id_list): array;
 }
