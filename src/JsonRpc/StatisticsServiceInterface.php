@@ -1,0 +1,16 @@
+<?php
+
+namespace linlic\JsonRpc;
+
+interface StatisticsServiceInterface
+{
+    /**
+     * 个人进度看板-模块字段
+     */
+    public function personalProgressDashboardField($params): array;
+
+    /**
+     * 个人进度看板-配置字段
+     */
+    public function personalProgressDashboardConf($params): array;
+}

@@ -386,13 +386,6 @@ interface TeachingActivityServiceInterface
     public function getUserActivityCount(int $org_id,string $system_id,string $uid,string $start_date = '',string $end_date = ''): int;
 
     /**
-     * 个人参与教学活动相关配置字段内容-数据汇总
-     * @param $params
-     * @return array
-     */
-    public function getUserJoinActivityRuleConf(string $orgId, array $menuId): array;
-
-    /**
      * 获取用户的教学活动列表
      * @return array
      */
