@@ -1,0 +1,27 @@
+<?php
+
+namespace linlic\JsonRpc;
+
+interface FinalAssessmentServiceInterface
+{
+    /**
+     * 结业考核功能字段
+     * @param array $params
+     * @return array
+     */
+    public function getFields(array $params): array;
+
+    /**
+     * 结业考核菜单配置
+     * @param array $params
+     * @return array
+     */
+    public function menuConf(array $params): array;
+
+    /**
+     * 结业考核机构配置
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params): array;
+}
