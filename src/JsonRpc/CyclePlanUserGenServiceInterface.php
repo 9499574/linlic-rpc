@@ -45,4 +45,14 @@ interface CyclePlanUserGenServiceInterface
     public function getUserPreviewInfo(int $orgId,string $userId,string $start_date = '',string $end_date = ''):array;
 
 
+    /**
+     * 获取轮转生成表数据
+     * @param int $orgId
+     * @param array $genIds
+     * @param array $fields
+     * @return array
+     */
+    public function getGenListData(int $orgId,array $genIds,array $fields=['*']):array;
+
+
 }
