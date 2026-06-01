@@ -39,7 +39,9 @@ interface CyclePlanUserGenServiceInterface
     /**
      * 获取用户轮转简单信息
      * @param int $orgId
-     * @param array $userId
+     * @param string $userId
+     * @param string $start_date
+     * @param string $end_date
      * @return array
      */
     public function getUserPreviewInfo(int $orgId,string $userId,string $start_date = '',string $end_date = ''):array;
