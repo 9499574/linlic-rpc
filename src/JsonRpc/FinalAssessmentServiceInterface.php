@@ -24,4 +24,11 @@ interface FinalAssessmentServiceInterface
      * @return array
      */
     public function orgSet(array $params): array;
+
+    /**
+     * 结业考核流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function finalAssessmentFlowCallback(array $params): bool;
 }
