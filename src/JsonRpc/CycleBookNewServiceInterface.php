@@ -32,4 +32,11 @@ interface CycleBookNewServiceInterface
      */
     public function getCycleBookConstOptions(array $params):array;
 
+    /**
+     * 轮转手册完成情况
+     * @param array $params
+     * @return array
+     */
+    public function bookFinishCaseNew(array $params):array;
+
 }
