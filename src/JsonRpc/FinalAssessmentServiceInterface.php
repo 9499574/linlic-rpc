@@ -38,4 +38,11 @@ interface FinalAssessmentServiceInterface
      * @return array
      */
     public function getFinalAssessmentItem(array $params): array;
+
+    /**
+     * 更新承诺书填报记录ID
+     * @param array $params
+     * @return array
+     */
+    public function updatePromiseFormId(array $params): array;
 }
