@@ -31,4 +31,11 @@ interface FinalAssessmentServiceInterface
      * @return bool
      */
     public function finalAssessmentFlowCallback(array $params): bool;
+
+    /**
+     * 获取结业考核项目数据
+     * @param array $params
+     * @return array
+     */
+    public function getFinalAssessmentItem(array $params): array;
 }
