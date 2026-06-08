@@ -35,4 +35,34 @@ interface BeijingReportServiceInterface
      * }
      */
     public function uploadTeacherData(string $orgId, array $teacherData, string $systemId): array;
+
+
+    /**
+     * 学员其他轮转信息（活动信息）批量上报
+     *
+     * @param string $orgId 机构ID（必填）
+     * @param array $activityList 活动信息列表（必填）
+     * @param string $systemId 系统ID（可选）
+     * @return array {
+     *     int $success_batches 成功批次
+     *     int $failed_batches 失败批次
+     *     array $errors 错误详情
+     * }
+     */
+    public function uploadLzPlanActivity(string $orgId, array $activityList, string $systemId): array;
+
+
+    /**
+     * 学员其他轮转信息（教学记录）批量上报
+     *
+     * @param string $orgId 机构ID（必填）
+     * @param array $teachingList 教学记录列表（必填）
+     * @param string $systemId 系统ID（可选）
+     * @return array {
+     *     int $success_batches 成功批次
+     *     int $failed_batches 失败批次
+     *     array $errors 错误详情
+     * }
+     */
+    public function uploadLzPlanTeaching(string $orgId, array $teachingList, string $systemId): array;
 }
