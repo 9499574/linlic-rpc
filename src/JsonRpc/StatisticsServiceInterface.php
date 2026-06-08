@@ -23,4 +23,9 @@ interface StatisticsServiceInterface
      * 科室进度看板-配置字段
      */
     public function ksProgressDashboardConf($params): array;
+
+    /**
+     * 科室进度看板数据分析
+     */
+    public function ksProgressDashboardAnalyze(array $params): bool;
 }
