@@ -33,12 +33,4 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
      * @return array
      */
     public function getFlowFormContent(array $flowIds):array;
-
-    /**
-     * 指定表单的填写数据修改（深圳第三人民医院定制化）
-     * @param string $filling_form_id
-     * @param array $data
-     * @return void
-     */
-    public function updateFillingFieldsFormData(string $filling_form_id,array $data): void;
 }
