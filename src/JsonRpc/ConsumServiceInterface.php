@@ -34,4 +34,10 @@ interface ConsumServiceInterface
      * @return array
      */
     public function getConsumStoreData($params): array;
+    /**
+     * 耗材可使用数量低于安全存量消息提醒注册
+     * @param $params
+     * @return array
+     */
+    public function messageConf($params): array;
 }

@@ -249,6 +249,7 @@ interface UserServiceInterface
         array  $params,
         array  $uidArr = [],
         bool $emptyParamsShowAll = false,
+        int $limit = 0
     ): array;
 
     /**
