@@ -62,9 +62,9 @@ interface CycleViewServiceInterface
     public function getCycleUsers(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1,array $params=[]):array;
 
     /**
-     * 获取轮转人员 - 菜单id可以为空时间默认不限制版
+     * 获取轮转人员和轮转情况
      * @param string $org_id 机构id 不能为空
-     * @param array $menu_id 轮转总览菜单数组 可以为空
+     * @param array $menu_id 轮转总览菜单数组 不能为空
      * @param array $is_leave 是否出科，可以为空
      * @param array $uid 学生数组，可以为空
      * @param array $date 时间段 ['2024-05-01','2024-05-31'] 可以为空
@@ -74,9 +74,9 @@ interface CycleViewServiceInterface
      * @param array $standard_base_id 基地数组 可以为空
      * @param int $date_type 时间段查询类型 1轮转时间 2出科时间
      * @param array $params 其他参数 $params['fields'] (array 需要的其他字段值 staff_room_id)
-     * @return array 学生uid，时间段，具体轮转科室，带教老师uid 轮转详情和带教姓名
+     * @return array 学生uid，时间段，具体轮转科室，带教老师uid
      */
-    public function easyGetCycleUsers(string $org_id,string $system_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1,array $params=[]):array;
+    public function getCycleUsersAndDetail(string $org_id,array $menu_id,array $is_leave,array $uid=[],array $date=[],array $hd_id=[],array $sd_id=[],array $stage=[], array $standard_base_id=[],int $date_type=1,array $params=[]):array;
 
     /**
      *获取带教老师角色id
