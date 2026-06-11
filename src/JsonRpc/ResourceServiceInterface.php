@@ -25,6 +25,17 @@ interface ResourceServiceInterface
 
 
     /**
+     * 富文本内容里面的文件迁移
+     * @param string $richTextContent
+     * @param string $orgId
+     * @param string $uid
+     * @param string $module
+     * @return string
+     */
+    public function richTextFileMigrate(string $richTextContent,string $orgId,string $uid,string $module):string;
+
+
+    /**
      * 获取文件信息
      * @param array $resource_id
      * @return array

@@ -46,5 +46,10 @@ interface FinalAssessmentServiceInterface
      */
     public function updatePromiseFormId(array $params): array;
 
-
+    /**
+     * 更新考核结论填报记录ID
+     * @param array $params
+     * @return array
+     */
+    public function updateConclusionFormId(array $params): array;
 }
