@@ -65,4 +65,18 @@ interface BeijingReportServiceInterface
      * }
      */
     public function uploadLzPlanTeaching(string $orgId, array $teachingList, string $systemId): array;
+
+    /**
+     * 学员其他轮转信息（科研获奖论文）上报
+     *
+     * @param string $orgId 机构ID（必填）
+     * @param array $articlesList 科研获奖论文列表（必填），每个元素包含：
+     * @param string $systemId 系统ID（可选）
+     * @return array {
+     *     int $success_batches 成功批次
+     *     int $failed_batches 失败批次
+     *     array $errors 错误详情
+     * }
+     */
+    public function uploadLzPlanArticles(string $orgId, array $articlesList, string $systemId): array;
 }
