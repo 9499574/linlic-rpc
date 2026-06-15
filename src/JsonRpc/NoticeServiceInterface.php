@@ -110,4 +110,11 @@ interface NoticeServiceInterface
      * @return bool
      */
     public function addNoticeConfDetailData(array $data):bool;
+
+    /**
+     * 根据内容推送消息
+     * @param $params
+     * @return bool
+     */
+    public function contentPushNotice($params):bool;
 }
