@@ -160,4 +160,11 @@ interface ComprehensiveAssessmentServiceInterface
      * $params org_id system_id
      * */
     public function getUserScoreList($params,$uid,$start_date = '',$end_date = ''): array;
+
+    /**
+     * 获取出科考核要去评估数据
+     * @param $params ['org_id'=>'','uid'=>'','menu_id','user_gen_ids'=>[]]
+     * @return array
+     */
+    public function getCkAssessData($params):array;
 }
