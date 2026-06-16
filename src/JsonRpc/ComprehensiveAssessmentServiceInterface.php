@@ -163,7 +163,7 @@ interface ComprehensiveAssessmentServiceInterface
 
     /**
      * 获取出科考核要去评估数据
-     * @param $params ['org_id'=>'','uid'=>'','menu_id','user_gen_ids'=>[]]
+     * @param $params
      * @return array
      */
     public function getCkAssessData($params):array;
