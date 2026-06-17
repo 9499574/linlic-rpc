@@ -63,4 +63,15 @@ interface HospitalDepartmentServiceInterface
      * @return array
      */
     public function getBaseIdsByHdIds(array $hd_ids):array;
+
+
+    /**
+     * 科室总览设置
+     * */
+    public function getDashboardConfig($params): array;
+
+    /**
+     * 科室总览列表字段
+     * */
+    public function getDashboardFields($params):array;
 }
