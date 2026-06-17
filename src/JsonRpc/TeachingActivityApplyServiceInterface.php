@@ -17,4 +17,11 @@ interface TeachingActivityApplyServiceInterface
      * @return array
      */
     public function reviewUserType($params): array;
+
+    /**
+     * 流程参数
+     * @param array $params
+     * @return array
+     */
+    public function flowParams(array $params): array;
 }
