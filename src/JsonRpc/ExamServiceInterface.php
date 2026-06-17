@@ -210,4 +210,9 @@ interface ExamServiceInterface
      * 用户画像用
      * */
     public function getUserExams($params,$uid,$start_date = '',$end_date = ''): array;
+
+    /**
+     * 获取考试分类
+     * */
+    public function getExamCategory($params): array;
 }
