@@ -109,7 +109,8 @@ interface UserServiceInterface
         bool $showFieldName = false,
         int $limit = 0,
         int $page = 0,
-        bool $show_high_manage = false
+        bool $show_high_manage = false,
+        array $orderBy = []
     ): array;
 
 
