@@ -42,6 +42,14 @@ interface HospitalDepartmentServiceInterface
      */
     public function getDepartmentCapacity($hdIds):array;
 
+
+    /**
+     * 获取本院科室最小容量
+     * @param array $hdIds ["1","2"]
+     * @return array ["1"=>10,"2"=>0]
+     */
+    public function getDepartmentMinCapacity(array $hdIds):array;
+
     /*
     * 获取本院科室的名称
     * @param $hdIds ["1","2"]
