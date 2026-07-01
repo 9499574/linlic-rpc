@@ -450,4 +450,13 @@ interface DictionaryServiceInterface
      * @return array
      */
     public function getDictData(array $select,array $dictKeys):array;
+
+    /**
+     * 根据字典key及菜单获取字典选项
+     * @param string $dictKey 字典key
+     * @param int $orgId 机构id
+     * @param array $menuId 菜单ID
+     * @return array
+     */
+    public function getDictOptionByMenuIds(string $dictKey, int $orgId, array $menuId): array;
 }
