@@ -329,4 +329,13 @@ interface UserServiceInterface
      */
     public function editUserTmpCallBack(array $params):bool;
 
+
+    /**
+     * 四川省人民-人事系统-轮转结束设置人员离院
+     *
+     * @param array $params
+     * @return bool
+     */
+    public function ScsrmEhrLeaveSetUser(int $orgId, string $uid):bool;
+
 }
