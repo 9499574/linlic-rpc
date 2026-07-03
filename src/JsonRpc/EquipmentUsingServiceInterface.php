@@ -48,4 +48,11 @@ interface EquipmentUsingServiceInterface
      * @return bool
      */
     public function cancelUse(string $businessId,  array $useRecordIds): bool;
+
+    /**
+     * 获取选择设备列表数据(同弹框选择设备)
+     * @param $params
+     * @return array
+     */
+    public function getListGroupByRoomRpc($params):array;
 }
