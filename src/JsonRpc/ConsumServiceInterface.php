@@ -40,4 +40,10 @@ interface ConsumServiceInterface
      * @return array
      */
     public function messageConf($params): array;
+    /**
+     * 获取选择耗材列表数据(同弹框选择耗材)
+     * @param $params
+     * @return array
+     */
+    public function consumSelectList($params): array;
 }
