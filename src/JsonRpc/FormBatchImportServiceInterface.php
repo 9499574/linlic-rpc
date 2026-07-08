@@ -46,4 +46,7 @@ interface FormBatchImportServiceInterface
     public function replaceValidConfig(array $params): array;
 
     public function replaceImportData(array $params): array;
+
+
+    public function getFormContent(string $menuId,array $params):array;
 }
