@@ -89,4 +89,18 @@ interface CycleBookServiceInterface
      */
     public function bookFinishCase(array $params):array;
 
+    /**
+     * 定时消息-表单字段
+     * @param array $params
+     * @return array
+     */
+    public function getMessageFormFields(array $params):array;
+
+    /**
+     * 定时消息-获取用户ID
+     * @param array $params
+     * @return array
+     */
+    public function getMessageUserIds(array $params):array;
+
 }
