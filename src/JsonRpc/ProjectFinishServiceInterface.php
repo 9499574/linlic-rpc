@@ -31,4 +31,11 @@ interface ProjectFinishServiceInterface
      * @return array
      */
     public function orgSet(array $params): array;
+
+    /**
+     * 消息注册
+     * @param array $params
+     * @return array
+     */
+    public function messageConf(array $params): array;
 }
