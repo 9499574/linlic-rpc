@@ -38,4 +38,11 @@ interface ProjectInspectServiceInterface
      * @return array
      */
     public function messageConf(array $params): array;
+
+    /**
+     * 更新项目中检成果类型表单数据id
+     * @param array $params
+     * @return array
+     */
+    public function updateCenterFillingFormId(array $params): array;
 }
