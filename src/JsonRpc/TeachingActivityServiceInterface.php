@@ -391,4 +391,12 @@ interface TeachingActivityServiceInterface
      */
     public function getUserActivities($params,$uid,$start_time = '',$end_time = ''): array;
 
+    /**
+     * 获取教学活动主表字段数据
+     * @param array $activityIds
+     * @param array $fields
+     * @return array
+     */
+    public function getActivityListDataFields(array $activityIds,array $fields):array;
+
 }
