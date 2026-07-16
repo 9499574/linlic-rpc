@@ -24,4 +24,18 @@ interface TeachingActivityApplyServiceInterface
      * @return array
      */
     public function flowParams(array $params): array;
+
+    /**
+     * 获取表单字段
+     * @param array $params
+     * @return array
+     */
+    public function getFields(array $params): array;
+
+    /**
+     * 获取配置
+     * @param array $params
+     * @return array
+     */
+    public function getConfigs(array $params): array;
 }
