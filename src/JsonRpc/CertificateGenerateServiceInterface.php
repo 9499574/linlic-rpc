@@ -38,4 +38,11 @@ interface CertificateGenerateServiceInterface
      * @return array
      */
     public function getCertificateGenerates(array $params):array;
+
+    /**
+     * 获取用户证书编号
+     * @param array $params
+     * @return array
+     */
+    public function getUserCertificateCode(array $params):array;
 }
