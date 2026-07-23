@@ -17,4 +17,12 @@ interface TtcourseServiceInterface
      * @return array
      */
     public function getConfigs($params):array;
+
+
+    /**
+     * 获取常量选择
+     * @param $params
+     * @return array
+     */
+    public function getConstOptions($params):array;
 }
