@@ -401,14 +401,11 @@ interface TeachingActivityServiceInterface
 
 
     /**
-     * 海康门禁-获取指定时间的活动编号集合
-     * 返回 开始、结束时间、房间编号、所有人员
+     * 海康门禁-根据当前时间获取活动编号集合
      * @param int $orgId
-     * @param string $dateTime
-     * @param array $roomIds
      * @return array
      */
-    public function hkGetTimeActivityInfoList(int $orgId,string $dateTime,array $roomIds):array;
+    public function hkGetNowDaTeActivityIds(int $orgId):array;
 
     /**
      * 海康门禁-获取活动信息
