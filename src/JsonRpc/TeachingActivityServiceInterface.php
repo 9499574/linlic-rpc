@@ -399,4 +399,23 @@ interface TeachingActivityServiceInterface
      */
     public function getActivityListDataFields(array $activityIds,array $fields):array;
 
+
+    /**
+     * 海康门禁-获取指定时间的活动编号集合
+     * 返回 开始、结束时间、房间编号、所有人员
+     * @param int $orgId
+     * @param string $dateTime
+     * @param array $roomIds
+     * @return array
+     */
+    public function hkGetTimeActivityInfoList(int $orgId,string $dateTime,array $roomIds):array;
+
+    /**
+     * 海康门禁-获取活动信息
+     * 返回 开始、结束时间、房间编号、所有人员
+     * @param string $activityId
+     * @return array
+     */
+    public function hkGetActivityInfo(string $activityId): array;
+
 }
