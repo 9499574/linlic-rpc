@@ -415,4 +415,11 @@ interface TeachingActivityServiceInterface
      */
     public function hkGetActivityInfo(string $activityId): array;
 
+    /**
+     * 删除教学活动
+     * @param array $params
+     * @return array
+     */
+    public function delTeachingActivity(array $params): array;
+
 }
