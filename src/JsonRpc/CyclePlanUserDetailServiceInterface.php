@@ -69,4 +69,17 @@ interface CyclePlanUserDetailServiceInterface
      * * * @return bool
     * */
     public function revokeUserPlan(array $params):bool;
+
+    /**
+     * 查询学员轮转排版详情
+     * @param array $field 查询字段
+     * @param int $org_id 机构ID
+     * @param array $system_id 系统ID
+     * @param array $menu_id 菜单ID
+     * @param array $hd_id 科室ID
+     * @param array $uid 用户ID
+     * @param array $date_range 日期范围
+     * @return array
+     */
+    public function getUserPlanDetails(array $field, int $org_id, array $system_id = [], array $menu_id = [], array $hd_id = [], array $uid = [], array $date_range = []): array;
 }
