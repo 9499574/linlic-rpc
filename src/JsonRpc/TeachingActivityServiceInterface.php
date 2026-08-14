@@ -422,4 +422,10 @@ interface TeachingActivityServiceInterface
      */
     public function delTeachingActivity(array $params): array;
 
+    /**
+     * 获取课时统计 table fields
+     * @param array $params
+     * @return array
+     */
+    public function dailyStatisticsFields(array $params): array;
 }

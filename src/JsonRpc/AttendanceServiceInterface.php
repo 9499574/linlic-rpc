@@ -92,4 +92,11 @@ interface AttendanceServiceInterface
      * @return array
      * */
     public function getShiftNames(array $id_list): array;
+
+    /**
+     * 补卡流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function restoreSignFlowCallBack(array $params): bool;
 }

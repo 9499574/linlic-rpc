@@ -41,6 +41,8 @@ interface ExamServiceInterface
      */
     public function examSituationConf($params):array;
 
+    //回收站功能字段
+    public function examRecycleField($params):array;
     /**
      * 考试-特殊考试注册后获取参数地址-测试用
      * @param $params
