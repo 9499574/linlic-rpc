@@ -336,4 +336,12 @@ interface UserServiceInterface
      */
     public function ScsrmEhrLeaveSetUser(int $orgId, array $uids):bool;
 
+    /**
+     * 获取当前机构是否开启了用户信息审核流程
+     *
+     * @param array $params
+     * @return bool
+     */
+    public function getUserInfoAuditFlowStatus(array $params):bool;
+
 }
