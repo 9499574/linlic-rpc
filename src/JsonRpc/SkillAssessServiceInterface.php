@@ -132,6 +132,13 @@ interface SkillAssessServiceInterface
      */
     public function getUserSkillAssessRecordData(array $params): array;
 
+    /**
+     * 获取考官评分详情导出文件列表缓存 Key
+     * @param array $params
+     * @return string
+     */
+    public function getScoreExamUserDetailExportFileList(array $params): string;
+
 
     /**
      * @param $select
