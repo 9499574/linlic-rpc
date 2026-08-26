@@ -5,7 +5,7 @@ namespace linlic\JsonRpc;
 /**
  * his部门接口
  */
-interface HisDeptInterface
+interface HisDeptServiceInterface
 {
     /**
      * 根据hdId获取hisInfo 返回his code和name
