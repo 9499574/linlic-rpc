@@ -94,4 +94,17 @@ interface CyclePlanUserDetailServiceInterface
      * @return array
      */
     public function getUserPlanDuration(int $org_id, array $system_id = [], array $menu_id = [], array $hd_id = [], array $uid = [], array $date_range = []): array;
+
+    /**
+     * 统计指定月份每一天的学员轮转人数
+     * @param array $params
+     * [
+     * 'org_id' => '692476229400604673',
+     * 'system_id' => '692476312259080192',
+     * 'menu_id' => 'menu-872772441461866497-692771897403023360',
+     * 'uids' => ['646006905047547904','646006905047547906'],
+     * 'month' => '2026-08'
+     * ]
+     */
+    public function getEveryDayCyclePlanUserNumByMonth(array $params): array;
 }
