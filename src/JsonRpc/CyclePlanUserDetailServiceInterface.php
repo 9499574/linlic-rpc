@@ -56,6 +56,17 @@ interface CyclePlanUserDetailServiceInterface
      */
     public function dateRangeGetUserHdIds(int $org_id,array $uid,array $menu_id,string $start_date,string $end_date):array;
 
+
+    /**
+     * 根据机构ID、用户ID、菜单ID集合和日期获取轮转计划用户本院科室Id
+     * @param string $orgId
+     * @param string $uid
+     * @param array $menuIds
+     * @param string $date
+     * @return string
+     */
+    public function getCycleUserDateHdId(string $orgId,string $uid,array $menuIds,string $date):string;
+
     /**
      * 删除轮转计划
      * @param array $params
