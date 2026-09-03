@@ -2,7 +2,7 @@
 
 namespace linlic\JsonRpc;
 
-interface CoursesMajorMnowledgeRelationServiceInterface
+interface CourseMajorKnowledgeRelationServiceInterface
 {
     /**
      * 校验RPC
