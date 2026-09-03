@@ -118,4 +118,12 @@ interface CyclePlanUserDetailServiceInterface
      * ]
      */
     public function getEveryDayCyclePlanUserNumByMonth(array $params): array;
+
+    /**
+     * 获取某一天无需打卡的人员列表
+     * @param string $day Y-m-d
+     * @param array $params ['org_id'='', 'system_id'='', 'menu_ids'=[], 'uids'=[],'page'=1,'limit'=10]
+     * @return array
+     */
+    public function getNotClockUser(string $day, array $params): array;
 }
