@@ -33,4 +33,12 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
      * @return array
      */
     public function getFlowFormContent(array $flowIds):array;
+
+    /**
+     * 获取流程审核参数-用于模块接入审核-在模块进行审核流程
+     * @param array $flowIds
+     * @param int $uid
+     * @return array
+     */
+    public function getFlowVerifyParams(array $flowIds,int $uid):array;
 }
