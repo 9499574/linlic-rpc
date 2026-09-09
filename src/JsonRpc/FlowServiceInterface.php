@@ -38,7 +38,8 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
      * 获取流程审核参数-用于模块接入审核-在模块进行审核流程
      * @param array $flowIds
      * @param int $uid
+     * @param bool $openForcedReturn 是否开启强制退回
      * @return array
      */
-    public function getFlowVerifyParams(array $flowIds,int $uid):array;
+    public function getFlowVerifyParams(array $flowIds,int $uid,bool $openForcedReturn=false):array;
 }
