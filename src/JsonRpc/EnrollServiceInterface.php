@@ -82,4 +82,13 @@ interface EnrollServiceInterface
      */
     public function formSubmitCallback(array $params):array;
 
+
+    /**
+     * 获取添加用户选择列表
+     * @param array $params
+     * @param string $type
+     * @return array
+     */
+    public function getAddSelectUserList(array $params,string $type):array;
+
 }
