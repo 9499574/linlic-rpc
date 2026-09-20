@@ -21,4 +21,11 @@ interface TutorSelectDetailServiceInterface
      * @return array
      */
     public function menuConf(array $params):array;
+
+    /**
+     * 师生互选指定人员个人简介字段信息
+     * @param array $params
+     * @return array
+     */
+    public function getPlanUserIntroData(array $params): array;
 }
