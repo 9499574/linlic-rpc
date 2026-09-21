@@ -26,5 +26,12 @@ interface AdmissionExamServiceInterface
      */
     public function getFilterOptions(array $params, string $key):array;
 
+    /**
+     * 获取机构设置
+     * @param array $params
+     * @return array
+     */
+    public function admissionExamOrgSet(array $params):array;
+
 
 }
