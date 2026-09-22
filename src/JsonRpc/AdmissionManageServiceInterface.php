@@ -52,6 +52,14 @@ interface AdmissionManageServiceInterface
      * @param array $params
      * @return array
      */
+    public function getApplyConfig(array $params):array;
+
+
+    /**
+     * 报名管理功能配置(录取配置？)
+     * @param array $params
+     * @return array
+     */
     public function getApplyConf(array $params):array;
 
     /**
