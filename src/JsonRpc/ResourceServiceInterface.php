@@ -80,4 +80,11 @@ interface ResourceServiceInterface
      * @return array
      */
     public function base64Upload(string $orgId, string $uId, string $module, string $fileName,string $base64Data,array $callback=[]):array;
+
+    /**
+     * 网络文件上传(大文件不支持)
+     * @param array $urlList
+     * @return array
+     */
+    public function networkFileUpload(array $urlList):array;
 }

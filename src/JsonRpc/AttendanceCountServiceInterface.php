@@ -24,4 +24,11 @@ interface AttendanceCountServiceInterface
      * @return bool
      */
     public function attendanceFlowCallback(array $params): bool;
+
+    /**
+     * 考勤汇总统计功能字段
+     * @param array $params
+     * @return array
+     */
+    public function getSummaryFields(array $params): array;
 }

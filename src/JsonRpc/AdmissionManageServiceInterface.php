@@ -18,6 +18,14 @@ interface AdmissionManageServiceInterface
      */
     public function getAdmissionConf(array $params):array;
 
+
+    /**
+     * 录取管理功能机构设置
+     * @param array $params
+     * @return array
+     */
+    public function getAdmissionOrgSet(array $params):array;
+
     /**
      * 报到管理功能字段
      * @param $params ['org_id'=>-1]
@@ -41,6 +49,14 @@ interface AdmissionManageServiceInterface
 
     /**
      * 报名管理功能配置
+     * @param array $params
+     * @return array
+     */
+    public function getApplyConfig(array $params):array;
+
+
+    /**
+     * 报名管理功能配置(录取配置？)
      * @param array $params
      * @return array
      */

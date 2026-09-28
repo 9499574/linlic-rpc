@@ -33,5 +33,11 @@ interface AttendanceRecordServiceInterface
      * @return array
      */
     public function getAttendanceRecordList(array $params): array;
+    /**
+     * 获取考勤到卡提醒信息
+     * @param array $params
+     * @return array
+     */
+    public function getAttendanceClockTimes(array $params): array;
 
 }

@@ -56,6 +56,17 @@ interface CyclePlanUserDetailServiceInterface
      */
     public function dateRangeGetUserHdIds(int $org_id,array $uid,array $menu_id,string $start_date,string $end_date):array;
 
+
+    /**
+     * 根据机构ID、用户ID、菜单ID集合和日期获取轮转计划用户本院科室Id
+     * @param string $orgId
+     * @param string $uid
+     * @param array $menuIds
+     * @param string $date
+     * @return string
+     */
+    public function getCycleUserDateHdId(string $orgId,string $uid,array $menuIds,string $date):string;
+
     /**
      * 删除轮转计划
      * @param array $params
@@ -69,4 +80,50 @@ interface CyclePlanUserDetailServiceInterface
      * * * @return bool
     * */
     public function revokeUserPlan(array $params):bool;
+
+    /**
+     * 查询学员轮转排版详情
+     * @param array $field 查询字段
+     * @param int $org_id 机构ID
+     * @param array $system_id 系统ID
+     * @param array $menu_id 菜单ID
+     * @param array $hd_id 科室ID
+     * @param array $uid 用户ID
+     * @param array $date_range 日期范围
+     * @return array
+     */
+    public function getUserPlanDetails(array $field, int $org_id, array $system_id = [], array $menu_id = [], array $hd_id = [], array $uid = [], array $date_range = []): array;
+
+    /**
+     * 查询学员轮转时长
+     * @param int $org_id 机构ID
+     * @param array $system_id 系统ID
+     * @param array $menu_id 菜单ID
+     * @param array $hd_id 科室ID
+     * @param array $uid 用户ID
+     * @param array $date_range 日期范围
+     * @return array
+     */
+    public function getUserPlanDuration(int $org_id, array $system_id = [], array $menu_id = [], array $hd_id = [], array $uid = [], array $date_range = []): array;
+
+    /**
+     * 统计指定月份每一天的学员轮转人数
+     * @param array $params
+     * [
+     * 'org_id' => '692476229400604673',
+     * 'system_id' => '692476312259080192',
+     * 'menu_id' => ['menu-872772441461866497-692771897403023360'],
+     * 'uids' => ['646006905047547904','646006905047547906'],
+     * 'month' => '2026-08'
+     * ]
+     */
+    public function getEveryDayCyclePlanUserNumByMonth(array $params): array;
+
+    /**
+     * 获取某一天无需打卡的人员列表
+     * @param string $day Y-m-d
+     * @param array $params ['org_id'='', 'system_id'='', 'menu_ids'=[], 'uids'=[],'page'=1,'limit'=10]
+     * @return array
+     */
+    public function getNotClockUser(string $day, array $params): array;
 }

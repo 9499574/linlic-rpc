@@ -24,4 +24,11 @@ interface AnnualAssessmentServiceInterface
      * @return array
      */
     public function getAssessmentItemsConfig(array $params): array;
+
+    /**
+     * 更新填报记录ID
+     * @param array $params
+     * @return array
+     */
+    public function updateFillingFormId(array $params): array;
 }
