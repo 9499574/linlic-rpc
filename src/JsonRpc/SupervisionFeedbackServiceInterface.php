@@ -56,4 +56,11 @@ interface SupervisionFeedbackServiceInterface
      */
     public function detailExportData(array $businessParams):array;
 
+    /**
+     * 机构设置
+     * @param $params
+     * @return array
+     */
+    public function getSetConf($params): array;
+
 }
