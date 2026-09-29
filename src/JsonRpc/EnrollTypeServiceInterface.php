@@ -11,4 +11,12 @@ interface EnrollTypeServiceInterface
      * @return array
      */
     public function getEnrollTypeSignWriteFields(int $orgId, array $enroll_ids): array;
+
+    /**
+     * 报名类型-获取选中需要显示的报名字段（根据计划ID查询）
+     * @param int $orgId
+     * @param array $enroll_ids
+     * @return array
+     */
+    public function getEnrollTypeShowUserFields(int $orgId, array $enroll_ids): array;
 }
