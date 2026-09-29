@@ -62,4 +62,12 @@ interface UserSearchServiceInterface
      * @return array
      */
     public function getCcmtvUidByUserIds(int $orgId,array $ccmtvUid):array;
+
+    /**
+     * 获取删除用户编号
+     * @param int $orgId
+     * @param array $userIds 如果为空则获取所有删除用户编号
+     * @return array
+     */
+    public function getDeleteUserIds(int $orgId,array $userIds=[]):array;
 }
