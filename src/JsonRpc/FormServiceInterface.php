@@ -365,4 +365,23 @@ interface FormServiceInterface
      * @return void
      */
     public function updateFillingFieldsFormData(string $filling_form_id,array $data): void;
+
+    /**
+     * 获取督导反馈需要的教学活动计划类型（深圳第三人民医院定制化）
+     * @param array $params
+     * @return array
+     */
+    public function getActPlanCate(array $params) :array;
+    /**
+     * 获取督导反馈需要的教学活动计划选项（深圳第三人民医院定制化）
+     * @param array $params
+     * @return array
+     */
+    public function getActPlanOptions(array $params) :array;
+    /**
+     * 获取督导反馈需要的教学活动计划名称（深圳第三人民医院定制化）
+     * @param array $params
+     * @return array
+     */
+    public function getActPlanNames(array $params) :array;
 }
