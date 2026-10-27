@@ -33,4 +33,11 @@ interface NxGraduationExamineServiceInterface
      * @return array
      */
     public function getDetailConf(array $params):array;
+
+    /**
+     * 结业审核导出功能
+     * @param array $businessParams
+     * @return array
+     */
+    public function exportMyPdf(array $businessParams):array;
 }
