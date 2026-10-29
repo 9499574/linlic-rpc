@@ -19,4 +19,13 @@ interface UserInfoServiceInterface
      * @return bool
      */
     public function batchUpdateUserInfoField(array $data):bool;
+
+
+    /**
+     * 更新CCMTV用户信息
+     * @param int $uid
+     * @param array $data ['user_name'=>"",'true_name'=>""]
+     * @return bool
+     */
+    public function updateCCMTVUserInfo(int $uid, array $data):bool;
 }
