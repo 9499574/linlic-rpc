@@ -428,4 +428,11 @@ interface TeachingActivityServiceInterface
      * @return array
      */
     public function dailyStatisticsFields(array $params): array;
+
+    /**
+     * 导出活动评价表单数据（下载中心回调，business_id 为评价记录编号）
+     * @param array $businessParams
+     * @return array
+     */
+    public function exportFillFormData(array $businessParams): array;
 }
