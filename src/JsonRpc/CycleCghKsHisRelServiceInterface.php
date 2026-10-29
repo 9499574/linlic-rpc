@@ -1,8 +1,7 @@
 <?php
 
-declare(strict_types=1);
 
-namespace App\JsonRpc;
+namespace linlic\JsonRpc;
 
 /**
  * 本院科室-HIS科室关系 RPC 服务接口
