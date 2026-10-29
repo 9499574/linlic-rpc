@@ -28,4 +28,11 @@ interface UserInfoServiceInterface
      * @return bool
      */
     public function updateCCMTVUserInfo(int $uid, array $data):bool;
+
+    /**
+     * 获取用户编辑详情数据
+     * @param int $uid
+     * @return array
+     */
+    public function getUserDetail(int $uid):array;
 }
