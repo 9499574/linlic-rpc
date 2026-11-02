@@ -41,6 +41,13 @@ interface FormBatchImportServiceInterface
      */
     public function importData(array $params): array;
 
+    /**
+     * 无流程导入
+     * @param array $params
+     * @return array
+     */
+    public function importDataNoFlow(array $params): array;
+
     public function replaceTemplateConfig(array $params): array;
 
     public function replaceValidConfig(array $params): array;
