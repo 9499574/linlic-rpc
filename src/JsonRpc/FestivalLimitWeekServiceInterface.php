@@ -10,7 +10,4 @@ interface FestivalLimitWeekServiceInterface
     public function weekConf($params):array;
     //机构设置
     public function getSetConf($params):array;
-
-
-    public function getOptions(string $orgId, int $systemId, string $menuId, array $select = [], array $where = []): array;
 }
