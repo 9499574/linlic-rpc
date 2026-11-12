@@ -42,4 +42,11 @@ interface FlowServiceInterface extends BaseModuleServiceInterface
      * @return array
      */
     public function getFlowVerifyParams(array $flowIds,int $uid,bool $openForcedReturn=false):array;
+
+    /**
+     * 流程监控字段
+     * @param array $params
+     * @return array
+     */
+    public function getMonitorField(array $params):array;
 }
