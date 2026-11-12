@@ -167,4 +167,10 @@ interface ComprehensiveAssessmentServiceInterface
      * @return array
      */
     public function getCkAssessData($params):array;
+    /**
+     * 根据评价人数组与被评价人数组获取评价记录
+     * @param array $params org_id/menu_id/uids/target_uids 必填，start_date/end_date/submit_status/flow_status/select 可选
+     * @return array
+     */
+    public function getAssessRecordsByPairs(array $params): array;
 }
