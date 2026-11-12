@@ -217,4 +217,19 @@ interface ExamServiceInterface
      * 获取考试分类
      * */
     public function getExamCategory($params): array;
+
+    /**
+     * 成绩审核流程参数
+     * @param array $params
+     * @return array
+     */
+    public function gradeReviewFlowParams(array $params): array;
+
+    /**
+     * 成绩审核流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function gradeReviewFlowCallBack(array $params): bool;
+
 }
