@@ -136,4 +136,11 @@ interface PaperServiceInterface
      * @return bool
      */
     public function flowCallback(array $params):bool;
+
+    /**
+     * 试卷流程字段
+     * @param array $params
+     * @return array
+     */
+    public function flowFields(array $params):array;
 }
