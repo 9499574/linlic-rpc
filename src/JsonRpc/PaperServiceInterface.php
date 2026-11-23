@@ -128,4 +128,12 @@ interface PaperServiceInterface
      * @return array
      */
     public function getPaperList($select,$org_id,$menu_id,$system_id=''):array;
+
+
+    /**
+     * 试卷流程回调
+     * @param array $params
+     * @return bool
+     */
+    public function flowCallback(array $params):bool;
 }
