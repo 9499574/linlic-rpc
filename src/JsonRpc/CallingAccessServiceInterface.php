@@ -17,4 +17,11 @@ interface CallingAccessServiceInterface
      * @return array
      */
     public function menuConfig(array $params): array;
+
+    /**
+     * 叫号排考字典
+     * @param array $params
+     * @return array
+     */
+    public function orgSet(array $params): array;
 }
